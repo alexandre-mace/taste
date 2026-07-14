@@ -1,17 +1,29 @@
-import { Geist, Geist_Mono, Inter } from "next/font/google"
+import type { Metadata } from "next"
+import { Archivo, Geist_Mono } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils";
+import { SiteHeader } from "@/components/site-header"
+import { cn } from "@/lib/utils"
 
-const geistHeading = Geist({subsets:['latin'],variable:'--font-heading'});
-
-const inter = Inter({subsets:['latin'],variable:'--font-sans'})
+const archivo = Archivo({
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+export const metadata: Metadata = {
+  title: {
+    default: "Taste — Montres",
+    template: "%s — Taste",
+  },
+  description:
+    "Explorez les montres les plus iconiques et découvrez vos préférées, duel après duel.",
+}
 
 export default function RootLayout({
   children,
@@ -20,12 +32,26 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="fr"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", inter.variable, geistHeading.variable)}
+      className={cn(
+        "antialiased",
+        "font-sans",
+        archivo.variable,
+        fontMono.variable
+      )}
     >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className="flex min-h-svh flex-col">
+        <ThemeProvider>
+          <SiteHeader />
+          <main className="flex-1">{children}</main>
+          <footer className="border-t">
+            <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 font-mono text-[11px] tracking-wider text-muted-foreground uppercase sm:px-6">
+              <p>Taste©2026</p>
+              <p>Photos Wikimedia Commons</p>
+            </div>
+          </footer>
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -1,0 +1,510 @@
+export type Watch = {
+  slug: string
+  brand: string
+  name: string
+  year: number
+  ref?: string
+  tagline: string
+  description: string
+}
+
+const collection: Watch[] = [
+  {
+    slug: "rolex-submariner",
+    brand: "Rolex",
+    name: "Submariner",
+    year: 1953,
+    ref: "124060",
+    tagline: "La plongeuse qui a défini le genre",
+    description:
+      "Lancée en 1953, la Submariner est la première montre de plongée étanche à 100 mètres, et sans doute la montre la plus copiée de l'histoire. Sa lunette tournante graduée, ses index luminescents et son boîtier Oyster ont fixé le vocabulaire de toutes les plongeuses qui ont suivi. Portée par Sean Connery dans les premiers James Bond, elle est passée du statut d'outil professionnel à celui d'icône culturelle. Sa production limitée face à une demande mondiale en a fait un objet de spéculation autant que d'horlogerie. C'est la référence absolue : on juge toutes les autres montres de sport par rapport à elle.",
+  },
+  {
+    slug: "rolex-daytona",
+    brand: "Rolex",
+    name: "Cosmograph Daytona",
+    year: 1963,
+    ref: "116500LN",
+    tagline: "Le chronographe le plus convoité au monde",
+    description:
+      "Conçue pour les pilotes de course, la Daytona tire son nom du circuit de Floride où Rolex chronométrait les courses d'endurance. Longtemps invendue dans les années 1960 et 1970, elle est devenue l'objet d'un retournement spectaculaire : la « Paul Newman », portée par l'acteur, s'est vendue 17,8 millions de dollars aux enchères en 2017, un record. Sa lunette tachymétrique et ses trois compteurs en font le chronographe sportif par excellence. Aujourd'hui, les listes d'attente s'étirent sur des années et elle se négocie bien au-dessus de son prix boutique. C'est la montre-trophée par définition.",
+  },
+  {
+    slug: "rolex-datejust",
+    brand: "Rolex",
+    name: "Datejust",
+    year: 1945,
+    ref: "126234",
+    tagline: "Le classique polyvalent absolu",
+    description:
+      "Première montre-bracelet à afficher la date dans un guichet, la Datejust est le modèle le plus vendu de Rolex depuis 1945. Sa loupe Cyclope, ajoutée en 1953, et sa lunette cannelée sont devenues des signatures instantanément reconnaissables. Ni sportive ni habillée, elle traverse toutes les situations avec la même aisance, du bureau au week-end. Déclinée dans des dizaines de tailles, cadrans et matériaux, elle a orné les poignets de présidents comme de stars. C'est l'archétype de la montre unique, celle qu'on garde toute une vie.",
+  },
+  {
+    slug: "rolex-day-date",
+    brand: "Rolex",
+    name: "Day-Date",
+    year: 1956,
+    ref: "228238",
+    tagline: "La « President », montre du pouvoir",
+    description:
+      "Lancée en 1956, la Day-Date est la première montre à afficher le jour de la semaine en toutes lettres, en plus de la date. Exclusivement produite en or ou en platine, elle est livrée sur le bracelet « President » à maillons semi-circulaires créé pour elle. Eisenhower, Kennedy, Johnson : tant de présidents américains l'ont portée qu'elle a gagné son surnom officieux. Symbole de réussite parfois ostentatoire, elle reste le sommet du catalogue Rolex classique. Le cadran champagne sur or jaune est l'image même du pouvoir au poignet.",
+  },
+  {
+    slug: "rolex-gmt-master",
+    brand: "Rolex",
+    name: "GMT-Master II",
+    year: 1955,
+    ref: "126710BLRO",
+    tagline: "La montre des pilotes, lunette « Pepsi »",
+    description:
+      "Développée en 1955 avec la Pan Am pour ses équipages transatlantiques, la GMT-Master affiche un second fuseau horaire grâce à une aiguille 24 heures et une lunette bicolore. La combinaison bleu et rouge, dite « Pepsi », distinguait le jour de la nuit et est devenue l'un des codes couleur les plus célèbres de l'horlogerie. La version « Batman » bleu et noir a créé l'événement à son lancement en 2013. Montre d'outil devenue objet de désir, elle incarne l'âge d'or du voyage en jet. Elle reste la référence des montres de voyageur.",
+  },
+  {
+    slug: "rolex-explorer",
+    brand: "Rolex",
+    name: "Explorer",
+    year: 1953,
+    ref: "124270",
+    tagline: "Née sur l'Everest, l'épure absolue",
+    description:
+      "L'Explorer est lancée en 1953 pour célébrer la première ascension de l'Everest par Hillary et Norgay, équipés de chronomètres Oyster. Son cadran noir aux chiffres 3-6-9 est un modèle de lisibilité, sans date, sans lunette, sans fioriture. C'est la Rolex des puristes : celle qui fait tout, ne montre rien, et se reconnaît pourtant au premier regard. Ian Fleming, créateur de James Bond, la portait lui-même. En 36 mm, elle est peut-être la montre-outil la plus épurée jamais dessinée.",
+  },
+  {
+    slug: "rolex-milgauss",
+    brand: "Rolex",
+    name: "Milgauss",
+    year: 1956,
+    ref: "116400GV",
+    tagline: "L'antimagnétique des scientifiques",
+    description:
+      "Créée en 1956 pour les ingénieurs et scientifiques du CERN, la Milgauss résiste à des champs magnétiques de 1 000 gauss grâce à une cage de Faraday interne, d'où son nom. Son aiguille des secondes en forme d'éclair orange est l'une des plus ludiques jamais montées par Rolex. La version à verre saphir teinté vert, unique dans le catalogue, lui a valu le surnom de « GV » pour Glace Verte. Longtemps mal-aimée, elle a été retirée du catalogue en 2023, ce qui a immédiatement relancé l'intérêt des collectionneurs. C'est la Rolex des originaux.",
+  },
+  {
+    slug: "rolex-sea-dweller",
+    brand: "Rolex",
+    name: "Sea-Dweller",
+    year: 1967,
+    ref: "126600",
+    tagline: "La plongeuse extrême des professionnels",
+    description:
+      "Développée en 1967 avec la société de plongée française Comex, la Sea-Dweller est la version extrême de la Submariner, étanche à 1 220 mètres. Sa valve à hélium, inventée pour l'occasion, permet aux plongeurs à saturation de remonter sans que le verre n'explose. La version « Deepsea » descend même à 3 900 mètres, et un modèle expérimental a accompagné James Cameron au fond de la fosse des Mariannes. C'est l'outil professionnel poussé à l'absurde, et c'est précisément ce qui plaît. La lunette rouge « Single Red » de 2017 rend hommage au prototype originel.",
+  },
+  {
+    slug: "omega-speedmaster",
+    brand: "Omega",
+    name: "Speedmaster Professional",
+    year: 1957,
+    ref: "310.30.42.50.01.001",
+    tagline: "La première montre portée sur la Lune",
+    description:
+      "La Speedmaster est la seule montre qualifiée par la NASA pour les vols habités après avoir survécu à des tests d'une brutalité légendaire. Au poignet de Buzz Aldrin le 21 juillet 1969, elle devient la première montre portée sur la Lune, un titre que personne ne pourra jamais lui reprendre. Lors d'Apollo 13, elle sert à chronométrer la mise à feu de 14 secondes qui ramène l'équipage sur Terre. Toujours équipée d'un mouvement à remontage manuel et d'un verre hésalite comme à l'époque, la « Moonwatch » est probablement la montre à l'histoire la plus forte du monde. Elle reste étonnamment accessible pour une telle légende.",
+  },
+  {
+    slug: "omega-seamaster-300m",
+    brand: "Omega",
+    name: "Seamaster Diver 300M",
+    year: 1993,
+    ref: "210.30.42.20.03.001",
+    tagline: "La montre de James Bond depuis 1995",
+    description:
+      "Lancée en 1993, la Seamaster Diver 300M devient mondialement célèbre deux ans plus tard au poignet de Pierce Brosnan dans GoldenEye. Depuis, chaque James Bond porte une Seamaster, jusqu'à la version titane spécialement conçue avec Daniel Craig pour Mourir peut attendre. Son cadran laqué bleu aux vagues gravées, sa valve à hélium apparente et sa lunette crantée la distinguent immédiatement de sa rivale de Genève. Étanche à 300 mètres et équipée du mouvement Co-Axial Master Chronometer, c'est une vraie plongeuse moderne. Elle offre sans doute le meilleur rapport icône-prix du marché.",
+  },
+  {
+    slug: "patek-philippe-nautilus",
+    brand: "Patek Philippe",
+    name: "Nautilus",
+    year: 1976,
+    ref: "5711/1A",
+    tagline: "Le graal en acier de Gérald Genta",
+    description:
+      "Dessinée en 1976 par Gérald Genta sur un coin de table de restaurant, la Nautilus transpose le luxe absolu dans un boîtier d'acier inspiré d'un hublot de paquebot. Son cadran à rayures horizontales et son boîtier à « oreilles » en font l'une des silhouettes les plus reconnaissables de l'horlogerie. La référence 5711 est devenue l'objet de toutes les spéculations : son arrêt en 2021 a fait exploser les prix, jusqu'à dix fois le tarif boutique. La version cadran vert, puis la Tiffany bleue vendue 6,5 millions de dollars aux enchères, ont marqué l'apogée de la folie horlogère des années 2020. C'est la montre la plus désirée du monde, tout simplement.",
+  },
+  {
+    slug: "patek-philippe-calatrava",
+    brand: "Patek Philippe",
+    name: "Calatrava",
+    year: 1932,
+    ref: "6119R",
+    tagline: "La montre habillée dans sa forme parfaite",
+    description:
+      "Lancée en 1932 et inspirée des principes du Bauhaus, la Calatrava est l'archétype de la montre habillée : un cadran rond, deux ou trois aiguilles, et rien d'autre. Sa lunette « Clous de Paris » guillochée est devenue l'une des signatures de Patek Philippe. C'est la montre des grandes occasions et des transmissions familiales, celle que vise le fameux slogan : « Vous ne possédez jamais complètement une Patek Philippe, vous en êtes juste le gardien pour les générations futures. » Sous son apparente simplicité se cache une finition de mouvement parmi les plus belles du monde. L'élégance ne se démode pas, et la Calatrava en est la preuve depuis bientôt un siècle.",
+  },
+  {
+    slug: "patek-philippe-aquanaut",
+    brand: "Patek Philippe",
+    name: "Aquanaut",
+    year: 1997,
+    ref: "5167A",
+    tagline: "La Patek décontractée sur caoutchouc",
+    description:
+      "Lancée en 1997 pour séduire une clientèle plus jeune, l'Aquanaut reprend l'esprit de la Nautilus dans un design plus moderne, avec un cadran à motif grenade et un bracelet en caoutchouc « Tropical ». Le pari était osé pour la manufacture la plus traditionnelle de Genève : mettre du caoutchouc sur une Patek. Vingt-cinq ans plus tard, c'est l'un des modèles les plus demandés du catalogue, porté par une génération qui mélange streetwear et haute horlogerie. La version chronographe orange et la « Luce » sertie ont élargi la famille. C'est la Patek qu'on porte avec un t-shirt.",
+  },
+  {
+    slug: "audemars-piguet-royal-oak",
+    brand: "Audemars Piguet",
+    name: "Royal Oak",
+    year: 1972,
+    ref: "15510ST",
+    tagline: "La montre qui a inventé le luxe sportif",
+    description:
+      "En 1972, Audemars Piguet joue sa survie en lançant une montre en acier au prix d'une montre en or : la Royal Oak, dessinée en une nuit par Gérald Genta. Sa lunette octogonale à huit vis apparentes, son cadran « Petite Tapisserie » et son bracelet intégré scandalisent puis révolutionnent l'industrie. Elle invente à elle seule la catégorie du « luxe sportif en acier » que tout le monde copiera. Cinquante ans plus tard, elle fait toujours vivre la manufacture du Brassus et s'arrache à des multiples de son prix. C'est l'un des trois ou quatre designs les plus importants de l'histoire horlogère.",
+  },
+  {
+    slug: "audemars-piguet-royal-oak-offshore",
+    brand: "Audemars Piguet",
+    name: "Royal Oak Offshore",
+    year: 1993,
+    tagline: "La Royal Oak muscle, icône des années 2000",
+    description:
+      "En 1993, le jeune designer Emmanuel Gueit gonfle la Royal Oak à 42 mm et l'habille de caoutchouc : les puristes hurlent, le public adore. Surnommée « The Beast », l'Offshore invente la montre de luxe surdimensionnée et devient l'emblème des sportifs et des rappeurs des années 2000. Arnold Schwarzenegger et Jay-Z en font un symbole de réussite ostentatoire. Ses éditions limitées, des « Safari » aux modèles en carbone forgé, sont devenues des objets de collection à part entière. C'est la démesure assumée, et elle a ouvert la voie à toute une esthétique.",
+  },
+  {
+    slug: "vacheron-constantin-222",
+    brand: "Vacheron Constantin",
+    name: "Historiques 222",
+    year: 1977,
+    tagline: "Le sport-chic oublié devenu culte",
+    description:
+      "Lancée en 1977 pour les 222 ans de Vacheron Constantin, plus ancienne manufacture en activité continue au monde, la 222 est la réponse de la maison à la Royal Oak et à la Nautilus. Dessinée par le jeune Jorg Hysek, elle se distingue par sa lunette cannelée vissée et sa petite croix de Malte dorée incrustée dans le boîtier à 5 heures. Produite à quelques centaines d'exemplaires seulement, elle est longtemps restée un secret de collectionneurs avant que sa cote n'explose. Sa réédition en or jaune en 2022 a été l'un des lancements les plus applaudis de la décennie. C'est l'ancêtre direct de l'Overseas, et le choix du connaisseur absolu.",
+  },
+  {
+    slug: "vacheron-constantin-patrimony",
+    brand: "Vacheron Constantin",
+    name: "Patrimony",
+    year: 2004,
+    tagline: "Le minimalisme selon Genève",
+    description:
+      "La Patrimony distille l'élégance des montres Vacheron Constantin des années 1950 dans un design d'une pureté absolue : boîtier extra-plat, cadran bombé, index bâtons et minuterie « perlée ». Aucune ligne n'est superflue, chaque proportion est calculée au dixième de millimètre. Poinçon de Genève, finitions main : c'est la haute horlogerie dans sa forme la plus discrète. Face à une Calatrava, elle joue la carte de la retenue aristocratique. C'est la montre de celui qui n'a plus rien à prouver.",
+  },
+  {
+    slug: "jaeger-lecoultre-reverso",
+    brand: "Jaeger-LeCoultre",
+    name: "Reverso",
+    year: 1931,
+    tagline: "Le boîtier réversible Art déco",
+    description:
+      "Née en 1931 pour les joueurs de polo britanniques des Indes qui brisaient leurs verres de montre, la Reverso pivote sur elle-même pour protéger son cadran. Son boîtier rectangulaire aux godrons Art déco est l'un des designs les plus purs de l'histoire, inchangé depuis plus de 90 ans. Son dos d'acier se prête aux gravures et émaux personnalisés, ou accueille un second cadran sur les versions Duoface. Manufacture aux mille calibres, Jaeger-LeCoultre en a fait des versions allant de la plus simple à la Grande Complication. C'est la montre rectangulaire par excellence, et un chef-d'œuvre de design fonctionnel.",
+  },
+  {
+    slug: "cartier-tank",
+    brand: "Cartier",
+    name: "Tank",
+    year: 1917,
+    tagline: "Un siècle d'élégance rectangulaire",
+    description:
+      "Dessinée par Louis Cartier en 1917, la Tank s'inspire de la vue aérienne des chars Renault de la Première Guerre mondiale : les brancards sont les chenilles, le boîtier la cabine. Chiffres romains, chemin de fer, cabochon de saphir : son vocabulaire n'a pas changé en plus d'un siècle. Jackie Kennedy, Andy Warhol, Yves Saint Laurent, la princesse Diana : la liste de ses porteurs est un panthéon du style. Warhol disait la porter sans jamais la remonter, « parce que c'est la montre qu'il faut porter ». Déclinée en Louis, Américaine, Française ou Must, elle reste la montre habillée la plus iconique du monde.",
+  },
+  {
+    slug: "cartier-santos",
+    brand: "Cartier",
+    name: "Santos",
+    year: 1904,
+    tagline: "La première montre-bracelet moderne",
+    description:
+      "En 1904, l'aviateur brésilien Alberto Santos-Dumont se plaint à son ami Louis Cartier de ne pouvoir lire l'heure en vol sans lâcher les commandes. Cartier lui dessine une montre-bracelet carrée à vis apparentes : la Santos, considérée comme la première montre-bracelet d'homme moderne. Ses vis dorées sur la lunette, scandaleuses à l'époque, anticipent de 70 ans le design industriel de la Royal Oak. Relancée en 2018 avec un bracelet interchangeable ingénieux, elle connaît une seconde jeunesse. Porter une Santos, c'est porter l'acte de naissance de la montre moderne.",
+  },
+  {
+    slug: "iwc-portugieser",
+    brand: "IWC",
+    name: "Portugieser",
+    year: 1939,
+    ref: "IW5007",
+    tagline: "L'instrument marin devenu classique",
+    description:
+      "En 1939, deux négociants portugais commandent à IWC une montre-bracelet aussi précise qu'un chronomètre de marine : la manufacture loge un mouvement de montre de poche dans un boîtier de 41,5 mm, gigantesque pour l'époque. Chiffres arabes fins, chemin de fer, aiguilles feuilles : la Portugieser est l'épure d'un instrument scientifique. Sa version chronographe, la 3714, est l'un des chronographes les plus vendus du segment. La Perpetual Calendar de Kurt Klaus, réglable par la seule couronne, est un monument d'ingéniosité. C'est la grande classique des amateurs de cadrans lisibles.",
+  },
+  {
+    slug: "iwc-pilots-watch",
+    brand: "IWC",
+    name: "Pilot's Watch Mark",
+    year: 1948,
+    ref: "Mark XI",
+    tagline: "La montre d'aviateur de référence",
+    description:
+      "La Mark 11, développée en 1948 pour la Royal Air Force, est la montre de pilote par excellence : cadran noir, chiffres blancs, triangle à 12 heures et cage antimagnétique. Elle est restée en service militaire pendant plus de 30 ans, un record. Ses descendantes, de la Mark XII à l'actuelle Mark XX, perpétuent ce design d'instrument sans un gramme de décoration. La Big Pilot de 46 mm, avec sa couronne oignon, en est la version spectaculaire. C'est le purisme militaire élevé au rang de style.",
+  },
+  {
+    slug: "breitling-navitimer",
+    brand: "Breitling",
+    name: "Navitimer",
+    year: 1952,
+    tagline: "L'ordinateur de bord au poignet",
+    description:
+      "Lancée en 1952, la Navitimer intègre une règle à calcul circulaire qui permettait aux pilotes de calculer vitesses, consommations et conversions en plein vol. Son cadran ultra-dense, illisible pour les profanes, est précisément ce qui fait son charme : c'est un instrument, pas un bijou. Adoptée par l'AOPA, la plus grande association de pilotes au monde, elle est LA montre d'aviation civile. Scott Carpenter en a porté une version 24 heures en orbite en 1962, avant même la Speedmaster lunaire. Plus de 70 ans après, elle se porte comme un morceau d'âge d'or de l'aviation.",
+  },
+  {
+    slug: "tag-heuer-monaco",
+    brand: "TAG Heuer",
+    name: "Monaco",
+    year: 1969,
+    ref: "CBL2111",
+    tagline: "Le carré bleu de Steve McQueen",
+    description:
+      "Premier chronographe automatique carré et étanche de l'histoire, la Monaco fait sensation à son lancement en 1969 avec son cadran bleu métallisé et sa couronne à gauche. Steve McQueen la porte en 1971 dans le film Le Mans, associée à sa combinaison Gulf : l'image devient l'une des plus iconiques du sport automobile. Son boîtier carré, radical aujourd'hui encore, était une hérésie à l'époque. La montre de McQueen s'est vendue 2,2 millions de dollars aux enchères en 2020. C'est le chronographe des esthètes qui trouvent le rond trop sage.",
+  },
+  {
+    slug: "tag-heuer-carrera",
+    brand: "TAG Heuer",
+    name: "Carrera",
+    year: 1963,
+    tagline: "Le chronographe de course épuré",
+    description:
+      "Jack Heuer dessine la Carrera en 1963 en pensant aux pilotes de la Carrera Panamericana, la course routière mexicaine la plus dangereuse du monde. Son idée révolutionnaire : un cadran parfaitement dégagé, où la lunette intérieure inclinée porte les graduations pour libérer l'affichage. C'est l'un des chronographes les plus lisibles et les plus élégants jamais dessinés. Les rééditions « Glassbox » modernes ont retrouvé l'esprit des originales des années 1960. Face à la Daytona, elle joue l'authenticité d'un lien réel avec la course automobile.",
+  },
+  {
+    slug: "zenith-el-primero",
+    brand: "Zenith",
+    name: "Chronomaster El Primero",
+    year: 1969,
+    tagline: "Le premier chronographe automatique haute fréquence",
+    description:
+      "Le 10 janvier 1969, Zenith présente El Primero, premier chronographe automatique intégré au monde, battant Heuer et Seiko dans la course historique. Sa haute fréquence de 5 Hz lui permet de mesurer le dixième de seconde, un exploit inégalé pendant des décennies. Dans les années 1970, l'horloger Charles Vermot cache les outillages dans un grenier pour les sauver de la direction américaine qui voulait tout jeter : ce geste sauve le calibre, qui équipera plus tard les Daytona de Rolex. Les compteurs tricolores gris, anthracite et bleu du modèle A386 sont une signature immédiatement reconnaissable. C'est le mouvement le plus légendaire de l'horlogerie moderne.",
+  },
+  {
+    slug: "panerai-luminor",
+    brand: "Panerai",
+    name: "Luminor",
+    year: 1950,
+    ref: "PAM01312",
+    tagline: "Le coussin italien au pont de couronne",
+    description:
+      "Conçue pour les nageurs de combat de la marine italienne, la Luminor se reconnaît entre mille à son pont protège-couronne à levier, breveté en 1956. Son boîtier coussin de 44 mm et son cadran « sandwich » luminescent en font l'une des montres les plus viriles du marché. Sylvester Stallone la découvre à Florence en 1995, la porte dans Daylight et en offre à ses amis, dont Schwarzenegger : la « Panéramania » est née. La marque florentine devenue genevoise a bâti tout un culte sur ce design militaire des années 1940. C'est la montre statement par excellence : on la voit de l'autre bout de la pièce.",
+  },
+  {
+    slug: "panerai-radiomir",
+    brand: "Panerai",
+    name: "Radiomir",
+    year: 1936,
+    tagline: "L'originale des commandos de la Décima",
+    description:
+      "La Radiomir de 1936 est la première montre de plongée militaire de l'histoire, créée par Panerai avec Rolex pour les commandos sous-marins italiens. Son nom vient de la pâte luminescente au radium qui rendait son cadran lisible dans les eaux noires. Boîtier coussin, anses en fil de fer soudé, cadran d'une simplicité absolue : c'est le degré zéro du design, et c'est magnifique. Les collectionneurs s'arrachent les rares exemplaires d'époque aux cadrans devenus crème. Plus fine et plus vintage que la Luminor, c'est la Panerai des connaisseurs.",
+  },
+  {
+    slug: "richard-mille",
+    brand: "Richard Mille",
+    name: "RM 011",
+    year: 2007,
+    tagline: "La machine de course à 200 000 euros",
+    description:
+      "Richard Mille a inventé en 2001 une nouvelle catégorie : la montre technique extrême au prix d'une supercar, conçue comme une Formule 1 du poignet. La RM 011, développée avec le pilote Felipe Massa, est le modèle qui a fait décoller la marque : boîtier tonneau squeletté, matériaux aérospatiaux, chronographe flyback. Rafael Nadal joue et gagne Roland-Garros avec sa RM 027 de 18 grammes au poignet, démonstration ultime. Portée par les milliardaires, les athlètes et les rappeurs, c'est la marque la plus ostentatoire du XXIe siècle. Un symbole : on ne dit plus « une montre de luxe », on dit « une Richard Mille ».",
+  },
+  {
+    slug: "blancpain-fifty-fathoms",
+    brand: "Blancpain",
+    name: "Fifty Fathoms",
+    year: 1953,
+    tagline: "La première vraie montre de plongée",
+    description:
+      "Commandée en 1953 par les nageurs de combat français du capitaine Maloubier, la Fifty Fathoms précède la Submariner de quelques mois et fixe le cahier des charges de la montre de plongée moderne : lunette tournante crantée, cadran noir contrasté, étanchéité à cinquante brasses. Jacques-Yves Cousteau la porte dans Le Monde du silence, Palme d'or 1956. Sa lunette bombée en saphir et son cadran d'un noir profond en font l'une des plongeuses les plus luxueuses du marché. La version Bathyscaphe, plus sobre, séduit les puristes. C'est la plongeuse originelle, pour ceux qui savent.",
+  },
+  {
+    slug: "breguet-classique",
+    brand: "Breguet",
+    name: "Classique",
+    year: 1775,
+    ref: "5177",
+    tagline: "L'héritage du plus grand horloger de l'histoire",
+    description:
+      "Abraham-Louis Breguet a inventé une part considérable de l'horlogerie moderne : le tourbillon, la spirale Breguet, la première montre-bracelet pour Caroline Murat en 1810. La collection Classique perpétue son langage : cadrans guillochés main, chiffres Breguet, aiguilles « à pomme » bleuies au feu et cannelures de carrure. Chaque montre semble sortie du XVIIIe siècle avec la précision du XXIe. Marie-Antoinette, Napoléon, Churchill : ses clients forment le who's who de trois siècles. Porter une Breguet, c'est porter l'histoire de l'horlogerie elle-même.",
+  },
+  {
+    slug: "breguet-type-xx",
+    brand: "Breguet",
+    name: "Type XX",
+    year: 1954,
+    tagline: "Le chronographe militaire français",
+    description:
+      "Le Type 20 est le chronographe commandé dans les années 1950 par l'armée de l'air française à plusieurs fournisseurs, dont Breguet, qui en a fait sa version civile Type XX. Sa fonction retour-en-vol, qui permet de relancer un chronométrage d'une seule pression, était essentielle pour les navigations aériennes. Boîtier robuste, lunette graduée, compteurs contrastés : c'est l'outil militaire français par excellence. La réédition 2023, fidèle aux originales, a été saluée par les collectionneurs. C'est le pan « pilote » inattendu de la plus aristocratique des maisons.",
+  },
+  {
+    slug: "grand-seiko-hi-beat",
+    brand: "Grand Seiko",
+    name: "Hi-Beat 36000",
+    year: 1968,
+    tagline: "La perfection japonaise à haute fréquence",
+    description:
+      "Née en 1960 pour battre les Suisses sur leur propre terrain, Grand Seiko a atteint son sommet avec les calibres Hi-Beat à 36 000 alternances par heure, parmi les plus précis jamais produits en série. Dans les années 1960, ses montres dominent les concours de chronométrie des observatoires suisses, au point que ceux-ci cessent de publier les résultats. Le style « Grammar of Design » de 1967, aux facettes plates et arêtes vives polies au « Zaratsu », donne aux boîtiers un éclat de miroir unique. Cadrans texturés inspirés de la nature, aiguilles biseautées, finition obsessionnelle : c'est l'artisanat japonais au niveau de la haute horlogerie. Longtemps secret bien gardé, Grand Seiko est devenu un culte mondial chez les connaisseurs.",
+  },
+  {
+    slug: "seiko-skx007",
+    brand: "Seiko",
+    name: "SKX007",
+    year: 1996,
+    ref: "SKX007",
+    tagline: "La plongeuse du peuple, culte absolu",
+    description:
+      "Produite de 1996 à 2019, la SKX007 est probablement la montre la plus recommandée de l'histoire des forums horlogers : une vraie plongeuse ISO 6425 à moins de 200 euros. Boîtier coussin, lunette crantée, lume légendaire de Seiko : elle a tout des grandes pour le prix d'un dîner. Des millions d'amateurs ont commencé leur collection par elle, et beaucoup l'ont gardée. Son arrêt de production en a fait un objet de collection dont la cote grimpe. C'est la preuve définitive que le culte horloger n'est pas une question de prix.",
+  },
+  {
+    slug: "seiko-5",
+    brand: "Seiko",
+    name: "5 Sports",
+    year: 1963,
+    tagline: "L'automatique accessible depuis 1963",
+    description:
+      "Lancée en 1963, la Seiko 5 promettait cinq attributs : mouvement automatique, jour et date, étanchéité, couronne protégée et boîtier robuste, le tout à prix populaire. Elle a mis la montre mécanique au poignet de millions de personnes dans le monde entier, des étudiants japonais aux soldats du Vietnam. Ses déclinaisons se comptent par milliers, dont les fameuses « SNK » à moins de 100 euros, éternelles recommandations pour débuter. La gamme moderne 5 Sports recycle le design de la SKX disparue. Aucune montre n'a démocratisé la mécanique comme elle.",
+  },
+  {
+    slug: "casio-g-shock",
+    brand: "Casio",
+    name: "G-Shock DW-5600",
+    year: 1983,
+    ref: "DW-5600",
+    tagline: "L'indestructible qui a survécu à tout",
+    description:
+      "En 1981, l'ingénieur Kikuo Ibe brise la montre offerte par son père et se jure de créer une montre incassable : après 200 prototypes jetés du troisième étage, la G-Shock naît en 1983. Le carré DW-5600, héritier direct de l'originale, résiste aux chocs, à l'eau, au froid et à peu près à tout ce que la vie peut lui infliger. Portée par les militaires, les skateurs, Kanye West et le personnel de la NASA, elle transcende toutes les tribus. Son design brutaliste n'a pas changé en 40 ans, et c'est très bien ainsi. C'est l'anti-montre de luxe absolue, et une icône tout aussi légitime.",
+  },
+  {
+    slug: "casio-f91w",
+    brand: "Casio",
+    name: "F-91W",
+    year: 1989,
+    ref: "F-91W",
+    tagline: "La digitale à 15 euros la plus portée du monde",
+    description:
+      "Vendue à des millions d'exemplaires par an depuis 1989, la F-91W est probablement la montre la plus portée de l'histoire de l'humanité. Sept ans de pile, alarme, chronomètre, 21 grammes : elle fait tout ce qu'on attend d'une montre pour le prix de deux cafés. Obama en a porté une, les hackers l'adorent, et elle est devenue un statement anti-luxe chez les milliardaires de la tech. Son design n'a jamais changé, ce qui en fait paradoxalement l'un des objets les plus intemporels du design industriel. C'est le degré zéro du prix et le degré maximal de l'icône.",
+  },
+  {
+    slug: "swatch",
+    brand: "Swatch",
+    name: "Original Gent",
+    year: 1983,
+    tagline: "La montre pop qui a sauvé l'horlogerie suisse",
+    description:
+      "En pleine crise du quartz, alors que l'horlogerie suisse agonise face au Japon, Nicolas Hayek lance en 1983 une montre plastique à 50 francs, produite en 51 composants au lieu de 91 : la Swatch. Le pari : faire de la montre un accessoire de mode qu'on collectionne comme des baskets. Le succès est planétaire, des centaines de millions d'exemplaires sont vendus, et les bénéfices financent le rachat d'Omega, Breguet et Blancpain. Les collaborations avec Keith Haring puis la MoonSwatch de 2022, qui a créé des émeutes en boutique, prouvent que la formule marche toujours. Sans elle, l'horlogerie suisse telle qu'on la connaît n'existerait plus.",
+  },
+  {
+    slug: "tissot-prx",
+    brand: "Tissot",
+    name: "PRX Powermatic 80",
+    year: 1978,
+    ref: "T137.407",
+    tagline: "Le sport-chic des années 70 à prix imbattable",
+    description:
+      "Réédition d'un modèle de 1978, la PRX a explosé à son lancement en 2021 en offrant l'esthétique bracelet intégré des années 1970 à moins de 700 euros en automatique. Cadran gaufré façon Nautilus, boîtier tonneau brossé, 80 heures de réserve de marche : le rapport qualité-prix a stupéfié le marché. Elle est devenue la montre d'entrée de gamme la plus recommandée au monde, et la porte d'entrée d'une génération TikTok vers l'horlogerie. Les déclinaisons chronographe et 35 mm ont suivi le succès. C'est la démocratisation du luxe sportif, et une leçon de produit.",
+  },
+  {
+    slug: "longines-legend-diver",
+    brand: "Longines",
+    name: "Legend Diver",
+    year: 1960,
+    tagline: "La plongeuse à double couronne des sixties",
+    description:
+      "Réédition fidèle d'une plongeuse de 1960, la Legend Diver arbore le design « Super Compressor » : deux couronnes, dont une pour la lunette intérieure tournante, et un cadran laqué bombé. Son esthétique skin-diver des années 1960 en fait l'une des plus élégantes plongeuses vintage du marché. Longines, qui fut l'une des plus grandes manufactures de l'histoire avant le quartz, puise dans des archives parmi les plus riches du monde. La version 39 mm de 2023 a corrigé le seul reproche des puristes. C'est le charme rétro sans les risques du vintage.",
+  },
+  {
+    slug: "tudor-black-bay",
+    brand: "Tudor",
+    name: "Black Bay 58",
+    year: 2018,
+    ref: "M79030N",
+    tagline: "Le vintage Rolex à prix accessible",
+    description:
+      "Tudor, la marque sœur de Rolex, a réussi l'une des renaissances les plus spectaculaires de l'horlogerie avec la Black Bay, qui puise dans les Submariner Tudor des années 1950. La Black Bay 58, en 39 mm avec ses accents dorés et sa couronne rose, est devenue la plongeuse la plus recommandée du segment intermédiaire. Aiguilles « Snowflake », lunette bordeaux ou noire, manufacture certifiée METAS : l'ADN Rolex à moitié prix. David Beckham et Lady Gaga en ont assuré la publicité. C'est le meilleur des deux mondes : l'héritage sans la liste d'attente.",
+  },
+  {
+    slug: "nomos-tangente",
+    brand: "Nomos",
+    name: "Tangente",
+    year: 1992,
+    tagline: "Le Bauhaus de Glashütte",
+    description:
+      "Fondée à Glashütte juste après la réunification, Nomos a bâti son succès sur la Tangente, un design d'inspiration Bauhaus aux chiffres fins et aux aiguilles bleuies, dérivé des montres des années 1930. Manufacture véritable, la maison produit ses propres calibres, dont l'ultra-plat DUW avec son échappement maison, à des prix qui défient la concurrence suisse. Son esthétique typographique obsessionnelle en a fait la montre favorite des architectes et des graphistes. Le cadran argenté galvanique et le fond saphir sont d'une pureté rare sous les 3 000 euros. C'est le minimalisme allemand dans sa forme la plus aboutie.",
+  },
+  {
+    slug: "junghans-max-bill",
+    brand: "Junghans",
+    name: "Max Bill",
+    year: 1961,
+    tagline: "Le design d'école d'Ulm au poignet",
+    description:
+      "Dessinée en 1961 par Max Bill, élève du Bauhaus et fondateur de l'école d'Ulm, cette montre est l'une des rares conçues par un designer majeur du XXe siècle. Chaque détail obéit à une logique mathématique : la typographie, les proportions, le verre bombé qui adoucit la géométrie. Elle figure dans les collections de design de plusieurs musées, dont le MoMA à travers l'horloge de cuisine du même Bill. Junghans la produit quasi inchangée depuis 60 ans, en quartz comme en mécanique. C'est moins une montre qu'un manifeste de design fonctionnel, porté au quotidien.",
+  },
+  {
+    slug: "mondaine",
+    brand: "Mondaine",
+    name: "Official Swiss Railways",
+    year: 1986,
+    tagline: "L'horloge des gares suisses au poignet",
+    description:
+      "La Mondaine reprend l'horloge des chemins de fer suisses dessinée en 1944 par Hans Hilfiker, ingénieur des CFF : cadran blanc, index bâtons noirs et célèbre trotteuse rouge en forme de palette de chef de gare. Sur les quais, cette trotteuse s'arrête deux secondes à midi pour que toutes les gares du pays repartent synchrones : un détail devenu légende du design. Licenciée par Mondaine en 1986, l'horloge devient montre et entre au MoMA et au Design Museum de Londres. Apple a même copié le design en 2012 dans iOS, moyennant un accord à plusieurs millions. C'est le design helvétique dans sa forme la plus pure et la plus démocratique.",
+  },
+  {
+    slug: "apple-watch",
+    brand: "Apple",
+    name: "Apple Watch",
+    year: 2015,
+    tagline: "La montre la plus vendue du monde",
+    description:
+      "Lancée en 2015, l'Apple Watch est devenue en quelques années la montre la plus vendue au monde, dépassant à elle seule toute l'industrie horlogère suisse en volume. Capteurs cardiaques, ECG, détection de chute : elle a redéfini la montre comme objet de santé et sauvé des vies documentées. Son design par Jony Ive, avec sa couronne digitale réinventée, est l'aboutissement du langage industriel d'Apple. Les puristes horlogers la méprisent, mais elle a paradoxalement ramené une génération entière au port d'un objet au poignet. Qu'on l'aime ou non, c'est la montre la plus importante du XXIe siècle.",
+  },
+  {
+    slug: "hamilton-khaki-field",
+    brand: "Hamilton",
+    name: "Khaki Field Mechanical",
+    year: 1969,
+    ref: "H69439931",
+    tagline: "La montre de soldat authentique",
+    description:
+      "La Khaki Field descend en ligne directe des montres militaires que Hamilton fournissait à l'armée américaine, de la Seconde Guerre mondiale au Vietnam. Cadran noir mat, chiffres 24 heures, aiguilles seringues, remontage manuel : c'est la copie quasi conforme de la MIL-W-46374 réglementaire. À moins de 600 euros, elle offre une authenticité militaire qu'aucun marketing ne peut fabriquer. Hollywood l'adore : Hamilton apparaît dans plus de 500 films, d'Interstellar à Indiana Jones. C'est la field watch de référence, sans un gramme de prétention.",
+  },
+  {
+    slug: "hamilton-ventura",
+    brand: "Hamilton",
+    name: "Ventura",
+    year: 1957,
+    tagline: "Le triangle électrique d'Elvis",
+    description:
+      "Lancée en 1957, la Ventura est la première montre électrique du monde, et son boîtier triangulaire dessiné par Richard Arbib reste l'un des designs les plus audacieux de l'histoire horlogère. Elvis Presley la porte en 1961 dans Blue Hawaii, et elle devient à jamais « la montre d'Elvis ». Son style rétrofuturiste américain des années atomiques n'a aucun équivalent : on dirait une Cadillac au poignet. Les Men in Black l'ont adoptée à l'écran, renforçant son statut culte. Ce n'est pas une montre consensuelle, et c'est exactement son intérêt.",
+  },
+  {
+    slug: "oris-aquis",
+    brand: "Oris",
+    name: "Aquis",
+    year: 2011,
+    tagline: "La plongeuse indépendante au poisson rouge",
+    description:
+      "L'Aquis est la plongeuse moderne d'Oris, l'une des dernières grandes marques suisses indépendantes, propriété de personne d'autre que d'elle-même depuis 1904. Design contemporain, lunette céramique, 300 mètres d'étanchéité, à des prix nettement sous les géants du secteur : c'est la proposition la plus honnête du marché. Ses éditions engagées pour la protection des océans et son calibre 400 à cinq jours de réserve de marche et dix ans de garantie ont renforcé sa crédibilité. La marque au poisson rouge cultive une sympathie que les grands groupes ne peuvent pas acheter. C'est la plongeuse de l'amateur indépendant d'esprit.",
+  },
+  {
+    slug: "rado-captain-cook",
+    brand: "Rado",
+    name: "Captain Cook",
+    year: 1962,
+    tagline: "La plongeuse rétro à lunette tournante concave",
+    description:
+      "Réédition d'une plongeuse confidentielle de 1962, la Captain Cook est devenue depuis 2017 le best-seller inattendu de Rado, la marque « maître des matériaux » du groupe Swatch. Sa lunette concave inversée et son ancre mobile sur le cadran lui donnent un charme sixties unique. Les versions céramique high-tech monobloc rappellent que Rado a été pionnière de ce matériau dès les années 1980. Son cadran vert bouteille a surfé sur la vague des cadrans colorés avec un succès particulier. C'est le vintage-cool à la suisse, sans se prendre au sérieux.",
+  },
+  {
+    slug: "piaget-polo",
+    brand: "Piaget",
+    name: "Polo",
+    year: 1979,
+    tagline: "Le luxe doré des années Studio 54",
+    description:
+      "Lancée en 1979 en pleine ère disco, la Polo originale était un lingot d'or intégral aux godrons horizontaux, où bracelet et boîtier ne faisaient qu'un. C'était la montre des années Studio 54, portée par Andy Warhol et les jet-setteurs, symbole d'un luxe hédoniste assumé. Piaget, maître incontesté des mouvements ultra-plats depuis les années 1950, y logeait des calibres d'une finesse record. La Polo moderne, ronde dans un boîtier coussin, vise le terrain de l'Overseas. La version 79 relancée en or massif rejoue la carte du glamour originel.",
+  },
+  {
+    slug: "timex-marlin",
+    brand: "Timex",
+    name: "Marlin",
+    year: 1960,
+    tagline: "La mécanique américaine populaire",
+    description:
+      "Le Marlin incarne l'âge d'or de Timex, quand un Américain sur trois portait une montre de la marque, vendue en pharmacie et démolie en direct à la télévision dans les fameux tests « It takes a licking and keeps on ticking ». Réédité en mécanique à remontage manuel depuis 2017, ce petit boîtier de 34 mm au cadran argenté bombé offre un charme fifties intact pour environ 200 euros. Son succès a surpris Timex elle-même et relancé toute une gamme rétro. C'est la porte d'entrée la plus charmante vers la montre mécanique vintage. Simple, honnête, américaine.",
+  },
+]
+
+// Parcours chronologique : la collection se visite de la première
+// création à la plus récente, comme les salles d'un musée.
+export const watches: Watch[] = [...collection].sort(
+  (a, b) => a.year - b.year || a.brand.localeCompare(b.brand)
+)
+
+export function getWatch(slug: string): Watch | undefined {
+  return watches.find((w) => w.slug === slug)
+}
+
+export function watchImage(slug: string): string {
+  return `/watches/${slug}.jpg`
+}
