@@ -493,6 +493,71 @@ const collection: Watch[] = [
     description:
       "Le Marlin incarne l'âge d'or de Timex, quand un Américain sur trois portait une montre de la marque, vendue en pharmacie et démolie en direct à la télévision dans les fameux tests « It takes a licking and keeps on ticking ». Réédité en mécanique à remontage manuel depuis 2017, ce petit boîtier de 34 mm au cadran argenté bombé offre un charme fifties intact pour environ 200 euros. Son succès a surpris Timex elle-même et relancé toute une gamme rétro. C'est la porte d'entrée la plus charmante vers la montre mécanique vintage. Simple, honnête, américaine.",
   },
+  {
+    slug: "universal-geneve-polerouter",
+    brand: "Universal Genève",
+    name: "Polerouter",
+    year: 1954,
+    tagline: "Le premier chef-d'œuvre de Gérald Genta",
+    description:
+      "En 1954, un designer de 23 ans nommé Gérald Genta dessine sa première montre marquante : la Polerouter, commandée par Universal Genève pour célébrer les vols polaires de la compagnie SAS entre Copenhague et Los Angeles. Son cadran à double niveau, ses index appliqués et ses cornes torsadées en font l'une des montres les plus élégantes des années 1950. Elle reçoit ensuite le calibre « microtor », un des premiers mouvements automatiques à micro-rotor intégré. Vingt ans avant la Royal Oak et la Nautilus, tout le talent de Genta est déjà là. Longtemps sous-cotée, elle est devenue l'un des grands cultes du vintage accessible.",
+  },
+  {
+    slug: "bulova-accutron-spaceview",
+    brand: "Bulova",
+    name: "Accutron Spaceview",
+    year: 1960,
+    tagline: "Le diapason qui a électrisé l'horlogerie",
+    description:
+      "L'Accutron de 1960 est la première montre électronique de l'histoire : un diapason vibrant à 360 hertz remplace le balancier, et la montre émet un bourdonnement caractéristique au lieu d'un tic-tac. Précise à une minute par mois, une performance inouïe à l'époque, elle équipe les pilotes de l'US Air Force et sa technologie accompagne les missions spatiales américaines. La version « Spaceview », au cadran ouvert dévoilant les bobines vertes et le circuit, était à l'origine un modèle de démonstration pour les vitrines : les clients l'ont tellement réclamée que Bulova l'a commercialisée. C'est l'icône rétrofuturiste par excellence, chaînon manquant entre la mécanique et le quartz.",
+  },
+  {
+    slug: "seiko-astron",
+    brand: "Seiko",
+    name: "Quartz Astron",
+    year: 1969,
+    ref: "35SQ",
+    tagline: "La première montre à quartz du monde",
+    description:
+      "Le 25 décembre 1969, Seiko lance à Tokyo la Quartz Astron : la première montre-bracelet à quartz de l'histoire, précise à cinq secondes par mois quand les meilleures mécaniques dérivaient de plusieurs secondes par jour. Vendue 450 000 yens, le prix d'une Toyota Corolla, elle est produite à une centaine d'exemplaires dans un boîtier en or. Seiko ouvre ensuite ses brevets, précipitant la « crise du quartz » qui manquera d'emporter toute l'horlogerie suisse dans les années 1970. Peu d'objets ont autant bouleversé une industrie entière. Dans un parcours chronologique, c'est la ligne de fracture entre deux mondes.",
+  },
+  {
+    slug: "hamilton-pulsar",
+    brand: "Hamilton",
+    name: "Pulsar Time Computer",
+    year: 1972,
+    ref: "P1",
+    tagline: "La première montre digitale, à LED rouges",
+    description:
+      "Lancée en 1972 par Hamilton, la Pulsar est la première montre numérique de l'histoire : pas d'aiguilles, juste des diodes rouges qui s'illuminent à la pression d'un bouton. La P1 en or massif coûtait 2 100 dollars, plus cher qu'une Rolex Day-Date de l'époque. Roger Moore la porte dans Vivre et laisser mourir, son premier James Bond, et le président Gerald Ford s'affiche avec au poignet. Son esthétique « Time Computer » incarne l'ère spatiale finissante et annonce l'invasion du digital. C'est la préhistoire flamboyante de toutes les montres connectées.",
+  },
+  {
+    slug: "cartier-panthere",
+    brand: "Cartier",
+    name: "Panthère",
+    year: 1983,
+    tagline: "Le bracelet-bijou des années 80",
+    description:
+      "Lancée en 1983, la Panthère doit son nom à son bracelet à maillons brossés, souple comme le félin emblème de Cartier depuis 1914. Petit boîtier carré hérité de la Santos, or et acier assumés : c'est la montre-bijou des années 1980, portée aussi bien par les femmes que par les hommes, de Keith Richards à Pierce Brosnan. Retirée du catalogue en 2004, elle est relancée en 2017 quasi inchangée et redevient immédiatement un best-seller. Elle incarne le glamour deux-tons de la décennie Dynasty mieux qu'aucune autre. C'est la preuve que Cartier fabrique des icônes en série.",
+  },
+  {
+    slug: "ulysse-nardin-freak",
+    brand: "Ulysse Nardin",
+    name: "Freak",
+    year: 2001,
+    tagline: "Ni aiguilles, ni cadran, ni couronne",
+    description:
+      "En 2001, la Freak fait voler en éclats trois siècles de conventions : pas d'aiguilles, pas de cadran, pas de couronne — c'est le mouvement entier qui tourne sur lui-même en carrousel pour indiquer l'heure. Imaginée par le génial Ludwig Oechslin pour Rolf Schnyder, elle inaugure surtout le premier échappement en silicium de l'horlogerie, une révolution technique que toute l'industrie adoptera, de Patek à Omega. Chaque génération de Freak sert depuis de laboratoire roulant à Ulysse Nardin. C'est peut-être la montre la plus radicale du XXIe siècle. Un manifeste mécanique qu'on porte au poignet.",
+  },
+  {
+    slug: "fp-journe",
+    brand: "F.P. Journe",
+    name: "Octa Calendrier",
+    year: 2002,
+    tagline: "« Invenit et Fecit » — le maître indépendant",
+    description:
+      "François-Paul Journe est l'horloger contemporain le plus célébré au monde : sa devise « Invenit et Fecit » (il l'a inventé et l'a fait) signe des montres entièrement conçues et fabriquées dans son atelier de Genève, avec des mouvements en or rose massif. L'Octa Calendrier combine calendrier annuel et grande date dans son langage inimitable : cadran excentré, chiffres dodus, architecture asymétrique. Produites à quelques centaines d'exemplaires par an, ses montres s'arrachent aux enchères à des multiples de leur prix, portées par une génération de collectionneurs qui le place au niveau de Breguet. Lauréat record du Grand Prix d'Horlogerie de Genève, il incarne l'âge d'or des indépendants. Posséder un Journe, c'est posséder la haute horlogerie vivante.",
+  },
 ]
 
 // Parcours chronologique : la collection se visite de la première

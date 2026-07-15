@@ -61,6 +61,13 @@ const MANIFEST = [
   { slug: "rado-captain-cook", commons: "Rado Captain Cook watch" },
   { slug: "piaget-polo", commons: "Piaget Polo" },
   { slug: "timex-marlin", commons: "Timex Marlin" },
+  { slug: "universal-geneve-polerouter", commons: "Universal Polerouter" },
+  { slug: "bulova-accutron-spaceview", commons: "Bulova Accutron Spaceview" },
+  { slug: "seiko-astron", commons: "Seiko Astron" },
+  { slug: "hamilton-pulsar", commons: "Pulsar Time Computer LED watch" },
+  { slug: "cartier-panthere", commons: "Cartier Panthère watch" },
+  { slug: "ulysse-nardin-freak", commons: "Ulysse Nardin Freak" },
+  { slug: "fp-journe", commons: "F.P. Journe watch" },
 ]
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))

@@ -7,12 +7,14 @@ const OUT = path.join(process.cwd(), "public", "watches")
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 const PICKS = {
-  "patek-philippe-nautilus": "Patek-Philippe-Nautilus-5711-1A-010-1.jpg",
-  "tag-heuer-monaco": "TAG Heuer Monaco, 2020.jpg",
-  "tag-heuer-carrera": "Heuer Carrera 1964.jpg",
-  "seiko-5": "Seiko 5 Sports SNZH53K1.jpg",
-  "nomos-tangente":
-    "Nomos Tangente neomatik 41 Update, Ref. 180, DUW 6101 -- 2024 -- 0149-51X.jpg",
+  "seiko-astron": "Seiko Astron.jpg",
+  "hamilton-pulsar": "PulsarTimeComputer.jpg",
+  "bulova-accutron-spaceview":
+    "Bulova Accutron Spaceview con calibro 214, prima metà anni '70.jpg",
+  "universal-geneve-polerouter": "Universal-Polerouter.jpg",
+  "cartier-panthere": "Cartier Panthere lady's 2 tone watch.jpg",
+  "fp-journe": "FP-Journe-IMG 0341.jpg",
+  "ulysse-nardin-freak": "Freak Vision.jpg",
 }
 
 for (const [slug, title] of Object.entries(PICKS)) {
