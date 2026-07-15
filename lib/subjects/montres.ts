@@ -594,7 +594,6 @@ const items: Item[] = [
 
 export const montres: Subject = {
   slug: "montres",
-  ordinal: "I",
   title: "Montres",
   category: "Horlogerie",
   intro:

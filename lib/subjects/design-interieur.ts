@@ -329,7 +329,6 @@ const pending: Item[] = [
 
 export const designInterieur: Subject = {
   slug: "design-interieur",
-  ordinal: "II",
   title: "Design d'intérieur",
   category: "Arts décoratifs",
   intro:

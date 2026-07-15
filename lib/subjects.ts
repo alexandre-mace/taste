@@ -19,8 +19,6 @@ export type Item = {
 
 export type Subject = {
   slug: string
-  /** Numéro de collection en chiffres romains : « I », « II »… */
-  ordinal: string
   title: string
   /** Discipline affichée dans l'eyebrow : « Horlogerie »… */
   category: string

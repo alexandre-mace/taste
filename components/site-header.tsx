@@ -52,7 +52,6 @@ export function SiteHeader() {
                     onClick={() => router.push(`/${s.slug}`)}
                     className="font-mono text-xs tracking-wider uppercase"
                   >
-                    <span className="text-muted-foreground">{s.ordinal}</span>
                     {s.title}
                     {s.slug === subject?.slug ? (
                       <CheckIcon data-icon="inline-end" aria-hidden />

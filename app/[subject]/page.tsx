@@ -37,9 +37,7 @@ export default async function SubjectPage({
     <div className="mx-auto max-w-6xl px-4 pt-10 pb-16 sm:px-6 sm:pt-14 sm:pb-24">
       <section>
         <div className="flex items-baseline justify-between gap-4 font-mono text-[11px] tracking-wider text-muted-foreground uppercase">
-          <p>
-            Collection {subject.ordinal} — {subject.category}
-          </p>
+          <p>Collection — {subject.category}</p>
           <p className="tabular-nums">
             {subject.items.length} {subject.itemNoun}s · {yearRange(subject)}
           </p>

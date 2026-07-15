@@ -49,7 +49,7 @@ function CollectionRow({ subject }: { subject: Subject }) {
     >
       <div>
         <p className="font-mono text-[11px] tracking-[0.25em] text-muted-foreground uppercase">
-          Collection {subject.ordinal} — {subject.category}
+          {subject.category}
         </p>
         <h2 className="mt-2 font-heading text-4xl font-semibold tracking-[-0.03em] uppercase underline-offset-8 group-hover:underline sm:text-6xl">
           {subject.title}
