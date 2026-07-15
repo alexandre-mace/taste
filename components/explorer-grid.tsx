@@ -3,7 +3,7 @@
 import * as React from "react"
 import { SearchIcon } from "lucide-react"
 
-import { WatchCard } from "@/components/watch-card"
+import { ItemCard } from "@/components/item-card"
 import {
   Empty,
   EmptyDescription,
@@ -15,7 +15,7 @@ import {
   InputGroupAddon,
   InputGroupInput,
 } from "@/components/ui/input-group"
-import type { Watch } from "@/lib/watches"
+import type { Item } from "@/lib/subjects"
 
 // Accent- and hyphen-insensitive: "jaeger lecoultre" matches Jaeger-LeCoultre.
 function normalize(value: string): string {
@@ -28,22 +28,26 @@ function normalize(value: string): string {
 }
 
 export function ExplorerGrid({
-  watches,
+  subject,
+  items,
+  searchPlaceholder,
   className,
 }: {
-  watches: Watch[]
+  subject: string
+  items: Item[]
+  searchPlaceholder: string
   className?: string
 }) {
   const [query, setQuery] = React.useState("")
 
   const indexed = React.useMemo(
     () =>
-      watches.map((watch, i) => ({
-        watch,
+      items.map((item, i) => ({
+        item,
         number: i + 1,
-        haystack: normalize(`${watch.brand} ${watch.name} ${watch.year}`),
+        haystack: normalize(`${item.maker} ${item.name} ${item.year}`),
       })),
-    [watches]
+    [items]
   )
 
   const filtered = React.useMemo(() => {
@@ -63,28 +67,32 @@ export function ExplorerGrid({
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Chercher une marque, un modèle…"
+            placeholder={searchPlaceholder}
           />
         </InputGroup>
         <p className="shrink-0 font-mono text-xs text-muted-foreground tabular-nums">
-          {filtered.length}/{watches.length}
+          {filtered.length}/{items.length}
         </p>
       </div>
 
       {filtered.length === 0 ? (
         <Empty>
           <EmptyHeader>
-            <EmptyTitle>Aucune pièce trouvée</EmptyTitle>
+            <EmptyTitle>Rien ne correspond</EmptyTitle>
             <EmptyDescription>
-              Aucune montre ne correspond à « {query} ». Essayez un autre nom ou
-              une autre marque.
+              Aucune pièce ne correspond à « {query} ». Essayez un autre nom.
             </EmptyDescription>
           </EmptyHeader>
         </Empty>
       ) : (
         <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
-          {filtered.map(({ watch, number }) => (
-            <WatchCard key={watch.slug} watch={watch} number={number} />
+          {filtered.map(({ item, number }) => (
+            <ItemCard
+              key={item.slug}
+              subject={subject}
+              item={item}
+              number={number}
+            />
           ))}
         </div>
       )}

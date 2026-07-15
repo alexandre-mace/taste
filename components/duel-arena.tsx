@@ -5,8 +5,8 @@ import Link from "next/link"
 
 import { BezelProgress } from "@/components/bezel-progress"
 import { Cartel } from "@/components/cartel"
+import { ItemFrame } from "@/components/item-frame"
 import { PageHeader } from "@/components/page-header"
-import { WatchFrame } from "@/components/watch-frame"
 import {
   Alert,
   AlertAction,
@@ -18,44 +18,50 @@ import { Kbd, KbdGroup } from "@/components/ui/kbd"
 import { Skeleton } from "@/components/ui/skeleton"
 import { useRankings } from "@/hooks/use-rankings"
 import { pickPair } from "@/lib/elo"
+import { getSubject, type Item } from "@/lib/subjects"
 import { cn } from "@/lib/utils"
-import { watches, type Watch } from "@/lib/watches"
 
 const TARGET_DUELS = 60
 const FLASH_MS = 420
 
-const slugs = watches.map((w) => w.slug)
-const bySlug = new Map(watches.map((w) => [w.slug, w]))
+type Flash = { pair: [Item, Item]; chosen: string }
 
-type Flash = { pair: [Watch, Watch]; chosen: string }
-
-export default function DuelPage() {
-  const { ready, entries, totalDuels, recentPairs, recordDuel } = useRankings()
+export function DuelArena({ subjectSlug }: { subjectSlug: string }) {
+  const subject = getSubject(subjectSlug)!
+  const { ready, entries, totalDuels, recentPairs, recordDuel } =
+    useRankings(subjectSlug)
   // During the win flash the previous pair stays on screen while the
   // duel is already recorded in the store.
   const [flash, setFlash] = React.useState<Flash | null>(null)
   const flashRef = React.useRef(false)
   const timerRef = React.useRef<number | null>(null)
 
+  const { slugs, bySlug } = React.useMemo(() => {
+    return {
+      slugs: subject.items.map((i) => i.slug),
+      bySlug: new Map(subject.items.map((i) => [i.slug, i])),
+    }
+  }, [subject])
+
   // Pure derivation: pickPair is deterministic for a given store state,
   // so the pair only changes when a duel is recorded.
-  const nextPair = React.useMemo<[Watch, Watch] | null>(() => {
+  const nextPair = React.useMemo<[Item, Item] | null>(() => {
     if (!ready) return null
     const picked = pickPair(slugs, entries, recentPairs, totalDuels)
     if (!picked) return null
     return [bySlug.get(picked[0])!, bySlug.get(picked[1])!]
-  }, [ready, entries, recentPairs, totalDuels])
+  }, [ready, entries, recentPairs, totalDuels, slugs, bySlug])
 
   const pair = flash?.pair ?? nextPair
   const chosen = flash?.chosen ?? null
 
   const choose = React.useCallback(
-    (winner: Watch, currentPair: [Watch, Watch]) => {
+    (winner: Item, currentPair: [Item, Item]) => {
       // Synchronous ref guard: two near-simultaneous key presses share the
       // same render's closure, so state alone cannot prevent a double record.
       if (flashRef.current) return
       flashRef.current = true
-      const loser = currentPair.find((w) => w.slug !== winner.slug)!
+      const loser = currentPair.find((i) => i.slug !== winner.slug)!
       setFlash({ pair: currentPair, chosen: winner.slug })
       recordDuel(winner.slug, loser.slug)
       timerRef.current = window.setTimeout(() => {
@@ -86,9 +92,12 @@ export default function DuelPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
       <div className="flex items-start justify-between gap-6">
-        <PageHeader eyebrow="Le duel" title="Laquelle préférez-vous ?">
+        <PageHeader
+          eyebrow={`Le duel — ${subject.title}`}
+          title={subject.duelQuestion}
+        >
           <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
-            Cliquez sur votre préférée, ou utilisez
+            Cliquez sur votre choix, ou utilisez
             <KbdGroup>
               <Kbd>←</Kbd>
               <Kbd>→</Kbd>
@@ -111,7 +120,7 @@ export default function DuelPage() {
               size="sm"
               variant="outline"
               nativeButton={false}
-              render={<Link href="/classement" />}
+              render={<Link href={`/${subject.slug}/classement`} />}
             >
               Voir le classement
             </Button>
@@ -128,7 +137,8 @@ export default function DuelPage() {
       ) : (
         <div className="mt-10 grid gap-4 sm:grid-cols-[1fr_auto_1fr] sm:items-stretch sm:gap-6">
           <DuelCard
-            watch={pair[0]}
+            subject={subject.slug}
+            item={pair[0]}
             state={stateFor(pair[0], chosen)}
             onChoose={() => choose(pair[0], pair)}
           />
@@ -138,7 +148,8 @@ export default function DuelPage() {
             </span>
           </div>
           <DuelCard
-            watch={pair[1]}
+            subject={subject.slug}
+            item={pair[1]}
             state={stateFor(pair[1], chosen)}
             onChoose={() => choose(pair[1], pair)}
           />
@@ -149,7 +160,7 @@ export default function DuelPage() {
         {totalDuels} duel{totalDuels > 1 ? "s" : ""} joué
         {totalDuels > 1 ? "s" : ""} ·{" "}
         <Link
-          href="/classement"
+          href={`/${subject.slug}/classement`}
           className="underline underline-offset-4 hover:text-foreground"
         >
           voir mon classement
@@ -161,17 +172,19 @@ export default function DuelPage() {
 
 type CardState = "idle" | "won" | "lost"
 
-function stateFor(watch: Watch, chosen: string | null): CardState {
+function stateFor(item: Item, chosen: string | null): CardState {
   if (chosen === null) return "idle"
-  return chosen === watch.slug ? "won" : "lost"
+  return chosen === item.slug ? "won" : "lost"
 }
 
 function DuelCard({
-  watch,
+  subject,
+  item,
   state,
   onChoose,
 }: {
-  watch: Watch
+  subject: string
+  item: Item
   state: CardState
   onChoose: () => void
 }) {
@@ -184,9 +197,10 @@ function DuelCard({
         state === "lost" && "opacity-35"
       )}
     >
-      <WatchFrame
-        slug={watch.slug}
-        alt={`${watch.brand} ${watch.name}`}
+      <ItemFrame
+        subject={subject}
+        slug={item.slug}
+        alt={`${item.maker} ${item.name}`}
         sizes="(max-width: 640px) 100vw, 460px"
         preload
         className={cn(
@@ -197,12 +211,12 @@ function DuelCard({
         )}
       />
       <Cartel
-        meta={String(watch.year)}
-        title={watch.name}
+        meta={String(item.year)}
+        title={item.name}
         titleAs="h2"
         size="lg"
-        brand={watch.brand}
-        footer={watch.tagline}
+        brand={item.maker}
+        footer={item.tagline}
       />
     </button>
   )

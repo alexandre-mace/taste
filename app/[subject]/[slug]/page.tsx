@@ -3,46 +3,52 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react"
 
-import { WatchFrame } from "@/components/watch-frame"
+import { ItemFrame } from "@/components/item-frame"
 import { Separator } from "@/components/ui/separator"
-import { getWatch, watches } from "@/lib/watches"
+import { getItem, getSubject, subjects } from "@/lib/subjects"
 
 export function generateStaticParams() {
-  return watches.map((w) => ({ slug: w.slug }))
+  return subjects.flatMap((s) =>
+    s.items.map((i) => ({ subject: s.slug, slug: i.slug }))
+  )
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>
+  params: Promise<{ subject: string; slug: string }>
 }): Promise<Metadata> {
-  const { slug } = await params
-  const watch = getWatch(slug)
-  if (!watch) return {}
+  const { subject: subjectSlug, slug } = await params
+  const subject = getSubject(subjectSlug)
+  const item = subject ? getItem(subject, slug) : undefined
+  if (!subject || !item) return {}
   return {
-    title: `${watch.brand} ${watch.name}`,
-    description: watch.tagline,
+    title: `${item.maker} ${item.name}`,
+    description: item.tagline,
   }
 }
 
-export default async function WatchPage({
+export default async function ItemPage({
   params,
 }: {
-  params: Promise<{ slug: string }>
+  params: Promise<{ subject: string; slug: string }>
 }) {
-  const { slug } = await params
-  const watch = getWatch(slug)
-  if (!watch) notFound()
+  const { subject: subjectSlug, slug } = await params
+  const subject = getSubject(subjectSlug)
+  if (!subject) notFound()
+  const item = getItem(subject, slug)
+  if (!item) notFound()
 
-  const index = watches.findIndex((w) => w.slug === watch.slug)
-  const prev = watches[(index - 1 + watches.length) % watches.length]
-  const next = watches[(index + 1) % watches.length]
+  const items = subject.items
+  const index = items.findIndex((i) => i.slug === item.slug)
+  const prev = items[(index - 1 + items.length) % items.length]
+  const next = items[(index + 1) % items.length]
   const number = index + 1
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
       <Link
-        href="/"
+        href={`/${subject.slug}`}
         className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
       >
         <ArrowLeftIcon className="size-4" aria-hidden />
@@ -51,9 +57,10 @@ export default async function WatchPage({
 
       <article className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-16">
         <figure className="flex flex-col gap-3">
-          <WatchFrame
-            slug={watch.slug}
-            alt={`${watch.brand} ${watch.name}`}
+          <ItemFrame
+            subject={subject.slug}
+            slug={item.slug}
+            alt={`${item.maker} ${item.name}`}
             fit="contain"
             preload
             sizes="(max-width: 1024px) 100vw, 560px"
@@ -62,30 +69,28 @@ export default async function WatchPage({
           />
           <figcaption className="flex flex-wrap justify-between gap-x-4 gap-y-1 px-0.5 font-mono text-[10px] tracking-wider text-muted-foreground tabular-nums">
             <span>
-              N° {String(number).padStart(2, "0")} / {watches.length} ·
-              Collection Montres
+              N° {String(number).padStart(2, "0")} / {items.length} · Collection{" "}
+              {subject.title}
             </span>
-            {watch.photoCredit ? (
-              <span>Photo : {watch.photoCredit}</span>
-            ) : null}
+            {item.photoCredit ? <span>Photo : {item.photoCredit}</span> : null}
           </figcaption>
         </figure>
 
         <div className="flex flex-col justify-center">
           <p className="text-xs font-medium tracking-[0.22em] text-muted-foreground uppercase">
-            {watch.brand}
+            {item.maker}
           </p>
           <h1 className="mt-3 font-heading text-4xl font-semibold tracking-[-0.03em] uppercase sm:text-5xl">
-            {watch.name}
+            {item.name}
           </h1>
           <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-xs text-muted-foreground">
-            <span>{watch.year}</span>
-            {watch.ref ? <span>Réf. {watch.ref}</span> : null}
+            <span>{item.year}</span>
+            {item.ref ? <span>Réf. {item.ref}</span> : null}
           </div>
-          <p className="mt-6 text-xl font-medium">{watch.tagline}</p>
+          <p className="mt-6 text-xl font-medium">{item.tagline}</p>
           <div className="mt-3 h-px w-12 bg-foreground" aria-hidden />
           <p className="mt-6 text-[17px] leading-relaxed text-foreground/90">
-            {watch.description}
+            {item.description}
           </p>
 
           <Separator className="mt-10" />
@@ -94,21 +99,17 @@ export default async function WatchPage({
             aria-label="Pièces voisines"
           >
             <Link
-              href={`/montres/${prev.slug}`}
+              href={`/${subject.slug}/${prev.slug}`}
               className="group inline-flex min-w-0 items-center gap-1.5 text-muted-foreground transition-colors hover:text-foreground"
             >
               <ArrowLeftIcon className="size-4 shrink-0" aria-hidden />
-              <span className="truncate">
-                {prev.brand} {prev.name}
-              </span>
+              <span className="truncate">{prev.name}</span>
             </Link>
             <Link
-              href={`/montres/${next.slug}`}
+              href={`/${subject.slug}/${next.slug}`}
               className="group inline-flex min-w-0 items-center gap-1.5 text-right text-muted-foreground transition-colors hover:text-foreground"
             >
-              <span className="truncate">
-                {next.brand} {next.name}
-              </span>
+              <span className="truncate">{next.name}</span>
               <ArrowRightIcon className="size-4 shrink-0" aria-hidden />
             </Link>
           </nav>

@@ -18,11 +18,11 @@ const fontMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Taste — Montres",
+    default: "Taste — Le musée personnel du goût",
     template: "%s — Taste",
   },
   description:
-    "Explorez les montres les plus iconiques et découvrez vos préférées, duel après duel.",
+    "Des collections d'icônes — montres, design d'intérieur… — à explorer et départager en duel pour révéler votre goût.",
 }
 
 export default function RootLayout({

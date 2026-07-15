@@ -1,48 +1,79 @@
 import Link from "next/link"
+import { ArrowRightIcon } from "lucide-react"
 
-import { ExplorerGrid } from "@/components/explorer-grid"
-import { Button } from "@/components/ui/button"
-import { watches } from "@/lib/watches"
+import { ItemFrame } from "@/components/item-frame"
+import { subjects, yearRange, type Subject } from "@/lib/subjects"
+
+// Pièces mises en vitrine sur la page d'accueil, par collection.
+const COVERS: Record<string, string[]> = {
+  montres: ["patek-philippe-nautilus", "cartier-tank", "casio-g-shock"],
+  "design-interieur": ["bauhaus", "art-deco", "memphis"],
+}
 
 export default function Page() {
-  const years = watches.map((w) => w.year)
-  const range = `${Math.min(...years)}–${Math.max(...years)}`
-
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-10 pb-16 sm:px-6 sm:pt-14 sm:pb-24">
-      <section>
-        <div className="flex items-baseline justify-between gap-4 font-mono text-[11px] tracking-wider text-muted-foreground uppercase">
-          <p>Collection I — Horlogerie</p>
-          <p className="tabular-nums">
-            {watches.length} pièces · {range}
-          </p>
-        </div>
-        <h1 className="mt-3 font-heading text-[clamp(4.5rem,15vw,13rem)] leading-[0.85] font-semibold tracking-[-0.045em] uppercase">
-          Montres
+    <div className="mx-auto max-w-6xl px-4 pt-12 pb-16 sm:px-6 sm:pt-20 sm:pb-24">
+      <section className="max-w-3xl">
+        <p className="font-mono text-[11px] tracking-[0.25em] text-muted-foreground uppercase">
+          Un musée personnel du goût
+        </p>
+        <h1 className="mt-4 font-heading text-5xl leading-[0.95] font-semibold tracking-[-0.04em] sm:text-7xl">
+          Explorez les icônes.
+          <br />
+          Révélez votre goût.
         </h1>
-        <div className="mt-6 flex flex-col gap-6 border-t pt-6 sm:mt-8 sm:flex-row sm:items-end sm:justify-between sm:gap-10 sm:pt-8">
-          <p className="max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Les montres qui ont écrit l&apos;histoire, exposées par ordre
-            chronologique — de l&apos;atelier d&apos;Abraham-Louis Breguet à
-            l&apos;Apple Watch. Parcourez la collection, puis départagez les
-            pièces en duel pour révéler votre goût.
-          </p>
-          <div className="flex shrink-0 flex-wrap gap-3">
-            <Button nativeButton={false} render={<Link href="/duel" />}>
-              Lancer le duel
-            </Button>
-            <Button
-              variant="outline"
-              nativeButton={false}
-              render={<Link href="/classement" />}
-            >
-              Mon classement
-            </Button>
-          </div>
-        </div>
+        <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+          Chaque collection expose les pièces qui ont écrit l&apos;histoire
+          d&apos;une discipline, en parcours chronologique. Explorez-les, puis
+          départagez-les en duel : votre classement se dessine, duel après duel.
+        </p>
       </section>
 
-      <ExplorerGrid watches={watches} className="mt-12 sm:mt-16" />
+      <section className="mt-14 sm:mt-20">
+        {subjects.map((subject) => (
+          <CollectionRow key={subject.slug} subject={subject} />
+        ))}
+      </section>
     </div>
+  )
+}
+
+function CollectionRow({ subject }: { subject: Subject }) {
+  const covers =
+    COVERS[subject.slug] ?? subject.items.slice(0, 3).map((i) => i.slug)
+
+  return (
+    <Link
+      href={`/${subject.slug}`}
+      className="group grid items-center gap-6 border-t py-8 outline-none sm:grid-cols-[1fr_auto] sm:gap-10 sm:py-10"
+    >
+      <div>
+        <p className="font-mono text-[11px] tracking-[0.25em] text-muted-foreground uppercase">
+          Collection {subject.ordinal} — {subject.category}
+        </p>
+        <h2 className="mt-2 font-heading text-4xl font-semibold tracking-[-0.03em] uppercase underline-offset-8 group-hover:underline sm:text-6xl">
+          {subject.title}
+        </h2>
+        <p className="mt-3 flex items-center gap-2 font-mono text-xs text-muted-foreground tabular-nums">
+          {subject.items.length} {subject.itemNoun}s · {yearRange(subject)}
+          <ArrowRightIcon
+            className="size-3.5 transition-transform group-hover:translate-x-1"
+            aria-hidden
+          />
+        </p>
+      </div>
+      <div className="flex gap-3">
+        {covers.map((slug) => (
+          <ItemFrame
+            key={slug}
+            subject={subject.slug}
+            slug={slug}
+            alt=""
+            sizes="120px"
+            className="aspect-4/5 w-20 transition-colors group-hover:border-foreground/40 sm:w-28"
+          />
+        ))}
+      </div>
+    </Link>
   )
 }

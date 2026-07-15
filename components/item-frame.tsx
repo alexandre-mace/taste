@@ -1,13 +1,14 @@
 import Image from "next/image"
 
 import { cn } from "@/lib/utils"
-import { watchImage } from "@/lib/watches"
+import { itemImage } from "@/lib/subjects"
 
 /**
- * Framed watch plate — the site's visual signature: hairline border,
+ * Framed plate — the site's visual signature: hairline border,
  * card background, image filling a fixed aspect box.
  */
-export function WatchFrame({
+export function ItemFrame({
+  subject,
   slug,
   alt,
   sizes,
@@ -16,6 +17,7 @@ export function WatchFrame({
   className,
   imageClassName,
 }: {
+  subject: string
   slug: string
   alt: string
   sizes: string
@@ -32,7 +34,7 @@ export function WatchFrame({
       )}
     >
       <Image
-        src={watchImage(slug)}
+        src={itemImage(subject, slug)}
         alt={alt}
         fill
         sizes={sizes}

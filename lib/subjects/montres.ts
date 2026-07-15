@@ -1,19 +1,9 @@
-export type Watch = {
-  slug: string
-  brand: string
-  name: string
-  year: number
-  ref?: string
-  tagline: string
-  description: string
-  /** Crédit photo affiché sur la fiche (les photos Commons restent créditées globalement). */
-  photoCredit?: string
-}
+import type { Item, Subject } from "@/lib/subjects"
 
-const collection: Watch[] = [
+const items: Item[] = [
   {
     slug: "rolex-submariner",
-    brand: "Rolex",
+    maker: "Rolex",
     name: "Submariner",
     year: 1953,
     ref: "124060",
@@ -23,7 +13,7 @@ const collection: Watch[] = [
   },
   {
     slug: "rolex-daytona",
-    brand: "Rolex",
+    maker: "Rolex",
     name: "Cosmograph Daytona",
     year: 1963,
     ref: "116500LN",
@@ -33,7 +23,7 @@ const collection: Watch[] = [
   },
   {
     slug: "rolex-datejust",
-    brand: "Rolex",
+    maker: "Rolex",
     name: "Datejust",
     year: 1945,
     ref: "126234",
@@ -43,7 +33,7 @@ const collection: Watch[] = [
   },
   {
     slug: "rolex-day-date",
-    brand: "Rolex",
+    maker: "Rolex",
     name: "Day-Date",
     year: 1956,
     ref: "228238",
@@ -53,7 +43,7 @@ const collection: Watch[] = [
   },
   {
     slug: "rolex-gmt-master",
-    brand: "Rolex",
+    maker: "Rolex",
     name: "GMT-Master II",
     year: 1955,
     ref: "126710BLRO",
@@ -63,7 +53,7 @@ const collection: Watch[] = [
   },
   {
     slug: "rolex-explorer",
-    brand: "Rolex",
+    maker: "Rolex",
     name: "Explorer",
     year: 1953,
     ref: "124270",
@@ -73,7 +63,7 @@ const collection: Watch[] = [
   },
   {
     slug: "rolex-milgauss",
-    brand: "Rolex",
+    maker: "Rolex",
     name: "Milgauss",
     year: 1956,
     ref: "116400GV",
@@ -83,7 +73,7 @@ const collection: Watch[] = [
   },
   {
     slug: "rolex-sea-dweller",
-    brand: "Rolex",
+    maker: "Rolex",
     name: "Sea-Dweller",
     year: 1967,
     ref: "126600",
@@ -93,7 +83,7 @@ const collection: Watch[] = [
   },
   {
     slug: "omega-speedmaster",
-    brand: "Omega",
+    maker: "Omega",
     name: "Speedmaster Professional",
     year: 1957,
     ref: "310.30.42.50.01.001",
@@ -103,7 +93,7 @@ const collection: Watch[] = [
   },
   {
     slug: "omega-seamaster-300m",
-    brand: "Omega",
+    maker: "Omega",
     name: "Seamaster Diver 300M",
     year: 1993,
     ref: "210.30.42.20.03.001",
@@ -113,7 +103,7 @@ const collection: Watch[] = [
   },
   {
     slug: "patek-philippe-nautilus",
-    brand: "Patek Philippe",
+    maker: "Patek Philippe",
     name: "Nautilus",
     year: 1976,
     ref: "5711/1A",
@@ -123,7 +113,7 @@ const collection: Watch[] = [
   },
   {
     slug: "patek-philippe-calatrava",
-    brand: "Patek Philippe",
+    maker: "Patek Philippe",
     name: "Calatrava",
     year: 1932,
     ref: "6119R",
@@ -133,7 +123,7 @@ const collection: Watch[] = [
   },
   {
     slug: "patek-philippe-aquanaut",
-    brand: "Patek Philippe",
+    maker: "Patek Philippe",
     name: "Aquanaut",
     year: 1997,
     ref: "5167A",
@@ -143,7 +133,7 @@ const collection: Watch[] = [
   },
   {
     slug: "audemars-piguet-royal-oak",
-    brand: "Audemars Piguet",
+    maker: "Audemars Piguet",
     name: "Royal Oak",
     year: 1972,
     ref: "15510ST",
@@ -153,7 +143,7 @@ const collection: Watch[] = [
   },
   {
     slug: "audemars-piguet-royal-oak-offshore",
-    brand: "Audemars Piguet",
+    maker: "Audemars Piguet",
     name: "Royal Oak Offshore",
     year: 1993,
     tagline: "La Royal Oak muscle, icône des années 2000",
@@ -162,7 +152,7 @@ const collection: Watch[] = [
   },
   {
     slug: "vacheron-constantin-222",
-    brand: "Vacheron Constantin",
+    maker: "Vacheron Constantin",
     name: "Historiques 222",
     year: 1977,
     tagline: "Le sport-chic oublié devenu culte",
@@ -171,7 +161,7 @@ const collection: Watch[] = [
   },
   {
     slug: "vacheron-constantin-patrimony",
-    brand: "Vacheron Constantin",
+    maker: "Vacheron Constantin",
     name: "Patrimony",
     year: 2004,
     tagline: "Le minimalisme selon Genève",
@@ -180,7 +170,7 @@ const collection: Watch[] = [
   },
   {
     slug: "jaeger-lecoultre-reverso",
-    brand: "Jaeger-LeCoultre",
+    maker: "Jaeger-LeCoultre",
     name: "Reverso",
     year: 1931,
     tagline: "Le boîtier réversible Art déco",
@@ -189,7 +179,7 @@ const collection: Watch[] = [
   },
   {
     slug: "cartier-tank",
-    brand: "Cartier",
+    maker: "Cartier",
     name: "Tank",
     year: 1917,
     tagline: "Un siècle d'élégance rectangulaire",
@@ -198,7 +188,7 @@ const collection: Watch[] = [
   },
   {
     slug: "cartier-santos",
-    brand: "Cartier",
+    maker: "Cartier",
     name: "Santos",
     year: 1904,
     tagline: "La première montre-bracelet moderne",
@@ -207,7 +197,7 @@ const collection: Watch[] = [
   },
   {
     slug: "iwc-portugieser",
-    brand: "IWC",
+    maker: "IWC",
     name: "Portugieser",
     year: 1939,
     ref: "IW5007",
@@ -217,7 +207,7 @@ const collection: Watch[] = [
   },
   {
     slug: "iwc-pilots-watch",
-    brand: "IWC",
+    maker: "IWC",
     name: "Pilot's Watch Mark",
     year: 1948,
     ref: "Mark XI",
@@ -227,7 +217,7 @@ const collection: Watch[] = [
   },
   {
     slug: "breitling-navitimer",
-    brand: "Breitling",
+    maker: "Breitling",
     name: "Navitimer",
     year: 1952,
     tagline: "L'ordinateur de bord au poignet",
@@ -236,7 +226,7 @@ const collection: Watch[] = [
   },
   {
     slug: "tag-heuer-monaco",
-    brand: "TAG Heuer",
+    maker: "TAG Heuer",
     name: "Monaco",
     year: 1969,
     ref: "CBL2111",
@@ -246,7 +236,7 @@ const collection: Watch[] = [
   },
   {
     slug: "tag-heuer-carrera",
-    brand: "TAG Heuer",
+    maker: "TAG Heuer",
     name: "Carrera",
     year: 1963,
     tagline: "Le chronographe de course épuré",
@@ -255,7 +245,7 @@ const collection: Watch[] = [
   },
   {
     slug: "zenith-el-primero",
-    brand: "Zenith",
+    maker: "Zenith",
     name: "Chronomaster El Primero",
     year: 1969,
     tagline: "Le premier chronographe automatique haute fréquence",
@@ -264,7 +254,7 @@ const collection: Watch[] = [
   },
   {
     slug: "panerai-luminor",
-    brand: "Panerai",
+    maker: "Panerai",
     name: "Luminor",
     year: 1950,
     ref: "PAM01312",
@@ -274,7 +264,7 @@ const collection: Watch[] = [
   },
   {
     slug: "panerai-radiomir",
-    brand: "Panerai",
+    maker: "Panerai",
     name: "Radiomir",
     year: 1936,
     tagline: "L'originale des commandos de la Décima",
@@ -283,7 +273,7 @@ const collection: Watch[] = [
   },
   {
     slug: "richard-mille",
-    brand: "Richard Mille",
+    maker: "Richard Mille",
     name: "RM 011",
     year: 2007,
     tagline: "La machine de course à 200 000 euros",
@@ -292,7 +282,7 @@ const collection: Watch[] = [
   },
   {
     slug: "blancpain-fifty-fathoms",
-    brand: "Blancpain",
+    maker: "Blancpain",
     name: "Fifty Fathoms",
     year: 1953,
     tagline: "La première vraie montre de plongée",
@@ -301,7 +291,7 @@ const collection: Watch[] = [
   },
   {
     slug: "breguet-classique",
-    brand: "Breguet",
+    maker: "Breguet",
     name: "Classique",
     year: 1775,
     ref: "5177",
@@ -311,7 +301,7 @@ const collection: Watch[] = [
   },
   {
     slug: "breguet-type-xx",
-    brand: "Breguet",
+    maker: "Breguet",
     name: "Type XX",
     year: 1954,
     tagline: "Le chronographe militaire français",
@@ -320,7 +310,7 @@ const collection: Watch[] = [
   },
   {
     slug: "grand-seiko-hi-beat",
-    brand: "Grand Seiko",
+    maker: "Grand Seiko",
     name: "Hi-Beat 36000",
     year: 1968,
     tagline: "La perfection japonaise à haute fréquence",
@@ -329,7 +319,7 @@ const collection: Watch[] = [
   },
   {
     slug: "seiko-skx007",
-    brand: "Seiko",
+    maker: "Seiko",
     name: "SKX007",
     year: 1996,
     ref: "SKX007",
@@ -339,7 +329,7 @@ const collection: Watch[] = [
   },
   {
     slug: "seiko-5",
-    brand: "Seiko",
+    maker: "Seiko",
     name: "5 Sports",
     year: 1963,
     tagline: "L'automatique accessible depuis 1963",
@@ -348,7 +338,7 @@ const collection: Watch[] = [
   },
   {
     slug: "casio-g-shock",
-    brand: "Casio",
+    maker: "Casio",
     name: "G-Shock DW-5600",
     year: 1983,
     ref: "DW-5600",
@@ -358,7 +348,7 @@ const collection: Watch[] = [
   },
   {
     slug: "casio-f91w",
-    brand: "Casio",
+    maker: "Casio",
     name: "F-91W",
     year: 1989,
     ref: "F-91W",
@@ -368,7 +358,7 @@ const collection: Watch[] = [
   },
   {
     slug: "swatch",
-    brand: "Swatch",
+    maker: "Swatch",
     name: "Original Gent",
     year: 1983,
     tagline: "La montre pop qui a sauvé l'horlogerie suisse",
@@ -377,7 +367,7 @@ const collection: Watch[] = [
   },
   {
     slug: "tissot-prx",
-    brand: "Tissot",
+    maker: "Tissot",
     name: "PRX Powermatic 80",
     year: 1978,
     ref: "T137.407",
@@ -387,7 +377,7 @@ const collection: Watch[] = [
   },
   {
     slug: "longines-legend-diver",
-    brand: "Longines",
+    maker: "Longines",
     name: "Legend Diver",
     year: 1960,
     tagline: "La plongeuse à double couronne des sixties",
@@ -396,7 +386,7 @@ const collection: Watch[] = [
   },
   {
     slug: "tudor-black-bay",
-    brand: "Tudor",
+    maker: "Tudor",
     name: "Black Bay 58",
     year: 2018,
     ref: "M79030N",
@@ -406,7 +396,7 @@ const collection: Watch[] = [
   },
   {
     slug: "nomos-tangente",
-    brand: "Nomos",
+    maker: "Nomos",
     name: "Tangente",
     year: 1992,
     tagline: "Le Bauhaus de Glashütte",
@@ -415,7 +405,7 @@ const collection: Watch[] = [
   },
   {
     slug: "junghans-max-bill",
-    brand: "Junghans",
+    maker: "Junghans",
     name: "Max Bill",
     year: 1961,
     tagline: "Le design d'école d'Ulm au poignet",
@@ -424,7 +414,7 @@ const collection: Watch[] = [
   },
   {
     slug: "mondaine",
-    brand: "Mondaine",
+    maker: "Mondaine",
     name: "Official Swiss Railways",
     year: 1986,
     tagline: "L'horloge des gares suisses au poignet",
@@ -433,7 +423,7 @@ const collection: Watch[] = [
   },
   {
     slug: "apple-watch",
-    brand: "Apple",
+    maker: "Apple",
     name: "Apple Watch",
     year: 2015,
     tagline: "La montre la plus vendue du monde",
@@ -442,7 +432,7 @@ const collection: Watch[] = [
   },
   {
     slug: "hamilton-khaki-field",
-    brand: "Hamilton",
+    maker: "Hamilton",
     name: "Khaki Field Mechanical",
     year: 1969,
     ref: "H69439931",
@@ -452,7 +442,7 @@ const collection: Watch[] = [
   },
   {
     slug: "hamilton-ventura",
-    brand: "Hamilton",
+    maker: "Hamilton",
     name: "Ventura",
     year: 1957,
     tagline: "Le triangle électrique d'Elvis",
@@ -461,7 +451,7 @@ const collection: Watch[] = [
   },
   {
     slug: "oris-aquis",
-    brand: "Oris",
+    maker: "Oris",
     name: "Aquis",
     year: 2011,
     tagline: "La plongeuse indépendante au poisson rouge",
@@ -470,7 +460,7 @@ const collection: Watch[] = [
   },
   {
     slug: "rado-captain-cook",
-    brand: "Rado",
+    maker: "Rado",
     name: "Captain Cook",
     year: 1962,
     tagline: "La plongeuse rétro à lunette tournante concave",
@@ -479,7 +469,7 @@ const collection: Watch[] = [
   },
   {
     slug: "piaget-polo",
-    brand: "Piaget",
+    maker: "Piaget",
     name: "Polo",
     year: 1979,
     tagline: "Le luxe doré des années Studio 54",
@@ -488,7 +478,7 @@ const collection: Watch[] = [
   },
   {
     slug: "timex-marlin",
-    brand: "Timex",
+    maker: "Timex",
     name: "Marlin",
     year: 1960,
     tagline: "La mécanique américaine populaire",
@@ -497,7 +487,7 @@ const collection: Watch[] = [
   },
   {
     slug: "universal-geneve-polerouter",
-    brand: "Universal Genève",
+    maker: "Universal Genève",
     name: "Polerouter",
     year: 1954,
     tagline: "Le premier chef-d'œuvre de Gérald Genta",
@@ -506,7 +496,7 @@ const collection: Watch[] = [
   },
   {
     slug: "bulova-accutron-spaceview",
-    brand: "Bulova",
+    maker: "Bulova",
     name: "Accutron Spaceview",
     year: 1960,
     tagline: "Le diapason qui a électrisé l'horlogerie",
@@ -515,7 +505,7 @@ const collection: Watch[] = [
   },
   {
     slug: "seiko-astron",
-    brand: "Seiko",
+    maker: "Seiko",
     name: "Quartz Astron",
     year: 1969,
     ref: "35SQ",
@@ -525,7 +515,7 @@ const collection: Watch[] = [
   },
   {
     slug: "hamilton-pulsar",
-    brand: "Hamilton",
+    maker: "Hamilton",
     name: "Pulsar Time Computer",
     year: 1972,
     ref: "P1",
@@ -535,7 +525,7 @@ const collection: Watch[] = [
   },
   {
     slug: "cartier-panthere",
-    brand: "Cartier",
+    maker: "Cartier",
     name: "Panthère",
     year: 1983,
     tagline: "Le bracelet-bijou des années 80",
@@ -544,7 +534,7 @@ const collection: Watch[] = [
   },
   {
     slug: "ulysse-nardin-freak",
-    brand: "Ulysse Nardin",
+    maker: "Ulysse Nardin",
     name: "Freak",
     year: 2001,
     tagline: "Ni aiguilles, ni cadran, ni couronne",
@@ -553,7 +543,7 @@ const collection: Watch[] = [
   },
   {
     slug: "lange-sohne-lange-1",
-    brand: "A. Lange & Söhne",
+    maker: "A. Lange & Söhne",
     name: "Lange 1",
     year: 1994,
     tagline: "Le chef-d'œuvre asymétrique de Saxe",
@@ -563,7 +553,7 @@ const collection: Watch[] = [
   },
   {
     slug: "cartier-ballon-bleu",
-    brand: "Cartier",
+    maker: "Cartier",
     name: "Ballon Bleu",
     year: 2007,
     tagline: "Le rond parfait au cabochon protégé",
@@ -573,7 +563,7 @@ const collection: Watch[] = [
   },
   {
     slug: "bulgari-octo-finissimo",
-    brand: "Bulgari",
+    maker: "Bulgari",
     name: "Octo Finissimo",
     year: 2014,
     tagline: "L'ultra-plat aux 110 facettes",
@@ -583,7 +573,7 @@ const collection: Watch[] = [
   },
   {
     slug: "bell-ross-br03",
-    brand: "Bell & Ross",
+    maker: "Bell & Ross",
     name: "BR 03",
     year: 2005,
     tagline: "L'instrument de cockpit carré",
@@ -593,7 +583,7 @@ const collection: Watch[] = [
   },
   {
     slug: "fp-journe",
-    brand: "F.P. Journe",
+    maker: "F.P. Journe",
     name: "Octa Calendrier",
     year: 2002,
     tagline: "« Invenit et Fecit » — le maître indépendant",
@@ -602,16 +592,16 @@ const collection: Watch[] = [
   },
 ]
 
-// Parcours chronologique : la collection se visite de la première
-// création à la plus récente, comme les salles d'un musée.
-export const watches: Watch[] = [...collection].sort(
-  (a, b) => a.year - b.year || a.brand.localeCompare(b.brand)
-)
-
-export function getWatch(slug: string): Watch | undefined {
-  return watches.find((w) => w.slug === slug)
-}
-
-export function watchImage(slug: string): string {
-  return `/watches/${slug}.jpg`
+export const montres: Subject = {
+  slug: "montres",
+  ordinal: "I",
+  title: "Montres",
+  category: "Horlogerie",
+  intro:
+    "Les montres qui ont écrit l'histoire, exposées par ordre chronologique — de l'atelier d'Abraham-Louis Breguet à l'Apple Watch. Parcourez la collection, puis départagez les pièces en duel pour révéler votre goût.",
+  itemNoun: "pièce",
+  itemGender: "f",
+  duelQuestion: "Laquelle préférez-vous ?",
+  searchPlaceholder: "Chercher une marque, un modèle…",
+  items,
 }
