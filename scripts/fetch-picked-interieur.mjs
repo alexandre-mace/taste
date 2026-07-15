@@ -46,6 +46,7 @@ const PICKS = {
   "shabby-chic": "Shabby chic room.jpg",
   minimalisme: "https://live.staticflickr.com/6226/6390301491_d4c5a557e9_b.jpg",
   maximalisme: "Tropical Noir Chic Boutique Hotel Room in Lisbon (54940806211).jpg",
+  boheme: "Furnished living room. (Unsplash).jpg",
 }
 
 await mkdir(OUT, { recursive: true })

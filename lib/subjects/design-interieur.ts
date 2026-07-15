@@ -305,15 +305,6 @@ const items: Item[] = [
     description:
       "En réaction aux années de gris minimaliste, le maximalisme contemporain — Luke Edward Hall, Beata Heuman, la vague « dopamine decor » — superpose sans complexe : papiers peints panoramiques, velours saturés, galeries de cadres jusqu'au plafond, motifs qui se répondent et se contredisent. L'héritage revendiqué va du victorien au Memphis en passant par David Hicks et ses géométries seventies. La règle est qu'il n'y en a pas, sinon la cohérence secrète d'un œil sûr : le maximalisme raté vire au bazar, le réussi à la caverne d'Ali Baba chic. Instagram lui a offert une scène mondiale — le décor y est un feed permanent. C'est le retour du plaisir dans la décoration.",
   },
-]
-
-/**
- * Styles écrits mais en attente d'une image libre de droits digne de la
- * grille (voir scripts/probe-commons.mjs et probe-openverse.mjs).
- * À déplacer dans `items` dès qu'une photo est trouvée.
- */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const pending: Item[] = [
   {
     slug: "boheme",
     maker: "Sans frontières",
@@ -323,6 +314,15 @@ const pending: Item[] = [
     description:
       "Héritier des ateliers d'artistes du XIXe et popularisé par la contre-culture des années 1960-70, le style bohème refuse les règles : kilims superposés, plantes en macramé, coussins berbères, meubles chinés et souvenirs de voyage cohabitent en strates joyeuses. Talitha Getty à Marrakech en fut l'icône absolue, immortalisée en caftan sur un toit-terrasse. Le « boho » raconte une vie — réelle ou fantasmée — de voyages, de trouvailles et de liberté, contre la décoration assortie des catalogues. Instagram et Pinterest l'ont recyclé en esthétique globale, parfois jusqu'à la caricature. Reste l'idée précieuse : une maison doit ressembler à ses habitants, pas à un magazine.",
   },
+]
+
+/**
+ * Styles écrits mais en attente d'une image libre de droits digne de la
+ * grille (voir scripts/probe-commons.mjs et probe-openverse.mjs).
+ * À déplacer dans `items` dès qu'une photo est trouvée.
+ */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const pending: Item[] = [
   {
     slug: "loft-industriel",
     maker: "New York",
