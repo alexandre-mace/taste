@@ -6,6 +6,8 @@ export type Watch = {
   ref?: string
   tagline: string
   description: string
+  /** Crédit photo affiché sur la fiche (les photos Commons restent créditées globalement). */
+  photoCredit?: string
 }
 
 const collection: Watch[] = [
@@ -548,6 +550,46 @@ const collection: Watch[] = [
     tagline: "Ni aiguilles, ni cadran, ni couronne",
     description:
       "En 2001, la Freak fait voler en éclats trois siècles de conventions : pas d'aiguilles, pas de cadran, pas de couronne — c'est le mouvement entier qui tourne sur lui-même en carrousel pour indiquer l'heure. Imaginée par le génial Ludwig Oechslin pour Rolf Schnyder, elle inaugure surtout le premier échappement en silicium de l'horlogerie, une révolution technique que toute l'industrie adoptera, de Patek à Omega. Chaque génération de Freak sert depuis de laboratoire roulant à Ulysse Nardin. C'est peut-être la montre la plus radicale du XXIe siècle. Un manifeste mécanique qu'on porte au poignet.",
+  },
+  {
+    slug: "lange-sohne-lange-1",
+    brand: "A. Lange & Söhne",
+    name: "Lange 1",
+    year: 1994,
+    tagline: "Le chef-d'œuvre asymétrique de Saxe",
+    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    description:
+      "En 1994, quatre ans après la chute du Mur, Walter Lange ressuscite la manufacture familiale de Glashütte nationalisée par la RDA : la Lange 1 est son premier modèle, et un coup de maître. Son cadran asymétrique, ordonné selon le nombre d'or, et sa grande date inspirée de l'horloge de l'opéra de Dresde sont devenus des icônes instantanées. Le mouvement, avec sa platine trois-quarts en maillechort, son coq de balancier gravé main et ses chatons en or, est parmi les plus beaux du monde. Beaucoup de collectionneurs la placent au-dessus de Patek en finition pure. C'est la preuve que la haute horlogerie parle aussi allemand.",
+  },
+  {
+    slug: "cartier-ballon-bleu",
+    brand: "Cartier",
+    name: "Ballon Bleu",
+    year: 2007,
+    tagline: "Le rond parfait au cabochon protégé",
+    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    description:
+      "Lancée en 2007, la Ballon Bleu est le plus grand succès commercial récent de Cartier. Son boîtier galet, bombé comme un ballon, enveloppe la couronne et son cabochon de saphir bleu dans un arc de métal, créant une silhouette immédiatement identifiable. Le chiffre romain XII déformé par le guichet de couronne est devenu une signature. Kate Middleton en a fait sa montre de tous les jours, assurant sa célébrité mondiale. Elle prouve que Cartier sait encore créer des icônes au XXIe siècle.",
+  },
+  {
+    slug: "bulgari-octo-finissimo",
+    brand: "Bulgari",
+    name: "Octo Finissimo",
+    year: 2014,
+    tagline: "L'ultra-plat aux 110 facettes",
+    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    description:
+      "L'Octo Finissimo a enchaîné huit records mondiaux de finesse en dix ans : mouvement automatique, tourbillon, chronographe et même répétition minutes, tout y passe, dans des boîtiers de quelques millimètres d'épaisseur. Son design aux 110 facettes, hérité de Gérald Genta dont Bulgari a racheté la maison, marie géométrie romaine et radicalité contemporaine. La version titane sablé, d'un gris uniforme presque irréel, est devenue l'icône du design horloger des années 2010. Elle a prouvé qu'une maison de joaillerie italienne pouvait battre les Suisses sur leur propre terrain technique. C'est la montre d'architecte par excellence.",
+  },
+  {
+    slug: "bell-ross-br03",
+    brand: "Bell & Ross",
+    name: "BR 03",
+    year: 2005,
+    tagline: "L'instrument de cockpit carré",
+    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    description:
+      "Fondée en 1992 par deux amis français, Bell & Ross a trouvé son identité en 2005 avec la BR 01 : un instrument de cockpit d'avion littéralement transposé au poignet, carré à quatre vis, cadran circulaire ultra-lisible. La BR 03, sa déclinaison en 42 mm, est devenue le cœur de la collection. Le design « rond dans un carré » est l'une des rares signatures véritablement nouvelles de l'horlogerie du XXIe siècle. Ses déclinaisons céramique, camouflage ou « Phantom » tout noir cultivent l'esthétique militaire et aéronautique. C'est la montre des amateurs de design industriel radical.",
   },
   {
     slug: "fp-journe",

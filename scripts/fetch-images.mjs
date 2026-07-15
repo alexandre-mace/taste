@@ -68,6 +68,23 @@ const MANIFEST = [
   { slug: "cartier-panthere", commons: "Cartier Panthère watch" },
   { slug: "ulysse-nardin-freak", commons: "Ulysse Nardin Freak" },
   { slug: "fp-journe", commons: "F.P. Journe watch" },
+  // Absentes de Commons — images Flickr domaine public (voir fetch-picked.mjs)
+  {
+    slug: "lange-sohne-lange-1",
+    url: "https://live.staticflickr.com/4270/34031722963_e2b33510c2_b.jpg",
+  },
+  {
+    slug: "bulgari-octo-finissimo",
+    url: "https://live.staticflickr.com/4289/34978824501_2d8eed09b4_b.jpg",
+  },
+  {
+    slug: "bell-ross-br03",
+    url: "https://live.staticflickr.com/1811/41969344380_d0831e1a7a_b.jpg",
+  },
+  {
+    slug: "cartier-ballon-bleu",
+    url: "https://live.staticflickr.com/4232/34266997844_26e8cff604_b.jpg",
+  },
 ]
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -151,7 +168,8 @@ for (const item of targets) {
   }
   let url = null
   try {
-    if (item.wiki) url = await fromWikipedia(item.wiki)
+    if (item.url) url = item.url
+    if (!url && item.wiki) url = await fromWikipedia(item.wiki)
     if (!url && item.commons) url = await fromCommons(item.commons)
     if (!url && item.wiki) url = await fromCommons(item.wiki)
     if (!url) throw new Error("no image found")

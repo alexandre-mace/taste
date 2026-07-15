@@ -60,9 +60,14 @@ export default async function WatchPage({
             className="aspect-4/5"
             imageClassName="p-6"
           />
-          <figcaption className="px-0.5 font-mono text-[10px] tracking-wider text-muted-foreground tabular-nums">
-            N° {String(number).padStart(2, "0")} / {watches.length} · Collection
-            Montres
+          <figcaption className="flex flex-wrap justify-between gap-x-4 gap-y-1 px-0.5 font-mono text-[10px] tracking-wider text-muted-foreground tabular-nums">
+            <span>
+              N° {String(number).padStart(2, "0")} / {watches.length} ·
+              Collection Montres
+            </span>
+            {watch.photoCredit ? (
+              <span>Photo : {watch.photoCredit}</span>
+            ) : null}
           </figcaption>
         </figure>
 

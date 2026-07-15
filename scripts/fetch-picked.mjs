@@ -6,6 +6,10 @@ const UA = "TasteProject/0.1 (personal project; hialexandre@proton.me)"
 const OUT = path.join(process.cwd(), "public", "watches")
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
+// Values are either a Commons file title, or a direct URL (e.g. Flickr
+// public-domain images found via Openverse). Note: the Flickr images from
+// Johnson Watch Co were manually cropped after download to remove the
+// retailer's watermark — re-fetching restores the uncropped originals.
 const PICKS = {
   "seiko-astron": "Seiko Astron.jpg",
   "hamilton-pulsar": "PulsarTimeComputer.jpg",
@@ -15,10 +19,20 @@ const PICKS = {
   "cartier-panthere": "Cartier Panthere lady's 2 tone watch.jpg",
   "fp-journe": "FP-Journe-IMG 0341.jpg",
   "ulysse-nardin-freak": "Freak Vision.jpg",
+  "lange-sohne-lange-1":
+    "https://live.staticflickr.com/4270/34031722963_e2b33510c2_b.jpg",
+  "bulgari-octo-finissimo":
+    "https://live.staticflickr.com/4289/34978824501_2d8eed09b4_b.jpg",
+  "bell-ross-br03":
+    "https://live.staticflickr.com/1811/41969344380_d0831e1a7a_b.jpg",
+  "cartier-ballon-bleu":
+    "https://live.staticflickr.com/4232/34266997844_26e8cff604_b.jpg",
 }
 
-for (const [slug, title] of Object.entries(PICKS)) {
-  const url = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(title)}?width=1400`
+for (const [slug, source] of Object.entries(PICKS)) {
+  const url = source.startsWith("http")
+    ? source
+    : `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(source)}?width=1400`
   let done = false
   for (let i = 0; i < 4 && !done; i++) {
     const res = await fetch(url, {
