@@ -35,7 +35,7 @@ export function SiteHeader() {
             href="/"
             className="shrink-0 font-heading text-lg leading-none font-bold tracking-[-0.03em] uppercase"
           >
-            Taste<sup className="align-super text-[9px]">®</sup>
+            Taste
           </Link>
           <DropdownMenu>
             <DropdownMenuTrigger className="flex min-w-0 items-center gap-1.5 border-b border-transparent pb-0.5 font-mono text-[11px] tracking-wider text-muted-foreground uppercase transition-colors outline-none hover:text-foreground focus-visible:border-ring data-[popup-open]:text-foreground">
