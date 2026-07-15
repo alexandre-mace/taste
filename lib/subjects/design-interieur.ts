@@ -118,7 +118,7 @@ const items: Item[] = [
     year: 1880,
     tagline: "La révolte de l'artisanat contre la machine",
     description:
-      "Mené par William Morris depuis sa Red House, le mouvement Arts & Crafts se dresse contre la laideur industrielle victorienne : retour au fait-main, aux matériaux honnêtes, aux motifs inspirés de la nature anglaise. Les papiers peints de Morris — Willow Bough, Strawberry Thief — sont toujours édités et toujours copiés, cent quarante ans plus tard. Le mouvement pose une idée révolutionnaire : la beauté du quotidien est une question morale et sociale, pas un luxe. Il inspirera directement l'Art nouveau, le Bauhaus et le design scandinave. Tout le design moderne descend de cette maison rouge du Kent.",
+      "Mené par William Morris depuis sa Red House, le mouvement Arts & Crafts se dresse contre la laideur industrielle victorienne : retour au fait-main, aux matériaux honnêtes, aux motifs inspirés de la nature anglaise. Les motifs de Morris — le papier peint Willow Bough, le tissu Strawberry Thief — sont toujours édités et toujours copiés, cent quarante ans plus tard. Le mouvement pose une idée révolutionnaire : la beauté du quotidien est une question morale et sociale, pas un luxe. Il inspirera directement l'Art nouveau, le Bauhaus et le design scandinave. Tout le design moderne descend de cette maison rouge du Kent.",
   },
   {
     slug: "art-nouveau",
@@ -230,15 +230,6 @@ const items: Item[] = [
     description:
       "Éclos sur Tumblr puis TikTok pendant les confinements, le cottagecore idéalise la vie de cottage anglais : papiers peints fleuris, vaisselle dépareillée, bouquets champêtres, patchworks, pain au levain et confitures maison en garniture existentielle. C'est moins un style d'architecte qu'une esthétique générationnelle : le décor comme refuge face au numérique — diffusé, paradoxalement, par le numérique lui-même. Laura Ashley et Beatrix Potter en sont les saintes patronnes involontaires. Sa version décorative sérieuse recroise le style « English country house » de Colefax and Fowler. C'est la première esthétique d'intérieur née d'un hashtag, et à ce titre, elle est déjà historique.",
   },
-]
-
-/**
- * Styles écrits mais en attente d'une image libre de droits digne de la
- * grille (voir scripts/probe-commons.mjs et probe-openverse.mjs).
- * À déplacer dans `items` dès qu'une photo est trouvée.
- */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const pending: Item[] = [
   {
     slug: "campagne-francaise",
     maker: "Provence & campagnes françaises",
@@ -262,27 +253,10 @@ const pending: Item[] = [
     maker: "Los Angeles",
     name: "Hollywood Regency",
     year: 1935,
+    photoCredit: "DesignFolly.com · Flickr (CC BY-SA 2.0)",
     tagline: "Le glamour des studios au salon",
     description:
       "Né dans les villas des stars de l'âge d'or hollywoodien, sous la houlette de décorateurs vedettes comme Dorothy Draper ou William Haines, le Hollywood Regency met la maison en scène comme un plateau de cinéma : laque noire et blanche, miroirs partout, velours émeraude, léopard, lustres théâtraux. Tout est contraste et brillance, pensé pour flatter ses occupants comme un éclairage de studio. C'est le style de l'apparence assumée, du cocktail à 18 heures et de l'escalier fait pour les entrées remarquées. Périodiquement ressuscité — par Jonathan Adler ou Kelly Wearstler —, il reste la référence du chic spectaculaire. Le glamour, ici, est une discipline.",
-  },
-  {
-    slug: "boheme",
-    maker: "Sans frontières",
-    name: "Bohème",
-    year: 1968,
-    tagline: "L'accumulation voyageuse et libre",
-    description:
-      "Héritier des ateliers d'artistes du XIXe et popularisé par la contre-culture des années 1960-70, le style bohème refuse les règles : kilims superposés, plantes en macramé, coussins berbères, meubles chinés et souvenirs de voyage cohabitent en strates joyeuses. Talitha Getty à Marrakech en fut l'icône absolue, immortalisée en caftan sur un toit-terrasse. Le « boho » raconte une vie — réelle ou fantasmée — de voyages, de trouvailles et de liberté, contre la décoration assortie des catalogues. Instagram et Pinterest l'ont recyclé en esthétique globale, parfois jusqu'à la caricature. Reste l'idée précieuse : une maison doit ressembler à ses habitants, pas à un magazine.",
-  },
-  {
-    slug: "loft-industriel",
-    maker: "New York",
-    name: "Loft industriel",
-    year: 1970,
-    tagline: "Habiter l'usine, inventer l'espace ouvert",
-    description:
-      "Quand les artistes de SoHo — Rauschenberg, puis toute une génération — investissent illégalement les étages d'anciennes manufactures new-yorkaises, ils inventent sans le savoir le fantasme résidentiel des cinquante années suivantes : plateaux ouverts, briques apparentes, colonnes de fonte, verrières d'atelier et volumes démesurés. L'esthétique de l'usine — tuyauterie visible, béton, métal riveté — devient un langage décoratif à part entière. Le loft transforme la contrainte en luxe : l'espace brut vaut plus que la finition. Copié dans le monde entier jusque dans les programmes neufs « esprit loft », il a durablement décloisonné nos logements. C'est la plus belle revanche de la friche sur le salon bourgeois.",
   },
   {
     slug: "high-tech",
@@ -307,6 +281,7 @@ const pending: Item[] = [
     maker: "Riviera, Grèce & Californie",
     name: "Méditerranéen",
     year: 1920,
+    photoCredit: "tylerkaraszewski · Flickr (CC BY 2.0)",
     tagline: "Chaux blanche, terre cuite et lumière",
     description:
       "Des villas des Cyclades aux haciendas californiennes du « Mediterranean Revival » des années 1920, le style méditerranéen distille la même recette : murs à la chaux, sols en terre cuite, bois patinés par le sel, niches et arches sculptées dans l'épaisseur des murs. La palette est celle du paysage — blanc éclatant, bleu Égée, ocres et verts d'olivier — et la frontière entre dedans et dehors s'efface sous les pergolas. Popularisé par les magazines de voyage puis par la vague « coastal » d'Instagram, il évoque instantanément l'été perpétuel. De Santorin à Comporta, c'est l'esthétique vacances devenue art de vivre. Le luxe y a la texture du plâtre frais.",
@@ -316,18 +291,10 @@ const pending: Item[] = [
     maker: "Londres & Japon",
     name: "Minimalisme",
     year: 1995,
+    photoCredit: "Ndecam · Flickr (CC BY 2.0)",
     tagline: "L'espace, la lumière, et presque rien",
     description:
       "Héritier du zen japonais et du modernisme, le minimalisme des années 1990 — John Pawson en chef de file, Claudio Silvestrin, l'influence de Tadao Ando — réduit l'architecture intérieure à l'essentiel absolu : murs nus, lumière sculptée, rangements invisibles, une matière ou deux traitées à la perfection. La maison Pawson à Londres ou le monastère de Nový Dvůr montrent la rigueur quasi monastique du genre. Calvin Klein en fit l'esthétique de sa marque, les galeries d'art son décor par défaut. Exigeant à vivre — le désordre y est un scandale —, il reste l'horizon de toute épure contemporaine. Moins, ici, est réellement plus.",
-  },
-  {
-    slug: "farmhouse-moderne",
-    maker: "Texas, États-Unis",
-    name: "Farmhouse moderne",
-    year: 2013,
-    tagline: "La ferme réinventée par la télévision",
-    description:
-      "Popularisé par Joanna Gaines et l'émission Fixer Upper depuis Waco, Texas, le modern farmhouse croise la ferme américaine et le confort contemporain : lambris shiplap blancs, poutres récupérées, éviers de ferme, luminaires de grange en métal noir et lettrages muraux. La recette — neutre, chaleureuse, familiale — a conquis l'Amérique périurbaine au point de devenir le style par défaut des constructions neuves des années 2010-2020. Sa diffusion par la télévision puis Pinterest en fait le premier grand style né du divertissement de masse. Critiqué pour son uniformité, il a néanmoins réhabilité bois brut et artisanat auprès du grand public. C'est le rêve pastoral en version climatisée.",
   },
   {
     slug: "maximalisme",
@@ -337,6 +304,42 @@ const pending: Item[] = [
     tagline: "Plus, c'est plus",
     description:
       "En réaction aux années de gris minimaliste, le maximalisme contemporain — Luke Edward Hall, Beata Heuman, la vague « dopamine decor » — superpose sans complexe : papiers peints panoramiques, velours saturés, galeries de cadres jusqu'au plafond, motifs qui se répondent et se contredisent. L'héritage revendiqué va du victorien au Memphis en passant par David Hicks et ses géométries seventies. La règle est qu'il n'y en a pas, sinon la cohérence secrète d'un œil sûr : le maximalisme raté vire au bazar, le réussi à la caverne d'Ali Baba chic. Instagram lui a offert une scène mondiale — le décor y est un feed permanent. C'est le retour du plaisir dans la décoration.",
+  },
+]
+
+/**
+ * Styles écrits mais en attente d'une image libre de droits digne de la
+ * grille (voir scripts/probe-commons.mjs et probe-openverse.mjs).
+ * À déplacer dans `items` dès qu'une photo est trouvée.
+ */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const pending: Item[] = [
+  {
+    slug: "boheme",
+    maker: "Sans frontières",
+    name: "Bohème",
+    year: 1968,
+    tagline: "L'accumulation voyageuse et libre",
+    description:
+      "Héritier des ateliers d'artistes du XIXe et popularisé par la contre-culture des années 1960-70, le style bohème refuse les règles : kilims superposés, plantes en macramé, coussins berbères, meubles chinés et souvenirs de voyage cohabitent en strates joyeuses. Talitha Getty à Marrakech en fut l'icône absolue, immortalisée en caftan sur un toit-terrasse. Le « boho » raconte une vie — réelle ou fantasmée — de voyages, de trouvailles et de liberté, contre la décoration assortie des catalogues. Instagram et Pinterest l'ont recyclé en esthétique globale, parfois jusqu'à la caricature. Reste l'idée précieuse : une maison doit ressembler à ses habitants, pas à un magazine.",
+  },
+  {
+    slug: "loft-industriel",
+    maker: "New York",
+    name: "Loft industriel",
+    year: 1970,
+    tagline: "Habiter l'usine, inventer l'espace ouvert",
+    description:
+      "Quand les artistes de SoHo — Rauschenberg, puis toute une génération — investissent illégalement les étages d'anciennes manufactures new-yorkaises, ils inventent sans le savoir le fantasme résidentiel des cinquante années suivantes : plateaux ouverts, briques apparentes, colonnes de fonte, verrières d'atelier et volumes démesurés. L'esthétique de l'usine — tuyauterie visible, béton, métal riveté — devient un langage décoratif à part entière. Le loft transforme la contrainte en luxe : l'espace brut vaut plus que la finition. Copié dans le monde entier jusque dans les programmes neufs « esprit loft », il a durablement décloisonné nos logements. C'est la plus belle revanche de la friche sur le salon bourgeois.",
+  },
+  {
+    slug: "farmhouse-moderne",
+    maker: "Texas, États-Unis",
+    name: "Farmhouse moderne",
+    year: 2013,
+    tagline: "La ferme réinventée par la télévision",
+    description:
+      "Popularisé par Joanna Gaines et l'émission Fixer Upper depuis Waco, Texas, le modern farmhouse croise la ferme américaine et le confort contemporain : lambris shiplap blancs, poutres récupérées, éviers de ferme, luminaires de grange en métal noir et lettrages muraux. La recette — neutre, chaleureuse, familiale — a conquis l'Amérique périurbaine au point de devenir le style par défaut des constructions neuves des années 2010-2020. Sa diffusion par la télévision puis Pinterest en fait le premier grand style né du divertissement de masse. Critiqué pour son uniformité, il a néanmoins réhabilité bois brut et artisanat auprès du grand public. C'est le rêve pastoral en version climatisée.",
   },
   {
     slug: "japandi",

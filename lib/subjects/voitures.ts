@@ -123,9 +123,9 @@ const items: Item[] = [
     maker: "Ferrari",
     name: "250 GTO",
     year: 1962,
-    tagline: "La voiture la plus chère du monde",
+    tagline: "Le graal absolu du collectionneur",
     description:
-      "Trente-six exemplaires construits pour homologuer Ferrari en course GT, un V12 de trois litres chantant jusqu'à 8 000 tours, une robe dessinée à la soufflerie et finie au marteau : la 250 GTO est le graal absolu du collectionnisme automobile. Un exemplaire s'est vendu plus de 70 millions de dollars, record de tous les temps pour une voiture. Victorieuse partout dans les années 1960, elle marie beauté, palmarès et rareté comme aucune autre. Son club de propriétaires est le cercle le plus fermé du monde. C'est la Joconde de l'automobile.",
+      "Trente-six exemplaires construits pour homologuer Ferrari en course GT, un V12 de trois litres chantant jusqu'à 8 000 tours, une robe dessinée à la soufflerie et finie au marteau : la 250 GTO est le graal absolu du collectionnisme automobile. Un exemplaire s'est vendu plus de 70 millions de dollars — record de tous les temps pour une Ferrari, seule une Mercedes 300 SLR l'a jamais dépassée aux enchères. Victorieuse partout dans les années 1960, elle marie beauté, palmarès et rareté comme aucune autre. Son club de propriétaires est le cercle le plus fermé du monde. C'est la Joconde de l'automobile.",
   },
   {
     slug: "alpine-a110",
@@ -233,7 +233,7 @@ const items: Item[] = [
     year: 1984,
     tagline: "Le sacré numéro qui a sauvé Peugeot",
     description:
-      "La 205 sauve Peugeot de la faillite en 1983, et sa version GTI de 1984 devient instantanément la reine des hot hatches : châssis d'une vivacité féline, moteur rageur, jantes pétales et liserés rouges. Sur les routes de France, elle est la terreur des nationales et l'objet de tous les désirs adolescents. Sa cousine Turbo 16 remporte deux titres mondiaux des rallyes aux mains d'Ari Vatanen et Timo Salonen. Les puristes la préfèrent encore à la Golf GTI, débat inépuisable des dîners français. C'est l'agilité française des années 80, cote de collection en prime.",
+      "La 205 sauve Peugeot de la faillite en 1983, et sa version GTI de 1984 devient instantanément la reine des hot hatches : châssis d'une vivacité féline, moteur rageur, jantes pétales et liserés rouges. Sur les routes de France, elle est la terreur des nationales et l'objet de tous les désirs adolescents. Sa cousine Turbo 16 remporte deux titres mondiaux des rallyes aux mains de Timo Salonen puis Juha Kankkunen. Les puristes la préfèrent encore à la Golf GTI, débat inépuisable des dîners français. C'est l'agilité française des années 80, cote de collection en prime.",
   },
   {
     slug: "testarossa",
@@ -269,7 +269,7 @@ const items: Item[] = [
     year: 1992,
     tagline: "Trois sièges, un V12, aucun compromis",
     description:
-      "Gordon Murray dessine en 1992 la voiture de route parfaite selon un ingénieur de Formule 1 : poste de conduite central entouré de deux passagers, coque carbone, V12 BMW atmosphérique, or véritable en isolant thermique du compartiment moteur. Ses 386,4 km/h resteront treize ans le record mondial d'une voiture de série — atteints presque par accident, la F1 n'ayant jamais été conçue pour la vitesse pure. Victorieuse au Mans 1995 quasi sans préparation, elle s'échange aujourd'hui au-delà de vingt millions. C'est l'ingénierie sans marketing, et donc la perfection.",
+      "Gordon Murray dessine en 1992 la voiture de route parfaite selon un ingénieur de Formule 1 : poste de conduite central entouré de deux passagers, coque carbone, V12 BMW atmosphérique, or véritable en isolant thermique du compartiment moteur. Ses 386,4 km/h de 1998 resteront sept ans le record mondial d'une voiture de série — atteints presque par accident, la F1 n'ayant jamais été conçue pour la vitesse pure. Victorieuse au Mans 1995 quasi sans préparation, elle s'échange aujourd'hui au-delà de vingt millions. C'est l'ingénierie sans marketing, et donc la perfection.",
   },
   {
     slug: "twingo",

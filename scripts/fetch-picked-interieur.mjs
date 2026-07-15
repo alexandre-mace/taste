@@ -34,7 +34,18 @@ const PICKS = {
   memphis: "Ettore sottsass per memphis, libreria carlton, 1981.jpg",
   brutalisme: "Appartement témoin cité radieuse à rezé 01.jpg",
   cottagecore:
-    'Interior of the "Gothic Cottage", Stourhead Estate - geograph.org.uk - 4723134.jpg',
+    "Sitting room - Coleridge Cottage - Nether Stowey - Somerset, England - DSC01122.jpg",
+  "brutalisme-2": "Habitat '67 interior - Flickr - deeelem.jpg",
+  "campagne-francaise": "Draguignan Musée ATP Cuisine provençale.JPG",
+  haussmannien: "Salon d'un appartement à Paris.jpg",
+  "hollywood-regency":
+    "https://live.staticflickr.com/6207/6035883261_0cac9c1447_b.jpg",
+  mediterraneen: "https://live.staticflickr.com/1264/5109322015_b88180af0a_b.jpg",
+  "high-tech":
+    "Interior of the Centre Georges-Pompidou, Paris 15 August 2021.jpg",
+  "shabby-chic": "Shabby chic room.jpg",
+  minimalisme: "https://live.staticflickr.com/6226/6390301491_d4c5a557e9_b.jpg",
+  maximalisme: "Tropical Noir Chic Boutique Hotel Room in Lisbon (54940806211).jpg",
 }
 
 await mkdir(OUT, { recursive: true })

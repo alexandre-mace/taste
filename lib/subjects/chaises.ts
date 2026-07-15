@@ -89,7 +89,7 @@ const items: Item[] = [
     year: 1929,
     tagline: "Le trône du modernisme",
     description:
-      "Dessinée avec Lilly Reich pour le pavillon allemand de l'Exposition de Barcelone en 1929 — officiellement pour accueillir le roi d'Espagne —, la chaise Barcelona croise deux lames d'acier en ciseaux sous des coussins de cuir capitonnés. Mies voulait un siège « monumental et digne » à la hauteur de son pavillon d'onyx et de travertin : il créa le trône du XXe siècle. Depuis, aucun hall de siège social, aucun loft d'architecte ne se pense sans elle. Éditée par Knoll depuis 1948, contrefaite des millions de fois. C'est le pouvoir moderne assis sur du cuir noir.",
+      "Dessinée avec Lilly Reich pour le pavillon allemand de l'Exposition de Barcelone en 1929 — officiellement pour accueillir le roi d'Espagne —, la chaise Barcelona croise deux lames d'acier en ciseaux sous des coussins de cuir capitonnés. Mies voulait un siège « monumental et digne » à la hauteur de son pavillon d'onyx et de travertin : il créa le trône du XXe siècle. Depuis, aucun hall de siège social, aucun loft d'architecte ne se pense sans elle. Éditée par Knoll depuis 1953, contrefaite des millions de fois. C'est le pouvoir moderne assis sur du cuir noir.",
   },
   {
     slug: "paimio",
@@ -150,6 +150,7 @@ const items: Item[] = [
     maker: "Charles & Ray Eames",
     name: "Plastic Chair DSW",
     year: 1950,
+    photoCredit: "withassociates · Flickr (CC BY-SA 2.0)",
     tagline: "La coque universelle aux mille bases",
     description:
       "Première chaise de série en plastique moulé, la Plastic Chair des Eames sépare génialement la coque de son piètement : la même assise en fibre de verre se visse sur des pieds bois « Eiffel », des tubes d'acier ou des patins, en une famille infinie. Pensée pour le concours « mobilier à bas coût » du MoMA, elle démocratise le design d'auteur des décennies avant IKEA. Sa déclinaison DSW aux pieds de bois clair est devenue l'un des objets les plus photographiés de Pinterest — et les plus contrefaits du monde. C'est la chaise moderne par défaut de la planète entière.",
@@ -170,7 +171,7 @@ const items: Item[] = [
     year: 1955,
     tagline: "La danoise la plus vendue du monde",
     description:
-      "Neuf couches de placage moulées en une coque cintrée à la taille : la Série 7 de Jacobsen raffine la technique des Eames en une silhouette de sablier devenue la chaise la plus vendue de l'histoire du design danois — plus de neuf millions d'exemplaires. Empilable, légère, disponible dans toutes les couleurs, elle meuble la moitié des cuisines, écoles et cafés de Scandinavie. Le portrait de Christine Keeler posant nue à califourchon sur une (copie de) Série 7 en fit une icône pop en 1963. C'est l'industrialisation du galbe parfait.",
+      "Neuf couches de placage moulées en une coque cintrée à la taille : la Série 7 de Jacobsen raffine la technique des Eames en une silhouette de sablier devenue la chaise la plus vendue de l'histoire du design danois — plus de cinq millions d'exemplaires. Empilable, légère, disponible dans toutes les couleurs, elle meuble la moitié des cuisines, écoles et cafés de Scandinavie. Le portrait de Christine Keeler posant nue à califourchon sur une (copie de) Série 7 en fit une icône pop en 1963. C'est l'industrialisation du galbe parfait.",
   },
   {
     slug: "tulip",
@@ -179,7 +180,7 @@ const items: Item[] = [
     year: 1956,
     tagline: "La fin du « taudis de pieds »",
     description:
-      "Saarinen détestait le « slum of legs », ce taudis de pieds encombrant le dessous des tables : la Tulip pose une coque de fibre de verre sur un unique pied central en fonte d'aluminium, comme un verre de vin ou une fleur. Avec la table assortie, elle compose les intérieurs les plus futuristes des années 1950 — Star Trek s'en équipera tel quel. Sa blancheur sculpturale reste d'une modernité intacte. Knoll la produit sans pause depuis 1957. C'est l'assise réduite à une seule ligne verticale, l'épure absolue du siècle américain.",
+      "Saarinen détestait le « slum of legs », ce taudis de pieds encombrant le dessous des tables : la Tulip pose une coque de fibre de verre sur un unique pied central en fonte d'aluminium, comme un verre de vin ou une fleur. Avec la table assortie, elle compose les intérieurs les plus futuristes des années 1950 — jusqu'aux plateaux de Star Trek, meublés de copies directement inspirées d'elle. Sa blancheur sculpturale reste d'une modernité intacte. Knoll la produit sans pause depuis 1957. C'est l'assise réduite à une seule ligne verticale, l'épure absolue du siècle américain.",
   },
   {
     slug: "eames-lounge",
@@ -224,7 +225,7 @@ const items: Item[] = [
     year: 1963,
     tagline: "La pièce dans la pièce",
     description:
-      "Eero Aarnio dessine sa première maison, n'a pas de fauteuil à sa taille et découpe une sphère : la Ball Chair, présentée à Cologne en 1966, fait le tour du monde en une semaine. Coque de fibre de verre pivotante, intérieur capitonné rouge, téléphone intégré en option : c'est un cockpit d'intimité, une « pièce dans la pièce » selon ses mots. Elle devient l'emblème absolu du design space age, réquisitionnée par le cinéma et la publicité dès qu'il faut dire « futur sixties ». Le Prisonnier et Men in Black se la disputent. C'est la bulle pop dans laquelle tout le monde a rêvé de s'asseoir.",
+      "Eero Aarnio dessine sa première maison, n'a pas de fauteuil à sa taille et découpe une sphère : la Ball Chair, présentée à Cologne en 1966, fait le tour du monde en une semaine. Coque de fibre de verre pivotante, intérieur capitonné rouge, téléphone intégré en option : c'est un cockpit d'intimité, une « pièce dans la pièce » selon ses mots. Elle devient l'emblème absolu du design space age, réquisitionnée par le cinéma et la publicité dès qu'il faut dire « futur sixties ». Le Prisonnier en a fait un personnage de série à part entière. C'est la bulle pop dans laquelle tout le monde a rêvé de s'asseoir.",
   },
   {
     slug: "panton",

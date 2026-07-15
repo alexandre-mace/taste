@@ -29,7 +29,7 @@ const items: Item[] = [
     ref: "126234",
     tagline: "Le classique polyvalent absolu",
     description:
-      "Première montre-bracelet à afficher la date dans un guichet, la Datejust est le modèle le plus vendu de Rolex depuis 1945. Sa loupe Cyclope, ajoutée en 1953, et sa lunette cannelée sont devenues des signatures instantanément reconnaissables. Ni sportive ni habillée, elle traverse toutes les situations avec la même aisance, du bureau au week-end. Déclinée dans des dizaines de tailles, cadrans et matériaux, elle a orné les poignets de présidents comme de stars. C'est l'archétype de la montre unique, celle qu'on garde toute une vie.",
+      "Première montre-bracelet automatique et certifiée chronomètre à afficher la date dans un guichet, la Datejust est le modèle le plus vendu de Rolex depuis 1945. Sa loupe Cyclope, ajoutée en 1953, et sa lunette cannelée sont devenues des signatures instantanément reconnaissables. Ni sportive ni habillée, elle traverse toutes les situations avec la même aisance, du bureau au week-end. Déclinée dans des dizaines de tailles, cadrans et matériaux, elle a orné les poignets de présidents comme de stars. C'est l'archétype de la montre unique, celle qu'on garde toute une vie.",
   },
   {
     slug: "rolex-day-date",
@@ -39,7 +39,7 @@ const items: Item[] = [
     ref: "228238",
     tagline: "La « President », montre du pouvoir",
     description:
-      "Lancée en 1956, la Day-Date est la première montre à afficher le jour de la semaine en toutes lettres, en plus de la date. Exclusivement produite en or ou en platine, elle est livrée sur le bracelet « President » à maillons semi-circulaires créé pour elle. Eisenhower, Kennedy, Johnson : tant de présidents américains l'ont portée qu'elle a gagné son surnom officieux. Symbole de réussite parfois ostentatoire, elle reste le sommet du catalogue Rolex classique. Le cadran champagne sur or jaune est l'image même du pouvoir au poignet.",
+      "Lancée en 1956, la Day-Date est la première montre à afficher le jour de la semaine en toutes lettres, en plus de la date. Exclusivement produite en or ou en platine, elle est livrée sur le bracelet « President » à maillons semi-circulaires créé pour elle. Lyndon B. Johnson fut le premier président américain à la porter au poignet — le surnom officieux était né. Symbole de réussite parfois ostentatoire, elle reste le sommet du catalogue Rolex classique. Le cadran champagne sur or jaune est l'image même du pouvoir au poignet.",
   },
   {
     slug: "rolex-gmt-master",
@@ -79,7 +79,7 @@ const items: Item[] = [
     ref: "126600",
     tagline: "La plongeuse extrême des professionnels",
     description:
-      "Développée en 1967 avec la société de plongée française Comex, la Sea-Dweller est la version extrême de la Submariner, étanche à 1 220 mètres. Sa valve à hélium, inventée pour l'occasion, permet aux plongeurs à saturation de remonter sans que le verre n'explose. La version « Deepsea » descend même à 3 900 mètres, et un modèle expérimental a accompagné James Cameron au fond de la fosse des Mariannes. C'est l'outil professionnel poussé à l'absurde, et c'est précisément ce qui plaît. La lunette rouge « Single Red » de 2017 rend hommage au prototype originel.",
+      "Développée en 1967 pour les plongeurs à saturation des programmes Sealab de l'US Navy, puis adoptée par la française Comex à partir de 1971, la Sea-Dweller est la version extrême de la Submariner — étanche à 610 mètres d'abord, puis 1 220 mètres dès 1978. Sa valve à hélium, inventée pour l'occasion, permet aux plongeurs à saturation de remonter sans que le verre n'explose. La version « Deepsea » descend même à 3 900 mètres, et un modèle expérimental a accompagné James Cameron au fond de la fosse des Mariannes. C'est l'outil professionnel poussé à l'absurde, et c'est précisément ce qui plaît. La lunette rouge « Single Red » de 2017 rend hommage au prototype originel.",
   },
   {
     slug: "omega-speedmaster",
@@ -392,7 +392,7 @@ const items: Item[] = [
     ref: "M79030N",
     tagline: "Le vintage Rolex à prix accessible",
     description:
-      "Tudor, la marque sœur de Rolex, a réussi l'une des renaissances les plus spectaculaires de l'horlogerie avec la Black Bay, qui puise dans les Submariner Tudor des années 1950. La Black Bay 58, en 39 mm avec ses accents dorés et sa couronne rose, est devenue la plongeuse la plus recommandée du segment intermédiaire. Aiguilles « Snowflake », lunette bordeaux ou noire, manufacture certifiée METAS : l'ADN Rolex à moitié prix. David Beckham et Lady Gaga en ont assuré la publicité. C'est le meilleur des deux mondes : l'héritage sans la liste d'attente.",
+      "Tudor, la marque sœur de Rolex, a réussi l'une des renaissances les plus spectaculaires de l'horlogerie avec la Black Bay, qui puise dans les Submariner Tudor des années 1950. La Black Bay 58, en 39 mm avec ses accents dorés et sa couronne rose, est devenue la plongeuse la plus recommandée du segment intermédiaire. Aiguilles « Snowflake », lunette bordeaux ou noire, calibre manufacture certifié chronomètre : l'ADN Rolex à moitié prix. David Beckham et Lady Gaga en ont assuré la publicité. C'est le meilleur des deux mondes : l'héritage sans la liste d'attente.",
   },
   {
     slug: "nomos-tangente",
@@ -456,7 +456,7 @@ const items: Item[] = [
     year: 2011,
     tagline: "La plongeuse indépendante au poisson rouge",
     description:
-      "L'Aquis est la plongeuse moderne d'Oris, l'une des dernières grandes marques suisses indépendantes, propriété de personne d'autre que d'elle-même depuis 1904. Design contemporain, lunette céramique, 300 mètres d'étanchéité, à des prix nettement sous les géants du secteur : c'est la proposition la plus honnête du marché. Ses éditions engagées pour la protection des océans et son calibre 400 à cinq jours de réserve de marche et dix ans de garantie ont renforcé sa crédibilité. La marque au poisson rouge cultive une sympathie que les grands groupes ne peuvent pas acheter. C'est la plongeuse de l'amateur indépendant d'esprit.",
+      "L'Aquis est la plongeuse moderne d'Oris, l'une des dernières grandes marques horlogères suisses indépendantes — fondée en 1904, et redevenue son propre maître en 1982 quand ses dirigeants l'ont rachetée. Design contemporain, lunette céramique, 300 mètres d'étanchéité, à des prix nettement sous les géants du secteur : c'est la proposition la plus honnête du marché. Ses éditions engagées pour la protection des océans et son calibre 400 à cinq jours de réserve de marche et dix ans de garantie ont renforcé sa crédibilité. La marque au poisson rouge cultive une sympathie que les grands groupes ne peuvent pas acheter. C'est la plongeuse de l'amateur indépendant d'esprit.",
   },
   {
     slug: "rado-captain-cook",
@@ -549,7 +549,7 @@ const items: Item[] = [
     tagline: "Le chef-d'œuvre asymétrique de Saxe",
     photoCredit: "Johnson Watch Co · Flickr (domaine public)",
     description:
-      "En 1994, quatre ans après la chute du Mur, Walter Lange ressuscite la manufacture familiale de Glashütte nationalisée par la RDA : la Lange 1 est son premier modèle, et un coup de maître. Son cadran asymétrique, ordonné selon le nombre d'or, et sa grande date inspirée de l'horloge de l'opéra de Dresde sont devenus des icônes instantanées. Le mouvement, avec sa platine trois-quarts en maillechort, son coq de balancier gravé main et ses chatons en or, est parmi les plus beaux du monde. Beaucoup de collectionneurs la placent au-dessus de Patek en finition pure. C'est la preuve que la haute horlogerie parle aussi allemand.",
+      "En décembre 1990, un an après la chute du Mur, Walter Lange ressuscite la manufacture familiale de Glashütte nationalisée par la RDA ; la Lange 1, présentée en 1994, est son premier modèle, et un coup de maître. Son cadran asymétrique, ordonné selon le nombre d'or, et sa grande date inspirée de l'horloge de l'opéra de Dresde sont devenus des icônes instantanées. Le mouvement, avec sa platine trois-quarts en maillechort, son coq de balancier gravé main et ses chatons en or, est parmi les plus beaux du monde. Beaucoup de collectionneurs la placent au-dessus de Patek en finition pure. C'est la preuve que la haute horlogerie parle aussi allemand.",
   },
   {
     slug: "cartier-ballon-bleu",
