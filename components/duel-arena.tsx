@@ -18,7 +18,7 @@ import { Kbd, KbdGroup } from "@/components/ui/kbd"
 import { Skeleton } from "@/components/ui/skeleton"
 import { useRankings } from "@/hooks/use-rankings"
 import { pickPair } from "@/lib/elo"
-import { getSubject, type Item } from "@/lib/subjects"
+import { getSubject, type Item, type Subject } from "@/lib/subjects"
 import { cn } from "@/lib/utils"
 
 const TARGET_DUELS = 60
@@ -137,7 +137,7 @@ export function DuelArena({ subjectSlug }: { subjectSlug: string }) {
       ) : (
         <div className="mt-10 grid gap-4 sm:grid-cols-[1fr_auto_1fr] sm:items-stretch sm:gap-6">
           <DuelCard
-            subject={subject.slug}
+            subject={subject}
             item={pair[0]}
             state={stateFor(pair[0], chosen)}
             onChoose={() => choose(pair[0], pair)}
@@ -148,7 +148,7 @@ export function DuelArena({ subjectSlug }: { subjectSlug: string }) {
             </span>
           </div>
           <DuelCard
-            subject={subject.slug}
+            subject={subject}
             item={pair[1]}
             state={stateFor(pair[1], chosen)}
             onChoose={() => choose(pair[1], pair)}
@@ -183,7 +183,7 @@ function DuelCard({
   state,
   onChoose,
 }: {
-  subject: string
+  subject: Subject
   item: Item
   state: CardState
   onChoose: () => void
@@ -198,13 +198,13 @@ function DuelCard({
       )}
     >
       <ItemFrame
-        subject={subject}
+        subject={subject.slug}
         slug={item.slug}
         alt={`${item.maker} ${item.name}`}
         sizes="(max-width: 640px) 100vw, 460px"
         preload
         className={cn(
-          "aspect-square w-full transition-colors sm:aspect-3/4",
+          cn("w-full transition-colors", subject.plateAspect),
           state === "idle" &&
             "group-hover:border-foreground/40 group-focus-visible:border-ring group-focus-visible:ring-3 group-focus-visible:ring-ring/50",
           state === "won" && "border-foreground ring-3 ring-foreground/25"

@@ -3,6 +3,7 @@ import type { Item, Subject } from "@/lib/subjects"
 const items: Item[] = [
   {
     slug: "zen-japonais",
+    photoCount: 2,
     maker: "Kyoto, Japon",
     name: "Zen japonais",
     year: 1482,
@@ -12,6 +13,7 @@ const items: Item[] = [
   },
   {
     slug: "wabi-sabi",
+    photoCount: 2,
     maker: "Japon",
     name: "Wabi-sabi",
     year: 1522,
@@ -21,6 +23,7 @@ const items: Item[] = [
   },
   {
     slug: "baroque",
+    photoCount: 2,
     maker: "Italie, puis France",
     name: "Baroque",
     year: 1600,
@@ -30,6 +33,7 @@ const items: Item[] = [
   },
   {
     slug: "riad-marocain",
+    photoCount: 2,
     maker: "Maroc",
     name: "Riad marocain",
     year: 1650,
@@ -39,6 +43,7 @@ const items: Item[] = [
   },
   {
     slug: "rococo",
+    photoCount: 2,
     maker: "France",
     name: "Rococo",
     year: 1730,
@@ -57,6 +62,7 @@ const items: Item[] = [
   },
   {
     slug: "gustavien",
+    photoCount: 2,
     maker: "Suède",
     name: "Gustavien",
     year: 1780,
@@ -66,6 +72,7 @@ const items: Item[] = [
   },
   {
     slug: "shaker",
+    photoCount: 2,
     maker: "Nouvelle-Angleterre, États-Unis",
     name: "Shaker",
     year: 1790,
@@ -75,6 +82,7 @@ const items: Item[] = [
   },
   {
     slug: "empire",
+    photoCount: 2,
     maker: "France",
     name: "Empire",
     year: 1804,
@@ -84,6 +92,7 @@ const items: Item[] = [
   },
   {
     slug: "biedermeier",
+    photoCount: 2,
     maker: "Autriche & Allemagne",
     name: "Biedermeier",
     year: 1815,
@@ -93,6 +102,7 @@ const items: Item[] = [
   },
   {
     slug: "victorien",
+    photoCount: 2,
     maker: "Angleterre",
     name: "Victorien",
     year: 1840,
@@ -102,6 +112,7 @@ const items: Item[] = [
   },
   {
     slug: "arts-and-crafts",
+    photoCount: 2,
     maker: "Angleterre",
     name: "Arts & Crafts",
     year: 1880,
@@ -111,6 +122,7 @@ const items: Item[] = [
   },
   {
     slug: "art-nouveau",
+    photoCount: 2,
     maker: "Bruxelles & Paris",
     name: "Art nouveau",
     year: 1893,
@@ -120,6 +132,7 @@ const items: Item[] = [
   },
   {
     slug: "de-stijl",
+    photoCount: 2,
     maker: "Utrecht, Pays-Bas",
     name: "De Stijl",
     year: 1917,
@@ -129,6 +142,7 @@ const items: Item[] = [
   },
   {
     slug: "bauhaus",
+    photoCount: 2,
     maker: "Weimar & Dessau, Allemagne",
     name: "Bauhaus",
     year: 1919,
@@ -138,6 +152,7 @@ const items: Item[] = [
   },
   {
     slug: "art-deco",
+    photoCount: 2,
     maker: "Paris",
     name: "Art déco",
     year: 1925,
@@ -147,6 +162,7 @@ const items: Item[] = [
   },
   {
     slug: "moderniste",
+    photoCount: 2,
     maker: "Europe",
     name: "Moderniste",
     year: 1929,
@@ -156,6 +172,7 @@ const items: Item[] = [
   },
   {
     slug: "mid-century-modern",
+    photoCount: 2,
     maker: "États-Unis & Scandinavie",
     name: "Mid-century modern",
     year: 1945,
@@ -165,6 +182,7 @@ const items: Item[] = [
   },
   {
     slug: "scandinave",
+    photoCount: 2,
     maker: "Danemark, Suède & Finlande",
     name: "Scandinave",
     year: 1950,
@@ -174,6 +192,7 @@ const items: Item[] = [
   },
   {
     slug: "brutalisme",
+    photoCount: 2,
     maker: "Angleterre & France",
     name: "Brutalisme",
     year: 1955,
@@ -183,6 +202,7 @@ const items: Item[] = [
   },
   {
     slug: "space-age",
+    photoCount: 2,
     maker: "France & Italie",
     name: "Space Age",
     year: 1960,
@@ -192,6 +212,7 @@ const items: Item[] = [
   },
   {
     slug: "memphis",
+    photoCount: 2,
     maker: "Milan",
     name: "Memphis",
     year: 1981,
@@ -201,6 +222,7 @@ const items: Item[] = [
   },
   {
     slug: "cottagecore",
+    photoCount: 2,
     maker: "Internet & campagne anglaise",
     name: "Cottagecore",
     year: 2020,
@@ -337,5 +359,7 @@ export const designInterieur: Subject = {
   itemGender: "m",
   duelQuestion: "Lequel préférez-vous ?",
   searchPlaceholder: "Chercher un style, une époque…",
+  detailFit: "cover",
+  plateAspect: "aspect-4/5",
   items,
 }

@@ -71,6 +71,7 @@ export default async function SubjectPage({
         subject={subject.slug}
         items={subject.items}
         searchPlaceholder={subject.searchPlaceholder}
+        plateAspect={subject.plateAspect}
         className="mt-12 sm:mt-16"
       />
     </div>

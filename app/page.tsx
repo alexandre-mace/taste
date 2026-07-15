@@ -8,6 +8,8 @@ import { subjects, yearRange, type Subject } from "@/lib/subjects"
 const COVERS: Record<string, string[]> = {
   montres: ["patek-philippe-nautilus", "cartier-tank", "casio-g-shock"],
   "design-interieur": ["bauhaus", "art-deco", "memphis"],
+  chaises: ["thonet-14", "eames-lounge", "panton"],
+  voitures: ["citroen-ds", "porsche-911", "coccinelle"],
 }
 
 export default function Page() {

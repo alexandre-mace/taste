@@ -3,7 +3,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react"
 
-import { ItemFrame } from "@/components/item-frame"
+import { ItemGallery } from "@/components/item-gallery"
 import { Separator } from "@/components/ui/separator"
 import { getItem, getSubject, subjects } from "@/lib/subjects"
 
@@ -57,15 +57,12 @@ export default async function ItemPage({
 
       <article className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-16">
         <figure className="flex flex-col gap-3">
-          <ItemFrame
+          <ItemGallery
             subject={subject.slug}
-            slug={item.slug}
+            item={item}
             alt={`${item.maker} ${item.name}`}
-            fit="contain"
-            preload
-            sizes="(max-width: 1024px) 100vw, 560px"
-            className="aspect-4/5"
-            imageClassName="p-6"
+            fit={subject.detailFit}
+            plateAspect={subject.plateAspect}
           />
           <figcaption className="flex flex-wrap justify-between gap-x-4 gap-y-1 px-0.5 font-mono text-[10px] tracking-wider text-muted-foreground tabular-nums">
             <span>

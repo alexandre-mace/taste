@@ -29,7 +29,12 @@ import {
 import { Skeleton } from "@/components/ui/skeleton"
 import { useRankings } from "@/hooks/use-rankings"
 import { formatRecord, getEntry, type EloEntry } from "@/lib/elo"
-import { getSubject, unseenLabel, type Item } from "@/lib/subjects"
+import {
+  getSubject,
+  unseenLabel,
+  type Item,
+  type Subject,
+} from "@/lib/subjects"
 import { cn } from "@/lib/utils"
 
 export function ClassementView({ subjectSlug }: { subjectSlug: string }) {
@@ -140,7 +145,7 @@ export function ClassementView({ subjectSlug }: { subjectSlug: string }) {
         {podium.map(({ item, entry }, i) => (
           <PodiumCard
             key={item.slug}
-            subject={subject.slug}
+            subject={subject}
             item={item}
             entry={entry}
             rank={i + 1}
@@ -195,14 +200,14 @@ function PodiumCard({
   entry,
   rank,
 }: {
-  subject: string
+  subject: Subject
   item: Item
   entry: EloEntry
   rank: number
 }) {
   return (
     <Link
-      href={`/${subject}/${item.slug}`}
+      href={`/${subject.slug}/${item.slug}`}
       className={cn(
         "group relative flex flex-col gap-3 outline-none",
         rank === 1 && "sm:order-2",
@@ -217,12 +222,13 @@ function PodiumCard({
         {rank}
       </Badge>
       <ItemFrame
-        subject={subject}
+        subject={subject.slug}
         slug={item.slug}
         alt={`${item.maker} ${item.name}`}
         sizes="(max-width: 640px) 100vw, 290px"
         className={cn(
-          "aspect-4/5 transition-colors",
+          subject.plateAspect,
+          "transition-colors",
           rank === 1 ? "border-foreground" : "group-hover:border-foreground/40"
         )}
         imageClassName="transition-transform duration-700 group-hover:scale-[1.02]"

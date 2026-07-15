@@ -31,11 +31,13 @@ export function ExplorerGrid({
   subject,
   items,
   searchPlaceholder,
+  plateAspect,
   className,
 }: {
   subject: string
   items: Item[]
   searchPlaceholder: string
+  plateAspect?: string
   className?: string
 }) {
   const [query, setQuery] = React.useState("")
@@ -92,6 +94,7 @@ export function ExplorerGrid({
               subject={subject}
               item={item}
               number={number}
+              plateAspect={plateAspect}
             />
           ))}
         </div>

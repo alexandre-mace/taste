@@ -1,5 +1,7 @@
 import { montres } from "@/lib/subjects/montres"
 import { designInterieur } from "@/lib/subjects/design-interieur"
+import { chaises } from "@/lib/subjects/chaises"
+import { voitures } from "@/lib/subjects/voitures"
 
 /** Une pièce exposée, quel que soit le sujet de la collection. */
 export type Item = {
@@ -15,6 +17,11 @@ export type Item = {
   description: string
   /** Crédit photo affiché sur la fiche (les photos Commons restent créditées globalement). */
   photoCredit?: string
+  /**
+   * Nombre de photos disponibles (défaut 1). Les fichiers suivent la
+   * convention <slug>.jpg, <slug>-2.jpg, <slug>-3.jpg…
+   */
+  photoCount?: number
 }
 
 export type Subject = {
@@ -30,6 +37,10 @@ export type Subject = {
   /** « Laquelle préférez-vous ? » / « Lequel préférez-vous ? » */
   duelQuestion: string
   searchPlaceholder: string
+  /** Cadrage de la photo sur la fiche : objet détouré → contain, scène → cover. */
+  detailFit: "contain" | "cover"
+  /** Classe d'aspect des cadres (grille, duel, fiche) : "aspect-4/5", "aspect-4/3"… */
+  plateAspect: string
   items: Item[]
 }
 
@@ -41,9 +52,12 @@ function chronological(items: Item[]): Item[] {
   )
 }
 
-export const subjects: Subject[] = [montres, designInterieur].map(
-  (subject) => ({ ...subject, items: chronological(subject.items) })
-)
+export const subjects: Subject[] = [
+  montres,
+  designInterieur,
+  chaises,
+  voitures,
+].map((subject) => ({ ...subject, items: chronological(subject.items) }))
 
 export function getSubject(slug: string): Subject | undefined {
   return subjects.find((s) => s.slug === slug)
@@ -55,6 +69,16 @@ export function getItem(subject: Subject, slug: string): Item | undefined {
 
 export function itemImage(subjectSlug: string, itemSlug: string): string {
   return `/images/${subjectSlug}/${itemSlug}.jpg`
+}
+
+/** Toutes les photos d'une pièce : <slug>.jpg, <slug>-2.jpg, <slug>-3.jpg… */
+export function itemImages(subjectSlug: string, item: Item): string[] {
+  const count = item.photoCount ?? 1
+  return Array.from({ length: count }, (_, i) =>
+    i === 0
+      ? itemImage(subjectSlug, item.slug)
+      : `/images/${subjectSlug}/${item.slug}-${i + 1}.jpg`
+  )
 }
 
 export function yearRange(subject: Subject): string {

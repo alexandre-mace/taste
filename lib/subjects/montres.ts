@@ -602,5 +602,7 @@ export const montres: Subject = {
   itemGender: "f",
   duelQuestion: "Laquelle préférez-vous ?",
   searchPlaceholder: "Chercher une marque, un modèle…",
+  detailFit: "contain",
+  plateAspect: "aspect-4/5",
   items,
 }
