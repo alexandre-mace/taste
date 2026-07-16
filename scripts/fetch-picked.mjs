@@ -16,7 +16,6 @@ const PICKS = {
   "bulova-accutron-spaceview":
     "Bulova Accutron Spaceview con calibro 214, prima metà anni '70.jpg",
   "universal-geneve-polerouter": "Universal-Polerouter.jpg",
-  "cartier-panthere": "Cartier Panthere lady's 2 tone watch.jpg",
   "fp-journe": "FP-Journe-IMG 0341.jpg",
   "ulysse-nardin-freak": "Freak Vision.jpg",
   "lange-sohne-lange-1":
@@ -25,8 +24,6 @@ const PICKS = {
     "https://live.staticflickr.com/4289/34978824501_2d8eed09b4_b.jpg",
   "bell-ross-br03":
     "https://live.staticflickr.com/1811/41969344380_d0831e1a7a_b.jpg",
-  "cartier-ballon-bleu":
-    "https://live.staticflickr.com/4232/34266997844_26e8cff604_b.jpg",
 }
 
 for (const [slug, source] of Object.entries(PICKS)) {

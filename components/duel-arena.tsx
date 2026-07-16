@@ -18,7 +18,12 @@ import { Kbd, KbdGroup } from "@/components/ui/kbd"
 import { Skeleton } from "@/components/ui/skeleton"
 import { useRankings } from "@/hooks/use-rankings"
 import { pickPair } from "@/lib/elo"
-import { getSubject, type Item, type Subject } from "@/lib/subjects"
+import {
+  getSubject,
+  subjectLabel,
+  type Item,
+  type Subject,
+} from "@/lib/subjects"
 import { cn } from "@/lib/utils"
 
 const TARGET_DUELS = 60
@@ -93,7 +98,7 @@ export function DuelArena({ subjectSlug }: { subjectSlug: string }) {
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
       <div className="flex items-start justify-between gap-6">
         <PageHeader
-          eyebrow={`Le duel — ${subject.title}`}
+          eyebrow={`Le duel — ${subjectLabel(subject)}`}
           title={subject.duelQuestion}
         >
           <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">

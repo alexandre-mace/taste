@@ -11,7 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { getSubject, subjects } from "@/lib/subjects"
+import { getSubject, subjectLabel, subjects } from "@/lib/subjects"
 import { cn } from "@/lib/utils"
 
 const sections = [
@@ -40,7 +40,7 @@ export function SiteHeader() {
           <DropdownMenu>
             <DropdownMenuTrigger className="flex min-w-0 items-center gap-1.5 border-b border-transparent pb-0.5 font-mono text-[11px] tracking-wider text-muted-foreground uppercase transition-colors outline-none hover:text-foreground focus-visible:border-ring data-[popup-open]:text-foreground">
               <span className="truncate">
-                {subject ? subject.title : "Collections"}
+                {subject ? subjectLabel(subject) : "Collections"}
               </span>
               <ChevronDownIcon className="size-3 shrink-0" aria-hidden />
             </DropdownMenuTrigger>
@@ -52,7 +52,7 @@ export function SiteHeader() {
                     onClick={() => router.push(`/${s.slug}`)}
                     className="font-mono text-xs tracking-wider uppercase"
                   >
-                    {s.title}
+                    {subjectLabel(s)}
                     {s.slug === subject?.slug ? (
                       <CheckIcon data-icon="inline-end" aria-hidden />
                     ) : null}

@@ -1,4 +1,5 @@
 import { montres } from "@/lib/subjects/montres"
+import { montresFemme } from "@/lib/subjects/montres-femme"
 import { designInterieur } from "@/lib/subjects/design-interieur"
 import { chaises } from "@/lib/subjects/chaises"
 import { voitures } from "@/lib/subjects/voitures"
@@ -27,6 +28,12 @@ export type Item = {
 export type Subject = {
   slug: string
   title: string
+  /**
+   * Variante d'une même collection (« Homme », « Femme »…) : les sujets
+   * qui partagent un même `title` sont présentés comme une seule aile
+   * du musée, avec un commutateur entre leurs variantes.
+   */
+  variant?: string
   /** Discipline affichée dans l'eyebrow : « Horlogerie »… */
   category: string
   /** Paragraphe d'introduction de l'explorateur. */
@@ -54,6 +61,7 @@ function chronological(items: Item[]): Item[] {
 
 export const subjects: Subject[] = [
   montres,
+  montresFemme,
   designInterieur,
   chaises,
   voitures,
@@ -61,6 +69,29 @@ export const subjects: Subject[] = [
 
 export function getSubject(slug: string): Subject | undefined {
   return subjects.find((s) => s.slug === slug)
+}
+
+/** « Montres · Femme » dans les menus, « Montres » pour les sujets sans variante. */
+export function subjectLabel(subject: Subject): string {
+  return subject.variant
+    ? `${subject.title} · ${subject.variant}`
+    : subject.title
+}
+
+/** Les autres variantes de la même collection (même `title`). */
+export function subjectVariants(subject: Subject): Subject[] {
+  return subjects.filter((s) => s.title === subject.title)
+}
+
+/** Collections regroupées par titre, pour l'accueil. */
+export function subjectGroups(): Subject[][] {
+  const groups = new Map<string, Subject[]>()
+  for (const subject of subjects) {
+    const group = groups.get(subject.title) ?? []
+    group.push(subject)
+    groups.set(subject.title, group)
+  }
+  return [...groups.values()]
 }
 
 export function getItem(subject: Subject, slug: string): Item | undefined {

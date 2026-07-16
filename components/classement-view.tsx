@@ -31,6 +31,7 @@ import { useRankings } from "@/hooks/use-rankings"
 import { formatRecord, getEntry, type EloEntry } from "@/lib/elo"
 import {
   getSubject,
+  subjectLabel,
   unseenLabel,
   type Item,
   type Subject,
@@ -95,7 +96,7 @@ export function ClassementView({ subjectSlug }: { subjectSlug: string }) {
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <PageHeader
-          eyebrow={`Accrochage personnel — ${subject.title}`}
+          eyebrow={`Accrochage personnel — ${subjectLabel(subject)}`}
           title="Votre classement"
         >
           <p className="mt-3 text-sm text-muted-foreground">
@@ -126,7 +127,7 @@ export function ClassementView({ subjectSlug }: { subjectSlug: string }) {
                   Remettre le classement à zéro ?
                 </AlertDialogTitle>
                 <AlertDialogDescription>
-                  Tous vos duels de la collection {subject.title} et le
+                  Tous vos duels de la collection {subjectLabel(subject)} et le
                   classement qui en découle seront définitivement effacés.
                 </AlertDialogDescription>
               </AlertDialogHeader>

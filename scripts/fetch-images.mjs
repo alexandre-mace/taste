@@ -65,7 +65,6 @@ const MANIFEST = [
   { slug: "bulova-accutron-spaceview", commons: "Bulova Accutron Spaceview" },
   { slug: "seiko-astron", commons: "Seiko Astron" },
   { slug: "hamilton-pulsar", commons: "Pulsar Time Computer LED watch" },
-  { slug: "cartier-panthere", commons: "Cartier Panthère watch" },
   { slug: "ulysse-nardin-freak", commons: "Ulysse Nardin Freak" },
   { slug: "fp-journe", commons: "F.P. Journe watch" },
   // Absentes de Commons — images Flickr domaine public (voir fetch-picked.mjs)
@@ -80,10 +79,6 @@ const MANIFEST = [
   {
     slug: "bell-ross-br03",
     url: "https://live.staticflickr.com/1811/41969344380_d0831e1a7a_b.jpg",
-  },
-  {
-    slug: "cartier-ballon-bleu",
-    url: "https://live.staticflickr.com/4232/34266997844_26e8cff604_b.jpg",
   },
 ]
 

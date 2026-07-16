@@ -524,15 +524,6 @@ const items: Item[] = [
       "Lancée en 1972 par Hamilton, la Pulsar est la première montre numérique de l'histoire : pas d'aiguilles, juste des diodes rouges qui s'illuminent à la pression d'un bouton. La P1 en or massif coûtait 2 100 dollars, plus cher qu'une Rolex Day-Date de l'époque. Roger Moore la porte dans Vivre et laisser mourir, son premier James Bond, et le président Gerald Ford s'affiche avec au poignet. Son esthétique « Time Computer » incarne l'ère spatiale finissante et annonce l'invasion du digital. C'est la préhistoire flamboyante de toutes les montres connectées.",
   },
   {
-    slug: "cartier-panthere",
-    maker: "Cartier",
-    name: "Panthère",
-    year: 1983,
-    tagline: "Le bracelet-bijou des années 80",
-    description:
-      "Lancée en 1983, la Panthère doit son nom à son bracelet à maillons brossés, souple comme le félin emblème de Cartier depuis 1914. Petit boîtier carré hérité de la Santos, or et acier assumés : c'est la montre-bijou des années 1980, portée aussi bien par les femmes que par les hommes, de Keith Richards à Pierce Brosnan. Retirée du catalogue en 2004, elle est relancée en 2017 quasi inchangée et redevient immédiatement un best-seller. Elle incarne le glamour deux-tons de la décennie Dynasty mieux qu'aucune autre. C'est la preuve que Cartier fabrique des icônes en série.",
-  },
-  {
     slug: "ulysse-nardin-freak",
     maker: "Ulysse Nardin",
     name: "Freak",
@@ -550,16 +541,6 @@ const items: Item[] = [
     photoCredit: "Johnson Watch Co · Flickr (domaine public)",
     description:
       "En décembre 1990, un an après la chute du Mur, Walter Lange ressuscite la manufacture familiale de Glashütte nationalisée par la RDA ; la Lange 1, présentée en 1994, est son premier modèle, et un coup de maître. Son cadran asymétrique, ordonné selon le nombre d'or, et sa grande date inspirée de l'horloge de l'opéra de Dresde sont devenus des icônes instantanées. Le mouvement, avec sa platine trois-quarts en maillechort, son coq de balancier gravé main et ses chatons en or, est parmi les plus beaux du monde. Beaucoup de collectionneurs la placent au-dessus de Patek en finition pure. C'est la preuve que la haute horlogerie parle aussi allemand.",
-  },
-  {
-    slug: "cartier-ballon-bleu",
-    maker: "Cartier",
-    name: "Ballon Bleu",
-    year: 2007,
-    tagline: "Le rond parfait au cabochon protégé",
-    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
-    description:
-      "Lancée en 2007, la Ballon Bleu est le plus grand succès commercial récent de Cartier. Son boîtier galet, bombé comme un ballon, enveloppe la couronne et son cabochon de saphir bleu dans un arc de métal, créant une silhouette immédiatement identifiable. Le chiffre romain XII déformé par le guichet de couronne est devenu une signature. Kate Middleton en a fait sa montre de tous les jours, assurant sa célébrité mondiale. Elle prouve que Cartier sait encore créer des icônes au XXIe siècle.",
   },
   {
     slug: "bulgari-octo-finissimo",
@@ -595,6 +576,7 @@ const items: Item[] = [
 export const montres: Subject = {
   slug: "montres",
   title: "Montres",
+  variant: "Homme",
   category: "Horlogerie",
   intro:
     "Les montres qui ont écrit l'histoire, exposées par ordre chronologique — de l'atelier d'Abraham-Louis Breguet à l'Apple Watch. Parcourez la collection, puis départagez les pièces en duel pour révéler votre goût.",
