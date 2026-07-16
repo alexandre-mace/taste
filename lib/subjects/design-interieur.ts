@@ -17,6 +17,7 @@ const items: Item[] = [
     maker: "Japon",
     name: "Wabi-sabi",
     year: 1522,
+    photoCredit: "Elle Decoration UK",
     tagline: "La beauté de l'imparfait et de l'usé",
     description:
       "Théorisé par les maîtres de thé japonais, Sen no Rikyū en tête, le wabi-sabi célèbre ce que l'Occident cache : l'irrégulier, le patiné, l'incomplet. Dans la salle de thé, un bol fêlé réparé à l'or (kintsugi) vaut plus qu'une porcelaine neuve ; les murs de terre brute et les poutres tordues sont choisis pour leur imperfection même. C'est une esthétique mais surtout une philosophie : accepter le passage du temps au lieu de le combattre. Redécouvert par les décorateurs occidentaux dans les années 2010, souvent réduit à un lin froissé et trois poteries brunes, il reste l'anti-showroom absolu. La maison wabi-sabi ne se photographie pas, elle se vit.",
@@ -136,6 +137,7 @@ const items: Item[] = [
     maker: "Utrecht, Pays-Bas",
     name: "De Stijl",
     year: 1917,
+    photoCredit: "Basvb · Wikimedia Commons (CC BY-SA 3.0)",
     tagline: "Vivre dans un Mondrian",
     description:
       "Le mouvement néerlandais De Stijl réduit le monde à ses éléments premiers : lignes droites, plans, et les trois couleurs primaires posées sur blanc, gris et noir. La maison Schröder de Gerrit Rietveld à Utrecht en est le manifeste habitable : cloisons coulissantes, mobilier intégré, sa fameuse chaise rouge et bleue : un tableau de Mondrian en trois dimensions. L'espace y est pensé comme une composition abstraite dont l'habitant fait partie. D'une radicalité inouïe pour 1924, elle est classée au patrimoine mondial de l'UNESCO. Aucun intérieur n'a jamais poussé aussi loin l'utopie géométrique.",
@@ -146,6 +148,7 @@ const items: Item[] = [
     maker: "Weimar & Dessau, Allemagne",
     name: "Bauhaus",
     year: 1919,
+    photoCredit: "JensKunstfreund & Martavictor · Wikimedia Commons",
     tagline: "La forme suit la fonction",
     description:
       "L'école fondée par Walter Gropius révolutionne l'habitat en mariant art et industrie : acier tubulaire de Marcel Breuer, luminaires de Marianne Brandt, plans libres et murs blancs. L'intérieur Bauhaus supprime tout ornement au profit de la fonction, avec une conviction : le bon design doit être reproductible et accessible à tous. Fermée par les nazis en 1933, l'école essaime dans le monde entier et fonde le design moderne. La chaise Cesca et le fauteuil Wassily meublent encore nos salons. Son esthétique machine, scandaleuse à l'époque, est devenue le langage par défaut de la modernité. Cent ans après, on habite tous un peu au Bauhaus.",
@@ -186,6 +189,7 @@ const items: Item[] = [
     maker: "Danemark, Suède & Finlande",
     name: "Scandinave",
     year: 1950,
+    photoCredit: "Alex Tyson · Pexels",
     tagline: "La beauté fonctionnelle pour tous",
     description:
       "Le design scandinave des années 1950 (Hans Wegner, Arne Jacobsen, Alvar Aalto, Finn Juhl) marie chaleur artisanale et modernisme : teck et chêne blonds, laine et cuir, formes douces dessinées pour le corps. Sa philosophie est sociale-démocrate jusque dans le mobilier : du beau, du fonctionnel, pour tout le monde. Le « hygge » danois et la lumière rare du Nord façonnent des intérieurs clairs, feutrés, où la bougie est une institution. IKEA en a diffusé une version planétaire, faisant du look scandinave le style par défaut du XXIe siècle. Peu de régions ont autant marqué la maison contemporaine.",
@@ -196,6 +200,7 @@ const items: Item[] = [
     maker: "Angleterre & France",
     name: "Brutalisme",
     year: 1955,
+    photoCredit: "The Modern House",
     tagline: "Le béton brut assumé jusqu'au salon",
     description:
       "Dérivé du « béton brut » de Le Corbusier à la Cité radieuse, le brutalisme assume la matière sans fard : voiles de béton laissés coffrage apparent, volumes massifs, monumentalité sans excuse. Le Barbican de Londres en est la version résidentielle culte, dont les appartements s'arrachent aujourd'hui. Longtemps haï, symbole du logement de masse, le style est réhabilité depuis les années 2010 par une génération qui y voit une honnêteté radicale, et un décor photogénique. À l'intérieur, il se marie au bois, au velours et aux plantes qui adoucissent sa rudesse. C'est le style le plus clivant du XXe siècle, et c'est précisément sa force.",
@@ -281,7 +286,8 @@ const items: Item[] = [
     maker: "Riviera, Grèce & Californie",
     name: "Méditerranéen",
     year: 1920,
-    photoCredit: "tylerkaraszewski · Flickr (CC BY 2.0)",
+    photoCount: 2,
+    photoCredit: "Agung Pandit Wiguna & hatice yağcı · Pexels",
     tagline: "Chaux blanche, terre cuite et lumière",
     description:
       "Des villas des Cyclades aux haciendas californiennes du « Mediterranean Revival » des années 1920, le style méditerranéen distille la même recette : murs à la chaux, sols en terre cuite, bois patinés par le sel, niches et arches sculptées dans l'épaisseur des murs. La palette est celle du paysage (blanc éclatant, bleu Égée, ocres et verts d'olivier) et la frontière entre dedans et dehors s'efface sous les pergolas. Popularisé par les magazines de voyage puis par la vague « coastal » d'Instagram, il évoque instantanément l'été perpétuel. De Santorin à Comporta, c'est l'esthétique vacances devenue art de vivre. Le luxe y a la texture du plâtre frais.",
