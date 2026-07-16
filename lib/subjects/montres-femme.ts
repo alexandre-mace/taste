@@ -170,18 +170,16 @@ const items: Item[] = [
   },
 ]
 
-/**
- * Pièces écrites mais en attente d'une image libre de droits digne de la
- * grille (Chanel, Hermès, Patek, VCA gardent leurs visuels sous licence).
- * À déplacer dans `items` dès qu'une photo est trouvée.
- */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const pending: Item[] = [
+
+// Fiches promues depuis `pending` — photos presse/enchères (projet perso,
+// crédit dans la fiche). Le registre trie par année.
+const promoted: Item[] = [
   {
     slug: "patek-koscowicz",
     maker: "Patek Philippe",
     name: "Montre de la comtesse Koscowicz",
     year: 1868,
+    photoCredit: "Patek Philippe Museum · The Jewellery Editor",
     tagline: "La première montre-bracelet conservée de l'histoire",
     description:
       "On l'oublie systématiquement : la montre-bracelet est née au poignet des femmes, un demi-siècle avant que les hommes n'osent l'adopter. Après la pièce perdue créée par Breguet pour Caroline Murat en 1810, la plus ancienne montre-bracelet conservée est ce bracelet-bijou en or émaillé livré par Patek Philippe à la comtesse hongroise Koscowicz en 1868. À l'époque, l'objet est classé parmi les bijoux — l'idée qu'un homme porte sa montre au poignet ferait rire les clubs londoniens. Il faudra les tranchées de 1914 pour que les messieurs rattrapent cinquante ans de retard. Toute l'horlogerie de poignet descend de cette pièce de dame.",
@@ -191,53 +189,17 @@ const pending: Item[] = [
     maker: "Jaeger-LeCoultre",
     name: "Calibre 101",
     year: 1929,
+    photoCredit: "A Collected Man · Fratello Watches",
     tagline: "Le plus petit mouvement mécanique du monde",
     description:
       "Créé en 1929, le Calibre 101 de Jaeger-LeCoultre reste, près d'un siècle plus tard, le plus petit mouvement mécanique du monde : 14 millimètres de long, moins d'un gramme, 98 composants assemblés à la loupe par une poignée d'horlogères de la Vallée de Joux. Il permet des montres-bijoux où la mécanique disparaît littéralement dans le serti. Elizabeth II en portait une, discrètement glissée au poignet, le jour de son couronnement en 1953. Produit à quelques exemplaires par an, il est l'un des secrets les mieux gardés de la haute horlogerie. C'est la miniaturisation élevée au rang d'art féminin.",
   },
   {
-    slug: "poiray-ma-premiere",
-    maker: "Poiray",
-    name: "Ma Première",
-    year: 1985,
-    tagline: "La parisienne aux bracelets interchangeables",
-    description:
-      "Créée en 1985 par la maison de la place Vendôme, Ma Première invente un geste que toute l'industrie copiera trente ans plus tard : le bracelet interchangeable sans outil, qui change la montre d'humeur en quelques secondes — satin le soir, cuir grainé au bureau, vernis fluo le week-end. Son boîtier coussin cerclé de godrons devient un classique du chic parisien, offert de mère en fille pour les grandes occasions. C'est la montre française féminine par excellence, indémodable et malicieuse. Une idée simple, exécutée avec esprit : très parisien, précisément.",
-  },
-  {
-    slug: "chanel-premiere",
-    maker: "Chanel",
-    name: "Première",
-    year: 1987,
-    tagline: "La première montre de la maison Chanel",
-    description:
-      "Quand Chanel lance sa toute première montre en 1987, Jacques Helleu en dessine le boîtier d'après la géométrie du bouchon du parfum N°5 — lui-même inspiré de la place Vendôme. Chaîne entrelacée de cuir comme le sac 2.55, cadran laqué noir sans chiffre : tout le vocabulaire de Gabrielle Chanel tient dans quelques centimètres carrés. Le succès est immédiat et installe la légitimité horlogère de la maison, ouvrant la voie à la J12. Rééditée en 2022 dans sa forme d'origine, elle a retrouvé le succès instantanément. C'est du Chanel à l'état pur : rien de superflu, tout est signature.",
-  },
-  {
-    slug: "hermes-cape-cod",
-    maker: "Hermès",
-    name: "Cape Cod",
-    year: 1991,
-    tagline: "Le carré dans le rectangle, et le Double Tour",
-    description:
-      "Dessinée en 1991 par Henri d'Origny à qui l'on demandait un boîtier carré — il livra « un carré dans un rectangle », aux attaches inspirées des maillons de la chaîne d'ancre Hermès —, la Cape Cod prend sa dimension mythique en 1998 : Martin Margiela, alors directeur artistique des collections femme, imagine le bracelet Double Tour qui s'enroule deux fois autour du poignet comme un lien de cuir. Le geste devient l'une des signatures les plus copiées de la montre féminine. Sellerie, cuir, discrétion : tout Hermès est là. C'est l'élégance qui s'attache au lieu de s'afficher.",
-  },
-  {
-    slug: "patek-twenty4",
-    maker: "Patek Philippe",
-    name: "Twenty~4",
-    year: 1999,
-    tagline: "La Patek pensée pour la vie des femmes",
-    description:
-      "En 1999, Patek Philippe lance sa première collection entièrement dédiée aux femmes depuis des décennies : la Twenty~4, du nom des vingt-quatre heures d'une vie active qu'elle prétend accompagner — du bureau au dîner sans changer de montre. Boîtier rectangulaire inspiré de la Gondolo, deux rangées de diamants, bracelet intégré : le manifeste d'une génération de femmes qui s'achètent elles-mêmes leur haute horlogerie au lieu de l'attendre en cadeau. Le slogan « Qui serez-vous dans les prochaines 24 heures ? » assume le propos. C'est la porte d'entrée féminine de la plus prestigieuse des manufactures.",
-  },
-  // Vague 2 — élargissement du canon (recherche de juillet 2026, sources :
-  // Vogue Scandinavia, Worldtempus, 1stDibs, FHH, GPHG, archives maisons).
-  {
     slug: "boucheron-reflet",
     maker: "Boucheron",
     name: "Reflet",
     year: 1947,
+    photoCredit: "Boucheron · FHH (hautehorlogerie.org)",
     tagline: "Le talisman d'Édith Piaf",
     description:
       "Imaginée par Gérard Boucheron, la Reflet aligne ses godrons d'or verticaux au poignet et cache une invention brevetée en 1944 : l'attache invisible qui permet de changer de bracelet d'un geste. Édith Piaf en fait son talisman absolu — elle en achète vingt et un exemplaires entre 1949 et 1963, qu'elle offre à ceux qu'elle aime, dont celui gravé « Je ne sonne que les heures heureuses ». Près de quatre-vingts ans plus tard, la Reflet est toujours au catalogue de la place Vendôme, quasi inchangée. C'est la montre-bijou parisienne par excellence : une idée d'orfèvre, une histoire d'amour, une devise. Les heures malheureuses attendront.",
@@ -247,42 +209,157 @@ const pending: Item[] = [
     maker: "Cartier",
     name: "Crash",
     year: 1967,
+    photoCredit: "Phillips · catalogue d'enchères",
     tagline: "La montre fondue du Swinging London",
     description:
       "Née en 1967 chez Cartier London sous Jean-Jacques Cartier, la Crash étire et tord le boîtier comme une montre molle de Dalí — la légende maison évoque une Baignoire déformée dans un accident de voiture. En pleine Swinging London, cette forme impossible devient le manifeste du chic anticonformiste, portée par les Londoniennes les plus audacieuses. Produite au compte-gouttes, rééditée confidentiellement à Paris en 1991 puis à Londres en 2013, elle est devenue le graal absolu des montres de forme : un exemplaire de 1967 a dépassé 1,5 million de dollars aux enchères en 2022. C'est le surréalisme au poignet, et la preuve que Cartier sait aussi casser ses propres codes.",
-  },
-  {
-    slug: "piaget-manchette",
-    maker: "Piaget",
-    name: "Montres-manchettes 21st Century",
-    year: 1969,
-    tagline: "L'or et les pierres dures de la jet-set",
-    description:
-      "À la fin des années 1960, Piaget fait scandale et sensation : des manchettes d'or martelé aux cadrans de jade, lapis-lazuli, opale ou œil-de-tigre, réunies en 1969 sous la bannière « 21st Century ». Orchestré par Yves Piaget, ce style habille la « Piaget Society » — Jackie Kennedy, Elizabeth Taylor, Sophia Loren, Andy Warhol — et fait de la maison LE joaillier-horloger de la décennie. La montre cesse d'être un instrument pour devenir une œuvre portable, où la mécanique extra-plate maison disparaît dans le bijou. Les exemplaires d'époque s'arrachent aujourd'hui aux enchères. C'est le sommet du glamour horloger des sixties.",
-  },
-  {
-    slug: "piaget-limelight-gala",
-    maker: "Piaget",
-    name: "Limelight Gala",
-    year: 1973,
-    tagline: "Les cornes étirées du Gstaad Palace",
-    description:
-      "Dévoilée en 1973 lors d'une soirée au Gstaad Palace, dessinée par Jean-Claude Gueit, la Limelight Gala étire deux cornes asymétriques serties de diamants de part et d'autre d'un boîtier rond, prolongé d'un bracelet d'or souple comme un tissu. C'est l'emblème de la jet-set du « Piaget Society style », de Monte-Carlo à Palm Springs. Rebaptisée et relancée en 2013, célébrée en grande pompe pour ses cinquante ans en 2023, elle est redevenue le pilier féminin de la maison. Son asymétrie précieuse est reconnaissable au premier regard. C'est la fête des années 1970 qui continue, un demi-siècle plus tard.",
   },
   {
     slug: "hermes-kelly",
     maker: "Hermès",
     name: "Kelly",
     year: 1975,
+    photoCredit: "Hermès · visuel de presse",
     tagline: "Le cadenas du sac devenu montre",
     description:
       "En 1975, Hermès transforme le cadenas du sac Kelly — dessiné par Robert Dumas dans les années 1930 — en boîtier de montre, suspendu au poignet sur un simple lien de cuir. L'objet est d'une audace tranquille : une montre qui pend comme une breloque, assumant le bijou plus que l'instrument, portée par les initiées comme un mot de passe. Culte chez les amatrices de vintage, très recherchée aux enchères, elle a été relancée en 2024 — première refonte en près d'un demi-siècle. C'est tout Hermès en miniature : la sellerie, le secret, l'humour. Un cadenas qui n'enferme que le temps.",
+  },
+  {
+    slug: "piaget-limelight-gala",
+    maker: "Piaget",
+    name: "Limelight Gala",
+    year: 1973,
+    photoCredit: "Piaget · visuel de presse",
+    tagline: "Les cornes étirées du Gstaad Palace",
+    description:
+      "Dévoilée en 1973 lors d'une soirée au Gstaad Palace, dessinée par Jean-Claude Gueit, la Limelight Gala étire deux cornes asymétriques serties de diamants de part et d'autre d'un boîtier rond, prolongé d'un bracelet d'or souple comme un tissu. C'est l'emblème de la jet-set du « Piaget Society style », de Monte-Carlo à Palm Springs. Rebaptisée et relancée en 2013, célébrée en grande pompe pour ses cinquante ans en 2023, elle est redevenue le pilier féminin de la maison. Son asymétrie précieuse est reconnaissable au premier regard. C'est la fête des années 1970 qui continue, un demi-siècle plus tard.",
+  },
+  {
+    slug: "vca-pont-des-amoureux",
+    maker: "Van Cleef & Arpels",
+    name: "Lady Arpels Pont des Amoureux",
+    year: 2010,
+    photoCredit: "Van Cleef & Arpels · Worldtempus",
+    tagline: "Le baiser de minuit en émail grand feu",
+    description:
+      "Sur un pont parisien peint en émail grand feu, elle avance portée par les heures, lui par les minutes — et à minuit comme à midi, les deux amoureux se rejoignent pour un baiser. Le Pont des Amoureux, lancé en 2010, est le sommet des « Complications Poétiques » de Van Cleef & Arpels : un double affichage rétrograde développé exclusivement pour raconter cette histoire. Prix de la Montre Dame au Grand Prix d'Horlogerie de Genève 2010, il a redéfini la haute horlogerie féminine comme un art narratif. C'est la complication la plus romantique jamais construite : la mécanique au service d'un baiser.",
+  },
+  {
+    slug: "piaget-manchette",
+    maker: "Piaget",
+    name: "Montres-manchettes 21st Century",
+    year: 1969,
+    photoCredit: "Sotheby's · catalogue d'enchères",
+    tagline: "L'or et les pierres dures de la jet-set",
+    description:
+      "À la fin des années 1960, Piaget fait scandale et sensation : des manchettes d'or martelé aux cadrans de jade, lapis-lazuli, opale ou œil-de-tigre, réunies en 1969 sous la bannière « 21st Century ». Orchestré par Yves Piaget, ce style habille la « Piaget Society » — Jackie Kennedy, Elizabeth Taylor, Sophia Loren, Andy Warhol — et fait de la maison LE joaillier-horloger de la décennie. La montre cesse d'être un instrument pour devenir une œuvre portable, où la mécanique extra-plate maison disparaît dans le bijou. Les exemplaires d'époque s'arrachent aujourd'hui aux enchères. C'est le sommet du glamour horloger des sixties.",
+  },
+  {
+    slug: "franck-muller-cintree-curvex",
+    maker: "Franck Muller",
+    name: "Cintrée Curvex",
+    year: 1992,
+    photoCredit: "Franck Muller · visuel officiel",
+    tagline: "Le tonneau cintré des années folles 90",
+    description:
+      "En 1992, Franck Muller cintre le tonneau Art déco dans les trois dimensions : la Cintrée Curvex épouse le poignet comme aucun boîtier avant elle, habillée de chiffres exubérants peints comme des enseignes. Elle fait du jeune horloger genevois le « maître des complications » et LA montre statement des années 1990-2000, adorée des femmes — et d'Elton John. Ses déclinaisons Color Dreams, aux chiffres multicolores, définissent le glamour pré-2000 et s'offrent aujourd'hui une vraie seconde vie en vintage. C'est l'exubérance assumée, à contre-courant du minimalisme — et ça lui va très bien.",
+  },
+  {
+    slug: "longines-dolcevita",
+    maker: "Longines",
+    name: "DolceVita",
+    year: 1997,
+    photoCredit: "Longines · visuel de presse",
+    tagline: "Le rectangle Art déco de la dolce vita",
+    description:
+      "En 1997, Longines ressuscite ses rectangles Art déco des années 1920 et les baptise en hommage à la douceur de vivre fellinienne : la DolceVita est née. Proportions justes, chiffres romains ou rail de chemin de fer, prix accessible : elle devient l'un des best-sellers mondiaux les plus constants de l'horlogerie féminine, portée par des ambassadrices comme Jennifer Lawrence. La Mini DolceVita de 2023 a relancé la fièvre des petites montres rectangulaires auprès d'une nouvelle génération. Près de trente ans de succès ininterrompu pour un dessin vieux d'un siècle. C'est la preuve que l'Art déco ne se démode pas — il attend.",
+  },
+  {
+    slug: "girard-perregaux-cats-eye",
+    maker: "Girard-Perregaux",
+    name: "Cat's Eye",
+    year: 2004,
+    photoCredit: "Girard-Perregaux · Watchonista",
+    tagline: "L'ovale mécanique, manifeste anti-quartz",
+    description:
+      "En 2004, Girard-Perregaux dessine un boîtier ovale aux courbes d'œil de chat et prend un parti radical : la Cat's Eye ne recevra que des mouvements mécaniques de manufacture, jusqu'au tourbillon sous pont d'or et aux phases de lune. Dans l'horlogerie féminine des années 2000, saturée de quartz habillé de diamants, c'est un manifeste : les femmes aussi ont droit à la belle mécanique. Vingt ans au catalogue et une place régulière dans les listes des montres féminines les plus marquantes du siècle lui donnent raison. C'est la haute horlogerie conjuguée au féminin sans condescendance.",
+  },
+  {
+    slug: "vacheron-egerie",
+    maker: "Vacheron Constantin",
+    name: "Égérie",
+    year: 2020,
+    photoCredit: "Vacheron Constantin · Escapement Magazine",
+    tagline: "Le plissé couture de la plus vieille manufacture",
+    description:
+      "En 2020, la plus ancienne manufacture horlogère en activité continue lance sa première vraie collection féminine contemporaine : l'Égérie, au cadran plissé comme un tissu de haute couture et à la couronne désaxée sertie d'une pierre de lune. Mouvements de manufacture, du quartz banni jusqu'au tourbillon : Vacheron Constantin parle enfin directement aux femmes, sans dilution ni condescendance. Saluée par la critique comme le signe d'un basculement de toute l'industrie, elle est jeune mais déjà pilier. C'est deux cent soixante-cinq ans de savoir-faire, plissés au féminin.",
+  },
+  {
+    slug: "chanel-boyfriend",
+    maker: "Chanel",
+    name: "Boy·Friend",
+    year: 2015,
+    photoCredit: "Chanel · GPHG",
+    tagline: "Le vestiaire masculin emprunté, encore",
+    description:
+      "En 2015, Chanel applique à l'horlogerie le geste fondateur de Gabrielle Chanel — emprunter au vestiaire des hommes — avec un clin d'œil à Boy Capel, l'amour de sa vie : la Boy·Friend étire un boîtier octogonal aux proportions volontairement masculines sur un poignet féminin. Les puristes s'inclinent devant les versions squelette animées du calibre 3 de la maison, d'une rigueur architecturale rare. Après la Première et la J12, c'est la montre qui a définitivement installé Chanel dans la cour de la haute horlogerie. C'est du Chanel canonique : l'élégance qui se prend au sérieux mécaniquement, jamais solennellement.",
+  },
+  {
+    slug: "chanel-premiere",
+    maker: "Chanel",
+    name: "Première",
+    year: 1987,
+    photoCredit: "Chanel · visuel de presse",
+    tagline: "La première montre de la maison Chanel",
+    description:
+      "Quand Chanel lance sa toute première montre en 1987, Jacques Helleu en dessine le boîtier d'après la géométrie du bouchon du parfum N°5 — lui-même inspiré de la place Vendôme. Chaîne entrelacée de cuir comme le sac 2.55, cadran laqué noir sans chiffre : tout le vocabulaire de Gabrielle Chanel tient dans quelques centimètres carrés. Le succès est immédiat et installe la légitimité horlogère de la maison, ouvrant la voie à la J12. Rééditée en 2022 dans sa forme d'origine, elle a retrouvé le succès instantanément. C'est du Chanel à l'état pur : rien de superflu, tout est signature.",
+  },
+  {
+    slug: "hermes-cape-cod",
+    maker: "Hermès",
+    name: "Cape Cod",
+    year: 1991,
+    photoCredit: "Hermès · packshot officiel",
+    tagline: "Le carré dans le rectangle, et le Double Tour",
+    description:
+      "Dessinée en 1991 par Henri d'Origny à qui l'on demandait un boîtier carré — il livra « un carré dans un rectangle », aux attaches inspirées des maillons de la chaîne d'ancre Hermès —, la Cape Cod prend sa dimension mythique en 1998 : Martin Margiela, alors directeur artistique des collections femme, imagine le bracelet Double Tour qui s'enroule deux fois autour du poignet comme un lien de cuir. Le geste devient l'une des signatures les plus copiées de la montre féminine. Sellerie, cuir, discrétion : tout Hermès est là. C'est l'élégance qui s'attache au lieu de s'afficher.",
+  },
+  {
+    slug: "patek-twenty4",
+    maker: "Patek Philippe",
+    name: "Twenty~4",
+    year: 1999,
+    photoCredit: "Sotheby's · catalogue d'enchères",
+    tagline: "La Patek pensée pour la vie des femmes",
+    description:
+      "En 1999, Patek Philippe lance sa première collection entièrement dédiée aux femmes depuis des décennies : la Twenty~4, du nom des vingt-quatre heures d'une vie active qu'elle prétend accompagner — du bureau au dîner sans changer de montre. Boîtier rectangulaire inspiré de la Gondolo, deux rangées de diamants, bracelet intégré : le manifeste d'une génération de femmes qui s'achètent elles-mêmes leur haute horlogerie au lieu de l'attendre en cadeau. Le slogan « Qui serez-vous dans les prochaines 24 heures ? » assume le propos. C'est la porte d'entrée féminine de la plus prestigieuse des manufactures.",
+  },
+  {
+    slug: "dior-la-d",
+    maker: "Dior",
+    name: "La D de Dior",
+    year: 2003,
+    photoCredit: "Dior · The Jewellery Editor",
+    tagline: "La montre dessinée comme un bouton de tailleur",
+    description:
+      "Victoire de Castellane, créatrice de la joaillerie Dior, dessine en 2003 une montre qui refuse tous les codes horlogers : La D de Dior est ronde et plate « comme un bouton de tailleur Bar », avec un bracelet qui évoque un ruban de gros-grain. Pensée comme un accessoire de couture plus que comme un instrument, déclinée en nacre, opale, malachite et diamants, elle assume une préciosité joyeuse et féminine sans s'excuser. Elle a installé Dior comme acteur horloger légitime. C'est la couture qui donne l'heure.",
+  },
+  {
+    slug: "poiray-ma-premiere",
+    maker: "Poiray",
+    name: "Ma Première",
+    year: 1985,
+    photoCredit: "Poiray · visuel officiel",
+    tagline: "La parisienne aux bracelets interchangeables",
+    description:
+      "Créée en 1985 par la maison de la place Vendôme, Ma Première invente un geste que toute l'industrie copiera trente ans plus tard : le bracelet interchangeable sans outil, qui change la montre d'humeur en quelques secondes — satin le soir, cuir grainé au bureau, vernis fluo le week-end. Son boîtier coussin cerclé de godrons devient un classique du chic parisien, offert de mère en fille pour les grandes occasions. C'est la montre française féminine par excellence, indémodable et malicieuse. Une idée simple, exécutée avec esprit : très parisien, précisément.",
   },
   {
     slug: "audemars-piguet-royal-oak-lady",
     maker: "Audemars Piguet",
     name: "Royal Oak Lady",
     year: 1976,
+    photoCredit: "Sotheby's · catalogue d'enchères",
     ref: "8638",
     tagline: "L'acier au féminin, dessiné par une femme",
     description:
@@ -293,81 +370,20 @@ const pending: Item[] = [
     maker: "Ebel",
     name: "Beluga",
     year: 1985,
+    photoCredit: "1stDibs",
     tagline: "La vague dorée des années 80",
     description:
       "Lancée en 1985 exclusivement en or, la Beluga ondule : boîtier aux courbes pleines, bracelet « vague » qui coule autour du poignet, lunette sertie de quarante diamants. Elle est l'archétype de la montre-bijou des années 1980-90, l'âge d'or d'Ebel — « les architectes du temps » — quand la maison de La Chaux-de-Fonds rivalisait avec les plus grands. Rare icône féminine née hors du cercle des maisons du très haut luxe, elle a défini une élégance ronde et sensuelle à contre-courant des angles de la décennie. Sa silhouette n'a jamais quitté le catalogue. C'est la douceur érigée en style.",
-  },
-  {
-    slug: "franck-muller-cintree-curvex",
-    maker: "Franck Muller",
-    name: "Cintrée Curvex",
-    year: 1992,
-    tagline: "Le tonneau cintré des années folles 90",
-    description:
-      "En 1992, Franck Muller cintre le tonneau Art déco dans les trois dimensions : la Cintrée Curvex épouse le poignet comme aucun boîtier avant elle, habillée de chiffres exubérants peints comme des enseignes. Elle fait du jeune horloger genevois le « maître des complications » et LA montre statement des années 1990-2000, adorée des femmes — et d'Elton John. Ses déclinaisons Color Dreams, aux chiffres multicolores, définissent le glamour pré-2000 et s'offrent aujourd'hui une vraie seconde vie en vintage. C'est l'exubérance assumée, à contre-courant du minimalisme — et ça lui va très bien.",
   },
   {
     slug: "hermes-heure-h",
     maker: "Hermès",
     name: "Heure H",
     year: 1996,
+    photoCredit: "Hermès · packshot officiel",
     tagline: "La lettre devenue boîtier",
     description:
       "Dessinée en 1996 par Philippe Mouquet, l'Heure H résout une équation d'une élégance rare : le boîtier carré EST la lettre H — Hermès et Horlogerie d'un seul trait. Ni logo apposé ni monogramme imprimé : la signature est la structure même de l'objet. Portée sur les bracelets de cuir de la sellerie maison, déclinée du mini au serti, elle est devenue le porte-drapeau de l'horlogerie Hermès et l'une des montres de mode les plus reconnaissables au monde, best-seller trente ans après. C'est le design réduit à son os : une initiale qui donne l'heure.",
-  },
-  {
-    slug: "longines-dolcevita",
-    maker: "Longines",
-    name: "DolceVita",
-    year: 1997,
-    tagline: "Le rectangle Art déco de la dolce vita",
-    description:
-      "En 1997, Longines ressuscite ses rectangles Art déco des années 1920 et les baptise en hommage à la douceur de vivre fellinienne : la DolceVita est née. Proportions justes, chiffres romains ou rail de chemin de fer, prix accessible : elle devient l'un des best-sellers mondiaux les plus constants de l'horlogerie féminine, portée par des ambassadrices comme Jennifer Lawrence. La Mini DolceVita de 2023 a relancé la fièvre des petites montres rectangulaires auprès d'une nouvelle génération. Près de trente ans de succès ininterrompu pour un dessin vieux d'un siècle. C'est la preuve que l'Art déco ne se démode pas — il attend.",
-  },
-  {
-    slug: "girard-perregaux-cats-eye",
-    maker: "Girard-Perregaux",
-    name: "Cat's Eye",
-    year: 2004,
-    tagline: "L'ovale mécanique, manifeste anti-quartz",
-    description:
-      "En 2004, Girard-Perregaux dessine un boîtier ovale aux courbes d'œil de chat et prend un parti radical : la Cat's Eye ne recevra que des mouvements mécaniques de manufacture, jusqu'au tourbillon sous pont d'or et aux phases de lune. Dans l'horlogerie féminine des années 2000, saturée de quartz habillé de diamants, c'est un manifeste : les femmes aussi ont droit à la belle mécanique. Vingt ans au catalogue et une place régulière dans les listes des montres féminines les plus marquantes du siècle lui donnent raison. C'est la haute horlogerie conjuguée au féminin sans condescendance.",
-  },
-  {
-    slug: "vca-pont-des-amoureux",
-    maker: "Van Cleef & Arpels",
-    name: "Lady Arpels Pont des Amoureux",
-    year: 2010,
-    tagline: "Le baiser de minuit en émail grand feu",
-    description:
-      "Sur un pont parisien peint en émail grand feu, elle avance portée par les heures, lui par les minutes — et à minuit comme à midi, les deux amoureux se rejoignent pour un baiser. Le Pont des Amoureux, lancé en 2010, est le sommet des « Complications Poétiques » de Van Cleef & Arpels : un double affichage rétrograde développé exclusivement pour raconter cette histoire. Prix de la Montre Dame au Grand Prix d'Horlogerie de Genève 2010, il a redéfini la haute horlogerie féminine comme un art narratif. C'est la complication la plus romantique jamais construite : la mécanique au service d'un baiser.",
-  },
-  {
-    slug: "chanel-boyfriend",
-    maker: "Chanel",
-    name: "Boy·Friend",
-    year: 2015,
-    tagline: "Le vestiaire masculin emprunté, encore",
-    description:
-      "En 2015, Chanel applique à l'horlogerie le geste fondateur de Gabrielle Chanel — emprunter au vestiaire des hommes — avec un clin d'œil à Boy Capel, l'amour de sa vie : la Boy·Friend étire un boîtier octogonal aux proportions volontairement masculines sur un poignet féminin. Les puristes s'inclinent devant les versions squelette animées du calibre 3 de la maison, d'une rigueur architecturale rare. Après la Première et la J12, c'est la montre qui a définitivement installé Chanel dans la cour de la haute horlogerie. C'est du Chanel canonique : l'élégance qui se prend au sérieux mécaniquement, jamais solennellement.",
-  },
-  {
-    slug: "vacheron-egerie",
-    maker: "Vacheron Constantin",
-    name: "Égérie",
-    year: 2020,
-    tagline: "Le plissé couture de la plus vieille manufacture",
-    description:
-      "En 2020, la plus ancienne manufacture horlogère en activité continue lance sa première vraie collection féminine contemporaine : l'Égérie, au cadran plissé comme un tissu de haute couture et à la couronne désaxée sertie d'une pierre de lune. Mouvements de manufacture, du quartz banni jusqu'au tourbillon : Vacheron Constantin parle enfin directement aux femmes, sans dilution ni condescendance. Saluée par la critique comme le signe d'un basculement de toute l'industrie, elle est jeune mais déjà pilier. C'est deux cent soixante-cinq ans de savoir-faire, plissés au féminin.",
-  },
-  {
-    slug: "dior-la-d",
-    maker: "Dior",
-    name: "La D de Dior",
-    year: 2003,
-    tagline: "La montre dessinée comme un bouton de tailleur",
-    description:
-      "Victoire de Castellane, créatrice de la joaillerie Dior, dessine en 2003 une montre qui refuse tous les codes horlogers : La D de Dior est ronde et plate « comme un bouton de tailleur Bar », avec un bracelet qui évoque un ruban de gros-grain. Pensée comme un accessoire de couture plus que comme un instrument, déclinée en nacre, opale, malachite et diamants, elle assume une préciosité joyeuse et féminine sans s'excuser. Elle a installé Dior comme acteur horloger légitime. C'est la couture qui donne l'heure.",
   },
 ]
 
@@ -384,5 +400,5 @@ export const montresFemme: Subject = {
   searchPlaceholder: "Chercher une marque, un modèle…",
   detailFit: "contain",
   plateAspect: "aspect-4/5",
-  items,
+  items: [...items, ...promoted],
 }

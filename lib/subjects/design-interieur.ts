@@ -317,17 +317,17 @@ const items: Item[] = [
 ]
 
 /**
- * Styles écrits mais en attente d'une image libre de droits digne de la
- * grille (voir scripts/probe-commons.mjs et probe-openverse.mjs).
- * À déplacer dans `items` dès qu'une photo est trouvée.
+ * Styles ajoutés après coup (photos Unsplash, projet perso — crédit dans
+ * la fiche). Le registre trie par année, l'ordre d'insertion est libre.
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const pending: Item[] = [
+const promoted: Item[] = [
   {
     slug: "loft-industriel",
     maker: "New York",
     name: "Loft industriel",
     year: 1970,
+    photoCount: 2,
+    photoCredit: "Keren Fedida & Christian Lendl · Unsplash",
     tagline: "Habiter l'usine, inventer l'espace ouvert",
     description:
       "Quand les artistes de SoHo — Rauschenberg, puis toute une génération — investissent illégalement les étages d'anciennes manufactures new-yorkaises, ils inventent sans le savoir le fantasme résidentiel des cinquante années suivantes : plateaux ouverts, briques apparentes, colonnes de fonte, verrières d'atelier et volumes démesurés. L'esthétique de l'usine — tuyauterie visible, béton, métal riveté — devient un langage décoratif à part entière. Le loft transforme la contrainte en luxe : l'espace brut vaut plus que la finition. Copié dans le monde entier jusque dans les programmes neufs « esprit loft », il a durablement décloisonné nos logements. C'est la plus belle revanche de la friche sur le salon bourgeois.",
@@ -337,6 +337,8 @@ const pending: Item[] = [
     maker: "Texas, États-Unis",
     name: "Farmhouse moderne",
     year: 2013,
+    photoCount: 2,
+    photoCredit: "Clay Banks · Unsplash",
     tagline: "La ferme réinventée par la télévision",
     description:
       "Popularisé par Joanna Gaines et l'émission Fixer Upper depuis Waco, Texas, le modern farmhouse croise la ferme américaine et le confort contemporain : lambris shiplap blancs, poutres récupérées, éviers de ferme, luminaires de grange en métal noir et lettrages muraux. La recette — neutre, chaleureuse, familiale — a conquis l'Amérique périurbaine au point de devenir le style par défaut des constructions neuves des années 2010-2020. Sa diffusion par la télévision puis Pinterest en fait le premier grand style né du divertissement de masse. Critiqué pour son uniformité, il a néanmoins réhabilité bois brut et artisanat auprès du grand public. C'est le rêve pastoral en version climatisée.",
@@ -346,6 +348,8 @@ const pending: Item[] = [
     maker: "Japon × Scandinavie",
     name: "Japandi",
     year: 2017,
+    photoCount: 2,
+    photoCredit: "Puscas Adryan & rawkkim · Unsplash",
     tagline: "Quand Kyoto rencontre Copenhague",
     description:
       "Contraction de « Japan » et « Scandi », le japandi fusionne deux traditions cousines : l'épure chaleureuse du design danois et la sobriété artisanale japonaise. Bois clairs et bois brûlés, céramiques wabi-sabi, lignes basses, palette minérale : tout y respire le calme étudié. La parenté n'est pas nouvelle — les Danois des années 1950 admiraient déjà l'artisanat japonais —, mais l'étiquette née des réseaux sociaux a cristallisé un goût mondial des années 2020 pour les intérieurs apaisés. C'est le style refuge de l'époque anxieuse, mi-hygge, mi-zen. La maison comme respiration.",
@@ -364,5 +368,5 @@ export const designInterieur: Subject = {
   searchPlaceholder: "Chercher un style, une époque…",
   detailFit: "cover",
   plateAspect: "aspect-4/5",
-  items,
+  items: [...items, ...promoted],
 }
