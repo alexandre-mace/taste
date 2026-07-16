@@ -571,6 +571,188 @@ const items: Item[] = [
     description:
       "François-Paul Journe est l'horloger contemporain le plus célébré au monde : sa devise « Invenit et Fecit » (il l'a inventé et l'a fait) signe des montres entièrement conçues et fabriquées dans son atelier de Genève, avec des mouvements en or rose massif. L'Octa Calendrier combine calendrier annuel et grande date dans son langage inimitable : cadran excentré, chiffres dodus, architecture asymétrique. Produites à quelques centaines d'exemplaires par an, ses montres s'arrachent aux enchères à des multiples de leur prix, portées par une génération de collectionneurs qui le place au niveau de Breguet. Lauréat record du Grand Prix d'Horlogerie de Genève, il incarne l'âge d'or des indépendants. Posséder un Journe, c'est posséder la haute horlogerie vivante.",
   },
+  // Vague 3 — sport-luxe intégré, classiques et avant-garde (juillet 2026).
+  {
+    slug: "patek-golden-ellipse",
+    maker: "Patek Philippe",
+    name: "Golden Ellipse",
+    year: 1968,
+    photoCredit: "Patek Philippe · visuel officiel",
+    tagline: "Le nombre d'or fait boîtier",
+    description:
+      "En 1968, Patek Philippe lance sa première collection entièrement nouvelle depuis la Calatrava de 1932, et c'est une pure affaire de proportions : la Golden Ellipse dessine un boîtier elliptique fondé sur le nombre d'or, ce rapport de 1 à 1,618 que les Grecs jugeaient parfait. Ni ronde ni rectangulaire, elle échappe à toute mode et se contente d'un cadran d'un bleu profond rehaussé d'or. Sans complication, sans esbroufe, elle mise tout sur la justesse de la forme. Plus de cinquante-cinq ans plus tard, elle est toujours au catalogue, quasi inchangée. C'est la preuve qu'un dessin juste se passe de tout le reste.",
+  },
+  {
+    slug: "jaeger-memovox-polaris",
+    maker: "Jaeger-LeCoultre",
+    name: "Memovox Polaris",
+    year: 1965,
+    photoCredit: "Jaeger-LeCoultre · Robb Report",
+    tagline: "Le réveil qui sonne sous l'eau",
+    description:
+      "Comment prévenir un plongeur qu'il est temps de remonter ? Jaeger-LeCoultre répond en 1965 avec la Memovox Polaris, une montre de plongée dotée d'un réveil mécanique dont la sonnerie reste audible sous l'eau grâce à un fond à triple caisse de résonance. Ses trois couronnes commandent l'heure, la lunette interne et l'alarme, sous un cadran noir d'une lisibilité parfaite. La version de 1968, produite à seulement 768 exemplaires en acier, est devenue l'une des JLC les plus recherchées des collectionneurs. Rééditée en Tribute to Polaris, elle a donné son nom à toute une collection sportive. C'est l'horlogerie qui résout un problème concret avec une élégance folle.",
+  },
+  {
+    slug: "girard-perregaux-laureato",
+    maker: "Girard-Perregaux",
+    name: "Laureato",
+    year: 1975,
+    photoCredit: "Girard-Perregaux · Monochrome-Watches",
+    tagline: "L'octogone oublié du sport-chic",
+    description:
+      "Sorti en 1975 en pleine crise du quartz, le Laureato superpose une lunette octogonale à un boîtier tonneau et un bracelet intégré, animé à l'origine par un mouvement à quartz haute fréquence entièrement maison, une prouesse pour l'époque. Il appartient à la même famille que la Royal Oak, la Nautilus et l'Ingenieur, ce sport-luxe à bracelet intégré né dans les années 1970, mais reste longtemps le grand oublié du genre. Son nom, clin d'œil au Lauréat de Mike Nichols, ne sera officialisé qu'en 1995. Redécouvert et relancé, il retrouve enfin la place qui lui revient. C'est la pièce manquante d'un canon que tout le monde croyait complet.",
+  },
+  {
+    slug: "iwc-ingenieur",
+    maker: "IWC",
+    name: "Ingenieur SL",
+    year: 1976,
+    photoCredit: "A Collected Man",
+    tagline: "Le quatrième Genta",
+    description:
+      "En 1976, IWC confie à Gérald Genta le soin de dessiner une Ingenieur sportive : il livre la référence 1832 « SL », lunette cerclée de cinq vis et bracelet intégré, sœur de la Royal Oak et de la Nautilus nées de la même main. C'est le quatrième grand dessin de Genta dans le genre du sport-luxe en acier, celui que l'on oublie toujours de citer. Échec commercial à sa sortie, moins de mille pièces produites jusqu'en 1983, elle devient logiquement un graal de collectionneur. IWC l'a relancée en fanfare en 2023, consacrant enfin son statut. C'est l'icône restée dans l'ombre des deux autres, et qui en sort à peine.",
+  },
+  {
+    slug: "vacheron-overseas",
+    maker: "Vacheron Constantin",
+    name: "Overseas",
+    year: 1996,
+    photoCredit: "Sotheby's · catalogue d'enchères",
+    tagline: "La croix de Malte part en voyage",
+    description:
+      "Descendante directe de la 222 de 1977, l'Overseas de 1996 est la sportive de voyage de la plus ancienne manufacture en activité : bracelet intégré, lunette dessinée d'après la croix de Malte emblème de la maison, résistance aux champs magnétiques pour le globe-trotter. Elle complète, aux côtés de la Royal Oak et de la Nautilus, la sainte trinité du sport-luxe genevois. Ses bracelets interchangeables sans outil, acier, cuir et caoutchouc, en font l'une des intégrées les plus polyvalentes du marché. Devenue une pièce très désirée, elle réconcilie la haute horlogerie avec le poignet du quotidien. C'est le luxe qui prend enfin l'avion en classe affaires.",
+  },
+  {
+    slug: "hublot-big-bang",
+    maker: "Hublot",
+    name: "Big Bang",
+    year: 2005,
+    photoCredit: "The Marin Vault",
+    tagline: "L'art de la fusion, assumé",
+    description:
+      "Quand Jean-Claude Biver dévoile la Big Bang à Bâle en 2005, il fonde ce qu'il nomme « l'art de la fusion » : mélanger dans un même boîtier l'acier, la céramique, le Kevlar, le caoutchouc, l'or et la fibre de carbone, matières que l'horlogerie classique n'aurait jamais osé marier. Lunette vissée de six plots en H, allure de hublot de navire, cadran squelette : elle rafle le Prix du Design du Grand Prix d'Horlogerie de Genève la même année. Clivante, tapageuse, adorée des sportifs et des rappeurs, elle relance à elle seule la maison Hublot. Impossible de raconter les années 2000 horlogères sans elle. C'est le bruit et la fureur, brevetés.",
+  },
+  {
+    slug: "chopard-alpine-eagle",
+    maker: "Chopard",
+    name: "Alpine Eagle",
+    year: 2019,
+    photoCredit: "Chopard · visuel officiel",
+    tagline: "L'œil de l'aigle en acier Lucent",
+    description:
+      "L'Alpine Eagle de 2019 ressuscite la St. Moritz de 1980, la toute première montre en acier de Chopard, imaginée par Karl-Friedrich Scheufele quand il avait vingt-deux ans, et relancée trente-neuf ans plus tard avec son fils. Son cadran texturé évoque l'iris d'un aigle, son acier Lucent breveté est refondu à partir de matière recyclée, son bracelet intégré file la ligne sport-chic. Projet réunissant trois générations d'une même famille, elle devient presque instantanément un classique culte de la vague des intégrées. Elle prouve qu'on peut encore entrer tard dans un genre saturé et s'y faire une place. C'est l'histoire de famille devenue objet de désir.",
+  },
+  {
+    slug: "de-bethune-db28",
+    maker: "De Bethune",
+    name: "DB28",
+    year: 2010,
+    photoCredit: "De Bethune · Monochrome-Watches",
+    tagline: "Le vaisseau de titane bleui",
+    description:
+      "La DB28 de 2010 ne ressemble à aucune autre montre : ses cornes flottantes articulées épousent le poignet par une géométrie variable, son titane est bleui par oxydation thermique jusqu'à un bleu nuit sidéral, son pont de balancier en delta signe le style de Denis Flageollet. Manifeste de la maison la plus avant-gardiste des indépendants, elle décroche l'Aiguille d'Or du Grand Prix d'Horlogerie de Genève en 2011, plus haute distinction du métier. Chaque détail y relève de la recherche pure, du balancier en silicium et platine aux finitions polies main. Elle regarde vers l'espace autant que vers la tradition. C'est l'horlogerie de demain, faite à l'ancienne.",
+  },
+  {
+    slug: "mbf-lm1",
+    maker: "MB&F",
+    name: "Legacy Machine N°1",
+    year: 2011,
+    photoCredit: "MB&F · The Hour Glass",
+    tagline: "Le balancier suspendu dans le vide",
+    description:
+      "Maximilian Büsser a fondé MB&F en 2005 pour transformer la montre en sculpture cinétique, et la Legacy Machine N°1 de 2011 en est le sommet lisible : un immense balancier flotte, suspendu, au-dessus du cadran, comme en lévitation, entouré de deux cadrans inclinés à double fuseau et d'un indicateur de réserve de marche en éventail. Là où les premières « Machines » de la maison étaient franchement extraterrestres, celle-ci rend hommage à l'horlogerie du XIXe siècle avec une émotion rare. Le spectacle mécanique se joue côté cadran, sous vos yeux, en permanence. Elle a scellé le statut de MB&F comme l'un des ateliers les plus créatifs du monde. C'est de la haute horlogerie qui se regarde comme un aquarium.",
+  },
+  {
+    slug: "grand-seiko-snowflake",
+    maker: "Grand Seiko",
+    name: "Snowflake",
+    year: 2010,
+    photoCredit: "Grand Seiko · visuel officiel",
+    tagline: "La neige de Shinshu au poignet",
+    description:
+      "Son cadran texturé évoque la surface d'une neige fraîche, celle des montagnes de Shinshu où elle est assemblée, et sa trotteuse glisse sans à-coups au lieu de tictaquer : c'est le mouvement Spring Drive, hybride unique de mécanique et de régulation électronique dont Seiko a le secret. Surnommée « Snowflake » spontanément par les collectionneurs, la référence SBGA211 révèle à l'Occident, à partir de 2010, l'existence d'une haute horlogerie japonaise aussi obsessionnelle que la suisse. Boîtier en titane clair, aiguille bleuie, finitions Zaratsu polies au miroir : tout y respire la retenue. Elle a converti une génération entière de passionnés. C'est la preuve que la perfection peut être discrète.",
+  },
+  // Vague 3 — icônes accessibles et pop (juillet 2026).
+  {
+    slug: "movado-museum",
+    maker: "Movado",
+    name: "Museum Watch",
+    year: 1947,
+    photoCredit: "Sheiban Jewelers",
+    tagline: "Le soleil au zénith, rien d'autre",
+    description:
+      "En 1947, le designer américain Nathan George Horwitt dessine un cadran d'une radicalité absolue : aucun chiffre, aucun index, juste un point d'or unique à midi figurant le soleil à son zénith. L'idée est si pure qu'elle entre en 1960 dans la collection permanente du Museum of Modern Art de New York, d'où le nom « Museum ». Horwitt dut d'ailleurs batailler des années pour faire reconnaître sa paternité, la montre ayant longtemps été copiée sans permission. Devenue la signature de Movado, produite en quantités industrielles à prix raisonnable, elle a mis le design de musée au poignet de tout le monde. C'est le minimalisme avant que le mot ne devienne une mode.",
+  },
+  {
+    slug: "doxa-sub-300",
+    maker: "Doxa",
+    name: "SUB 300",
+    year: 1967,
+    photoCredit: "Doxa · visuel officiel",
+    tagline: "Le cadran orange des profondeurs",
+    description:
+      "Présentée à Bâle en 1967, la Doxa SUB 300 est la première montre de plongée vraiment pensée pour le grand public et non pour les seuls professionnels : son cadran orange vif, dernière couleur visible quand on descend, la rend lisible là où toutes les autres s'éteignent. Sa lunette porte une table de décompression mise au point avec US Divers, la société de Jacques Cousteau, dont les plongeurs de la Calypso l'adoptent aussitôt. Popularisée plus tard par Dirk Pitt, le héros des romans de Clive Cussler, elle devient un objet culte à la silhouette immédiatement reconnaissable. Peu de montres ont autant démocratisé la plongée. C'est l'orange qui a rendu les abysses lisibles.",
+  },
+  {
+    slug: "vostok-amphibia",
+    maker: "Vostok",
+    name: "Amphibia",
+    year: 1967,
+    photoCredit: "SevenFiveThree · Wikimedia Commons (CC BY-SA 4.0)",
+    tagline: "La plongeuse soviétique indestructible",
+    description:
+      "Conçue en 1967 par Mikhaïl Novikov et Vera Belova pour les hommes-grenouilles de la marine soviétique, l'Amphibia résout l'étanchéité avec une logique inversée géniale : plus la pression augmente en profondeur, plus le verre et le fond à baïonnette se plaquent et se scellent d'eux-mêmes. Là où l'Ouest multiplie les joints, l'URSS retourne le problème avec trois fois rien. Robuste à l'excès, réparable avec un tournevis, vendue pour une bouchée de pain, elle traverse les décennies sans jamais changer d'esprit. Elle est devenue culte auprès des amateurs du monde entier, précisément pour son ingéniosité contre-intuitive. C'est la preuve que la contrainte accouche parfois du génie.",
+  },
+  {
+    slug: "seiko-turtle",
+    maker: "Seiko",
+    name: "Prospex Turtle",
+    year: 1976,
+    photoCredit: "Belmont Watches",
+    tagline: "La tortue au boîtier coussin",
+    description:
+      "Lancée en 1976 sous la référence 6309, cette plongeuse automatique doit son surnom de « Turtle » à son boîtier coussin arrondi, évoquant une carapace de tortue. Robuste, étanche, animée d'un mouvement automatique quasi increvable, elle accompagne des générations de plongeurs, des rizières d'Asie aux mers tropicales, pour un prix dérisoire. Son rapport robustesse-prix en fait l'une des montres-outils les plus aimées de l'histoire, rééditée à succès dans la série SRP. Elle incarne une certaine idée japonaise de l'objet honnête : faire simple, faire solide, faire durable. C'est la montre de plongée du peuple, et elle en est fière.",
+  },
+  {
+    slug: "casio-calculatrice",
+    maker: "Casio",
+    name: "CA-53W",
+    year: 1988,
+    photoCredit: "Morn · Wikimedia Commons (CC BY-SA 4.0)",
+    tagline: "La calculatrice de Marty McFly",
+    description:
+      "Casio met une calculatrice au poignet dès les années 1980, et la CA-53W de 1988 en devient l'archétype : huit touches minuscules, écran à cristaux liquides, boîtier de résine noire, le tout pour le prix d'un sandwich. Elle doit sa célébrité au cinéma, portée par Marty McFly dans les deuxième et troisième volets de Retour vers le futur, ce qui lui vaut son surnom éternel. Objet geek assumé, gadget increvable, elle est toujours produite quasiment à l'identique près de quarante ans plus tard. Portée aujourd'hui au second degré comme au premier, elle ne se démode pas parce qu'elle n'a jamais cherché à être à la mode. C'est le futur des années 80, resté au poignet.",
+  },
+  {
+    slug: "braun-aw10",
+    maker: "Braun",
+    name: "AW 10",
+    year: 1989,
+    photoCredit: "Braun · visuel officiel",
+    tagline: "Moins, mais mieux",
+    description:
+      "Quand Braun se lance dans la montre-bracelet à la fin des années 1980, c'est Dietrich Lubs, dans le sillage du grand Dieter Rams, qui en dessine le cadran : lisibilité maximale, index nets, une seule touche de jaune sur la trotteuse, et rien de superflu. L'AW 10 de 1989 applique au poignet le fameux « moins, mais mieux » qui a fait la légende du design Braun, des radios aux calculatrices. Elle devient le modèle secret de tout le minimalisme horloger contemporain, copiée à l'infini par des marques qui ne la citent jamais. Rééditée pour son statut d'icône, elle reste une leçon de rigueur. C'est le fonctionnalisme allemand réduit à sa plus juste expression.",
+  },
+  {
+    slug: "casio-casioak",
+    maker: "Casio",
+    name: "G-Shock GA-2100",
+    year: 2019,
+    photoCredit: "Creation Watches",
+    tagline: "La G-Shock surnommée CasiOak",
+    description:
+      "Sortie en 2019, la G-Shock GA-2100 troque les habituels pavés de résine pour une fine lunette octogonale, et les collectionneurs la baptisent aussitôt « CasiOak », contraction de Casio et de Royal Oak, tant sa silhouette évoque l'icône d'Audemars Piguet à un centième du prix. Le clin d'œil provoque une pénurie mondiale surprise et fait d'elle l'un des plus gros phénomènes G-Shock de la décennie. Ultra-fine pour une G-Shock, personnalisable à l'infini par la communauté, elle truste les classements de la meilleure montre à moins de cent euros. Elle prouve qu'un dessin malin vaut tous les budgets marketing. C'est le luxe cité de mémoire, en résine et bonne humeur.",
+  },
+  {
+    slug: "omega-swatch-moonswatch",
+    maker: "Omega × Swatch",
+    name: "MoonSwatch",
+    year: 2022,
+    photoCredit: "StrapHabit",
+    tagline: "La Speedmaster de tout le monde",
+    description:
+      "Le 26 mars 2022, Omega et Swatch dévoilent la MoonSwatch, réinterprétation en biocéramique de la mythique Speedmaster qui a marché sur la Lune, vendue autour de deux cent soixante euros et déclinée en onze planètes du système solaire. Le résultat provoque des files d'attente mondiales et des bousculades devant les boutiques Swatch, du jamais-vu dans l'horlogerie. En important la logique de la « hype » des baskets en édition limitée, l'objet fait entrer le Graal spatial d'Omega dans des milliers de poignets qui n'y auraient jamais eu accès. Phénomène pop autant qu'objet horloger, la MoonSwatch est le coup de tonnerre récent du secteur. C'est la Lune rendue accessible, avec humour et malice.",
+  },
 ]
 
 export const montres: Subject = {
