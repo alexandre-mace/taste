@@ -385,6 +385,107 @@ const promoted: Item[] = [
     description:
       "Dessinée en 1996 par Philippe Mouquet, l'Heure H résout une équation d'une élégance rare : le boîtier carré EST la lettre H. Hermès et Horlogerie d'un seul trait. Ni logo apposé ni monogramme imprimé : la signature est la structure même de l'objet. Portée sur les bracelets de cuir de la sellerie maison, déclinée du mini au serti, elle est devenue le porte-drapeau de l'horlogerie Hermès et l'une des montres de mode les plus reconnaissables au monde, best-seller trente ans après. C'est le design réduit à son os : une initiale qui donne l'heure.",
   },
+  // Vague 3 — élargissement du canon (juillet 2026), tous budgets.
+  {
+    slug: "tiffany-atlas",
+    maker: "Tiffany & Co.",
+    name: "Atlas",
+    year: 1983,
+    photoCredit: "Rago Auctions · catalogue d'enchères",
+    tagline: "Les chiffres romains de la Cinquième Avenue",
+    description:
+      "En 1983, John Loring, directeur du design de Tiffany & Co., s'inspire de l'horloge que porte la statue d'Atlas au-dessus de l'entrée du magasin historique de la Cinquième Avenue, veillant sur New York depuis 1853. Il en tire la collection Atlas et ses chiffres romains en haut-relief, brevetés, disposés en couronne autour du cadran comme sur un cadran d'horloge monumentale. Élégante, graphique, immédiatement identifiable, elle devient une signature du style américain et l'un des piliers horlogers de la maison au petit écrin bleu. Portée le jour comme le soir, elle traverse les modes sans effort. C'est un morceau d'architecture new-yorkaise ramené à l'échelle du poignet.",
+  },
+  {
+    slug: "gucci-interchangeable",
+    maker: "Gucci",
+    name: "Montre à lunettes interchangeables",
+    year: 1985,
+    photoCredit: "Archives de Luxe",
+    tagline: "Douze humeurs pour une seule montre",
+    description:
+      "Au milieu des années 1980, Gucci lance l'idée qui va définir la montre de mode : un boîtier unique et un jeu de douze lunettes de couleur que l'on change selon la tenue, l'humeur ou l'heure de la journée. On raconte qu'il y avait la queue devant les boutiques pour compléter sa collection d'anneaux colorés. Pionnière du concept de « fashion watch », elle fait de l'accessoire horloger un jeu de style abordable, loin de la haute horlogerie. Relancée en 2019 sous le nom de Gucci Play, l'idée n'a rien perdu de sa malice. C'est la montre transformée en garde-robe, une couleur à la fois.",
+  },
+  {
+    slug: "cartier-tank-francaise",
+    maker: "Cartier",
+    name: "Tank Française",
+    year: 1996,
+    photoCredit: "Cartier · visuel officiel",
+    tagline: "La Tank de Lady Diana",
+    description:
+      "En 1996, Cartier resserre sa Tank en un boîtier et un bracelet de maillons parfaitement intégrés, plus souples, plus sportifs : la Tank Française est née. La même année, Lady Diana en fait sa montre de tous les jours au moment de son divorce, au point que la presse la surnomme durablement « la montre de Diana ». Cette filiation royale et la ligne assagie en font instantanément un best-seller mondial de la maison. Sa déclinaison accessible, la Must de Cartier relancée depuis en vermeil et cadrans colorés, en fait même un phénomène auprès des nouvelles générations. Redevenue une icône absolue, elle porte toute l'histoire de la Tank au féminin. C'est le carré parfait de Cartier, ajusté au poignet du quotidien.",
+  },
+  {
+    slug: "jlc-reverso-duetto",
+    maker: "Jaeger-LeCoultre",
+    name: "Reverso Duetto",
+    year: 1997,
+    photoCredit: "Jaeger-LeCoultre · visuel de presse",
+    tagline: "Deux visages pour un seul poignet",
+    description:
+      "La Reverso naît en 1931 pour les joueurs de polo, son boîtier basculant sur lui-même afin de protéger le verre : soixante-six ans plus tard, la Duetto exploite génialement ce dos jusqu'ici nu. D'un côté un cadran clair et lisible pour le jour, de l'autre un cadran précieux, serti ou nacré pour le soir ; un seul mouvement anime les deux. La femme retourne littéralement sa montre pour changer de tenue, du bureau au dîner, d'un geste. Cette double vie fait de la Duetto l'expression féminine la plus aboutie de l'une des montres les plus iconiques du XXe siècle. C'est l'Art déco qui joue, malicieusement, sur les deux tableaux.",
+  },
+  {
+    slug: "harry-winston-avenue",
+    maker: "Harry Winston",
+    name: "Avenue",
+    year: 1997,
+    photoCredit: "Harry Winston · The Gourmet Gazette",
+    tagline: "La montre de tapis rouge du roi du diamant",
+    description:
+      "Harry Winston, le « roi du diamant » qui habille les stars d'Hollywood pour la nuit des Oscars, dessine dans les années 1990 une montre à sa mesure : l'Avenue, au boîtier cintré Art déco étiré à la verticale, baptisée d'après la Cinquième Avenue new-yorkaise. Serti de diamants, épousant le poignet comme un bijou, elle devient la montre de soirée par excellence, celle qui accompagne les robes de grands soirs sous les projecteurs. Là où d'autres maisons font des montres qui portent des diamants, Winston fait des diamants qui donnent l'heure. Elle incarne le glamour américain dans sa version la plus scintillante. C'est la haute joaillerie qui a rendez-vous avec les caméras.",
+  },
+  {
+    slug: "chaumet-josephine",
+    maker: "Chaumet",
+    name: "Joséphine",
+    year: 2010,
+    photoCredit: "Chaumet · GPHG",
+    tagline: "Le diadème de l'impératrice, devenu montre",
+    description:
+      "Chaumet, joaillier de Napoléon installé place Vendôme depuis plus de deux siècles, puise dans ses archives de diadèmes et dans la figure de l'impératrice Joséphine, sa cliente et égérie fondatrice. La ligne Joséphine, lancée en 2010, en tire sa signature : l'aigrette, cette poire de diamant dressée comme la pointe d'un diadème impérial, qui couronne le cadran serti. Bijou d'abord, montre ensuite, elle porte deux cents ans d'histoire joaillière française dans quelques centimètres carrés. Romantique et régalienne, elle rappelle qu'avant d'être horloger, Chaumet fut d'abord le faiseur de couronnes des têtes de l'Empire. C'est un diadème miniature qui aurait appris à donner l'heure.",
+  },
+  {
+    slug: "daniel-wellington",
+    maker: "Daniel Wellington",
+    name: "Classic",
+    year: 2011,
+    photoCredit: "Daniel Wellington · visuel officiel",
+    tagline: "Le minimalisme qui a conquis Instagram",
+    description:
+      "Fondée en 2011 par le Suédois Filip Tysander avec quelques milliers d'euros, Daniel Wellington lance une montre d'une simplicité extrême : cadran blanc épuré, aiguilles fines, boîtier plat, le tout sur un bracelet NATO rayé aux couleurs militaires. Le produit importe peu ; c'est la stratégie qui fait date, propulsée par des centaines de micro-influenceuses Instagram brandissant leur poignet sous le mot-dièse de la marque. En quelques années, plus de six millions de pièces sont vendues et la maison devient le symbole du marketing d'influence des années 2010. Objet horloger modeste mais marqueur culturel majeur, elle raconte une décennie autant qu'elle donne l'heure. C'est la montre née sur un écran de téléphone.",
+  },
+  {
+    slug: "dior-grand-bal",
+    maker: "Dior",
+    name: "Grand Bal",
+    year: 2011,
+    photoCredit: "Dior · MOJEH",
+    tagline: "La masse oscillante qui danse sur le cadran",
+    description:
+      "Victoire de Castellane, créatrice de la joaillerie Dior, réalise en 2011 un tour de force horloger : déplacer la masse oscillante d'un mouvement automatique, normalement cachée au dos, sur la face du cadran, où elle tourne au moindre geste comme une jupe de bal en plein tournoiement. Ce mécanisme baptisé « Dior Inversé », signé Frédéric Jouvenot, transforme la mécanique en robe de gala sertie de plumes de diamants et d'émail. La montre s'inspire directement des jupons des robes du soir de la maison, drapés et virevoltants. Rare mariage de haute couture et de haute horlogerie, elle prouve que la mécanique peut être pure émotion. C'est un bal masqué qui tient au poignet.",
+  },
+  {
+    slug: "fred-force-10",
+    maker: "Fred",
+    name: "Force 10",
+    year: 1985,
+    photoCredit: "Mikaël Dan",
+    tagline: "Le gréement des voiliers au poignet",
+    description:
+      "Fred Samuel, joaillier de Saint-Tropez et de la place Vendôme, crée en 1966 la ligne Force 10 en s'inspirant du gréement des voiliers : un câble d'acier tressé fermé par une manille de bateau en or, ce crochet qui tend les cordages du pont. Vingt ans plus tard, la maison en tire une montre où le câble marin cercle la lunette et où la manille se retrouve au fermoir. Nautique, sportive et chic à la fois, elle devient la signature de Fred et l'accessoire des étés méditerranéens, du yacht au dîner en bord de mer. Déclinée en versions serties et en montre-bijou où la manille devient le boîtier, elle n'a jamais quitté le catalogue. C'est l'esprit du grand large, noué au poignet.",
+  },
+  {
+    slug: "bulgari-divas-dream",
+    maker: "Bulgari",
+    name: "Divas' Dream",
+    year: 2015,
+    photoCredit: "Bulgari · Monochrome-Watches",
+    tagline: "L'éventail des thermes de Caracalla",
+    description:
+      "En 2015, Bulgari donne à sa clientèle féminine une signature nouvelle, distincte de la Serpenti : la Divas' Dream, dont le motif en éventail reprend les mosaïques des thermes de Caracalla, dans la Rome antique chère à la maison. L'objet est un hommage aux « divas » qui ont fait la légende romaine de Bulgari, d'Elizabeth Taylor à Anna Magnani, dans le Rome dolce vita des années 1960. Cadran de pierre dure, nacre ou serti, boîtier à godrons : tout y célèbre le glamour méditerranéen le plus assumé. Elle est devenue l'un des deux grands piliers féminins de la maison. C'est l'Antiquité romaine transformée en bijou de poignet contemporain.",
+  },
 ]
 
 export const montresFemme: Subject = {
