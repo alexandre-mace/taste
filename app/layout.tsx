@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s — Taste",
   },
   description:
-    "Des collections d'icônes — montres, design d'intérieur… — à explorer et départager en duel pour révéler votre goût.",
+    "Des collections d'icônes (montres, design d'intérieur…) à explorer et départager en duel pour révéler votre goût.",
 }
 
 export default function RootLayout({

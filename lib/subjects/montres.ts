@@ -39,7 +39,7 @@ const items: Item[] = [
     ref: "228238",
     tagline: "La « President », montre du pouvoir",
     description:
-      "Lancée en 1956, la Day-Date est la première montre à afficher le jour de la semaine en toutes lettres, en plus de la date. Exclusivement produite en or ou en platine, elle est livrée sur le bracelet « President » à maillons semi-circulaires créé pour elle. Lyndon B. Johnson fut le premier président américain à la porter au poignet — le surnom officieux était né. Symbole de réussite parfois ostentatoire, elle reste le sommet du catalogue Rolex classique. Le cadran champagne sur or jaune est l'image même du pouvoir au poignet.",
+      "Lancée en 1956, la Day-Date est la première montre à afficher le jour de la semaine en toutes lettres, en plus de la date. Exclusivement produite en or ou en platine, elle est livrée sur le bracelet « President » à maillons semi-circulaires créé pour elle. Lyndon B. Johnson fut le premier président américain à la porter au poignet. Le surnom officieux était né. Symbole de réussite parfois ostentatoire, elle reste le sommet du catalogue Rolex classique. Le cadran champagne sur or jaune est l'image même du pouvoir au poignet.",
   },
   {
     slug: "rolex-gmt-master",
@@ -79,7 +79,7 @@ const items: Item[] = [
     ref: "126600",
     tagline: "La plongeuse extrême des professionnels",
     description:
-      "Développée en 1967 pour les plongeurs à saturation des programmes Sealab de l'US Navy, puis adoptée par la française Comex à partir de 1971, la Sea-Dweller est la version extrême de la Submariner — étanche à 610 mètres d'abord, puis 1 220 mètres dès 1978. Sa valve à hélium, inventée pour l'occasion, permet aux plongeurs à saturation de remonter sans que le verre n'explose. La version « Deepsea » descend même à 3 900 mètres, et un modèle expérimental a accompagné James Cameron au fond de la fosse des Mariannes. C'est l'outil professionnel poussé à l'absurde, et c'est précisément ce qui plaît. La lunette rouge « Single Red » de 2017 rend hommage au prototype originel.",
+      "Développée en 1967 pour les plongeurs à saturation des programmes Sealab de l'US Navy, puis adoptée par la française Comex à partir de 1971, la Sea-Dweller est la version extrême de la Submariner : étanche à 610 mètres d'abord, puis 1 220 mètres dès 1978. Sa valve à hélium, inventée pour l'occasion, permet aux plongeurs à saturation de remonter sans que le verre n'explose. La version « Deepsea » descend même à 3 900 mètres, et un modèle expérimental a accompagné James Cameron au fond de la fosse des Mariannes. C'est l'outil professionnel poussé à l'absurde, et c'est précisément ce qui plaît. La lunette rouge « Single Red » de 2017 rend hommage au prototype originel.",
   },
   {
     slug: "omega-speedmaster",
@@ -456,7 +456,7 @@ const items: Item[] = [
     year: 2011,
     tagline: "La plongeuse indépendante au poisson rouge",
     description:
-      "L'Aquis est la plongeuse moderne d'Oris, l'une des dernières grandes marques horlogères suisses indépendantes — fondée en 1904, et redevenue son propre maître en 1982 quand ses dirigeants l'ont rachetée. Design contemporain, lunette céramique, 300 mètres d'étanchéité, à des prix nettement sous les géants du secteur : c'est la proposition la plus honnête du marché. Ses éditions engagées pour la protection des océans et son calibre 400 à cinq jours de réserve de marche et dix ans de garantie ont renforcé sa crédibilité. La marque au poisson rouge cultive une sympathie que les grands groupes ne peuvent pas acheter. C'est la plongeuse de l'amateur indépendant d'esprit.",
+      "L'Aquis est la plongeuse moderne d'Oris, l'une des dernières grandes marques horlogères suisses indépendantes : fondée en 1904, et redevenue son propre maître en 1982 quand ses dirigeants l'ont rachetée. Design contemporain, lunette céramique, 300 mètres d'étanchéité, à des prix nettement sous les géants du secteur : c'est la proposition la plus honnête du marché. Ses éditions engagées pour la protection des océans et son calibre 400 à cinq jours de réserve de marche et dix ans de garantie ont renforcé sa crédibilité. La marque au poisson rouge cultive une sympathie que les grands groupes ne peuvent pas acheter. C'est la plongeuse de l'amateur indépendant d'esprit.",
   },
   {
     slug: "rado-captain-cook",
@@ -530,7 +530,7 @@ const items: Item[] = [
     year: 2001,
     tagline: "Ni aiguilles, ni cadran, ni couronne",
     description:
-      "En 2001, la Freak fait voler en éclats trois siècles de conventions : pas d'aiguilles, pas de cadran, pas de couronne — c'est le mouvement entier qui tourne sur lui-même en carrousel pour indiquer l'heure. Imaginée par le génial Ludwig Oechslin pour Rolf Schnyder, elle inaugure surtout le premier échappement en silicium de l'horlogerie, une révolution technique que toute l'industrie adoptera, de Patek à Omega. Chaque génération de Freak sert depuis de laboratoire roulant à Ulysse Nardin. C'est peut-être la montre la plus radicale du XXIe siècle. Un manifeste mécanique qu'on porte au poignet.",
+      "En 2001, la Freak fait voler en éclats trois siècles de conventions : pas d'aiguilles, pas de cadran, pas de couronne, c'est le mouvement entier qui tourne sur lui-même en carrousel pour indiquer l'heure. Imaginée par le génial Ludwig Oechslin pour Rolf Schnyder, elle inaugure surtout le premier échappement en silicium de l'horlogerie, une révolution technique que toute l'industrie adoptera, de Patek à Omega. Chaque génération de Freak sert depuis de laboratoire roulant à Ulysse Nardin. C'est peut-être la montre la plus radicale du XXIe siècle. Un manifeste mécanique qu'on porte au poignet.",
   },
   {
     slug: "lange-sohne-lange-1",
@@ -567,7 +567,7 @@ const items: Item[] = [
     maker: "F.P. Journe",
     name: "Octa Calendrier",
     year: 2002,
-    tagline: "« Invenit et Fecit » — le maître indépendant",
+    tagline: "« Invenit et Fecit », le maître indépendant",
     description:
       "François-Paul Journe est l'horloger contemporain le plus célébré au monde : sa devise « Invenit et Fecit » (il l'a inventé et l'a fait) signe des montres entièrement conçues et fabriquées dans son atelier de Genève, avec des mouvements en or rose massif. L'Octa Calendrier combine calendrier annuel et grande date dans son langage inimitable : cadran excentré, chiffres dodus, architecture asymétrique. Produites à quelques centaines d'exemplaires par an, ses montres s'arrachent aux enchères à des multiples de leur prix, portées par une génération de collectionneurs qui le place au niveau de Breguet. Lauréat record du Grand Prix d'Horlogerie de Genève, il incarne l'âge d'or des indépendants. Posséder un Journe, c'est posséder la haute horlogerie vivante.",
   },
@@ -579,7 +579,7 @@ export const montres: Subject = {
   variant: "Homme",
   category: "Horlogerie",
   intro:
-    "Les montres qui ont écrit l'histoire, exposées par ordre chronologique — de l'atelier d'Abraham-Louis Breguet à l'Apple Watch. Parcourez la collection, puis départagez les pièces en duel pour révéler votre goût.",
+    "Les montres qui ont écrit l'histoire, exposées par ordre chronologique, de l'atelier d'Abraham-Louis Breguet à l'Apple Watch. Parcourez la collection, puis départagez les pièces en duel pour révéler votre goût.",
   itemNoun: "pièce",
   itemGender: "f",
   duelQuestion: "Laquelle préférez-vous ?",

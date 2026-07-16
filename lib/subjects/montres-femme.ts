@@ -19,7 +19,7 @@ const items: Item[] = [
     photoCredit: "shakko · Wikimedia Commons (CC BY-SA 3.0)",
     tagline: "La montre-cadenas de la duchesse de Windsor",
     description:
-      "Dessinée en 1935, la Cadenas de Van Cleef & Arpels enroule son bracelet en un fermoir de cadenas dont le cadran, incliné vers celle qui la porte, permet de lire l'heure sans geste visible — car une dame du monde ne consulte pas sa montre en société. La légende l'associe à Wallis Simpson, duchesse de Windsor et cliente fidèle de la maison, dont l'histoire d'amour scandaleuse avec Édouard VIII fascine l'époque. Bijou d'abord, montre ensuite, elle incarne l'âge d'or de la joaillerie horlogère parisienne. Toujours au catalogue, quasi inchangée. C'est l'heure lue à la dérobée, transformée en geste d'élégance.",
+      "Dessinée en 1935, la Cadenas de Van Cleef & Arpels enroule son bracelet en un fermoir de cadenas dont le cadran, incliné vers celle qui la porte, permet de lire l'heure sans geste visible, car une dame du monde ne consulte pas sa montre en société. La légende l'associe à Wallis Simpson, duchesse de Windsor et cliente fidèle de la maison, dont l'histoire d'amour scandaleuse avec Édouard VIII fascine l'époque. Bijou d'abord, montre ensuite, elle incarne l'âge d'or de la joaillerie horlogère parisienne. Toujours au catalogue, quasi inchangée. C'est l'heure lue à la dérobée, transformée en geste d'élégance.",
   },
   {
     slug: "bulgari-serpenti",
@@ -28,7 +28,7 @@ const items: Item[] = [
     year: 1948,
     tagline: "Le serpent qui s'enroule au poignet",
     description:
-      "Née à Rome à la fin des années 1940, la Serpenti enroule un serpent d'or au poignet, la tête abritant le cadran, le corps en spirale Tubogas épousant le bras sans fermoir. Elizabeth Taylor la porte sur le tournage de Cléopâtre en 1962 — la photo fait le tour du monde et scelle le mythe. Symbole de séduction et de renaissance dans l'iconographie antique, le serpent devient l'emblème absolu de Bulgari, décliné en émail, en diamants, en acier. Les versions vintage à écailles émaillées comptent parmi les montres-bijoux les plus recherchées des enchères. C'est le bijou qui hypnotise, et qui donne l'heure presque par accident.",
+      "Née à Rome à la fin des années 1940, la Serpenti enroule un serpent d'or au poignet, la tête abritant le cadran, le corps en spirale Tubogas épousant le bras sans fermoir. Elizabeth Taylor la porte sur le tournage de Cléopâtre en 1962. La photo fait le tour du monde et scelle le mythe. Symbole de séduction et de renaissance dans l'iconographie antique, le serpent devient l'emblème absolu de Bulgari, décliné en émail, en diamants, en acier. Les versions vintage à écailles émaillées comptent parmi les montres-bijoux les plus recherchées des enchères. C'est le bijou qui hypnotise, et qui donne l'heure presque par accident.",
   },
   {
     slug: "blancpain-ladybird",
@@ -37,7 +37,7 @@ const items: Item[] = [
     year: 1956,
     tagline: "Le plus petit mouvement rond de son temps",
     description:
-      "En 1956, Blancpain lance la Ladybird autour du plus petit mouvement rond du monde, 11,85 millimètres de diamètre — un exploit pensé non comme une prouesse de laboratoire mais comme un produit pour les femmes actives de l'après-guerre. À sa tête, fait rarissime : une femme, Betty Fiechter, première dirigeante d'une manufacture horlogère suisse, qui pilote Blancpain depuis 1933. La Ladybird traverse les décennies en versions acier, or et serties, toujours au catalogue aujourd'hui. C'est un jalon doublement féminin de l'horlogerie : par sa clientèle et par celle qui l'a créée.",
+      "En 1956, Blancpain lance la Ladybird autour du plus petit mouvement rond du monde, 11,85 millimètres de diamètre : un exploit pensé non comme une prouesse de laboratoire mais comme un produit pour les femmes actives de l'après-guerre. À sa tête, fait rarissime : une femme, Betty Fiechter, première dirigeante d'une manufacture horlogère suisse, qui pilote Blancpain depuis 1933. La Ladybird traverse les décennies en versions acier, or et serties, toujours au catalogue aujourd'hui. C'est un jalon doublement féminin de l'horlogerie : par sa clientèle et par celle qui l'a créée.",
   },
   {
     slug: "rolex-lady-datejust",
@@ -46,7 +46,7 @@ const items: Item[] = [
     year: 1957,
     tagline: "L'icône Rolex à l'échelle du poignet féminin",
     description:
-      "En 1957, Rolex décline son best-seller absolu en 26 millimètres : la Lady-Datejust reprend tout de sa grande sœur — guichet de date, loupe Cyclope, lunette cannelée, bracelet Jubilé — dans des proportions pensées pour le poignet féminin. Elle devient la montre des femmes de pouvoir avant que l'expression n'existe, des cours royales aux conseils d'administration. Déclinée en acier, or, nacre et diamants, elle est probablement la montre féminine la plus vendue de l'histoire. Sa cote vintage grimpe portée par le retour des petits diamètres. C'est l'uniforme discret de la réussite au féminin.",
+      "En 1957, Rolex décline son best-seller absolu en 26 millimètres : la Lady-Datejust reprend tout de sa grande sœur (guichet de date, loupe Cyclope, lunette cannelée, bracelet Jubilé) dans des proportions pensées pour le poignet féminin. Elle devient la montre des femmes de pouvoir avant que l'expression n'existe, des cours royales aux conseils d'administration. Déclinée en acier, or, nacre et diamants, elle est probablement la montre féminine la plus vendue de l'histoire. Sa cote vintage grimpe portée par le retour des petits diamètres. C'est l'uniforme discret de la réussite au féminin.",
   },
   {
     slug: "chopard-happy-diamonds",
@@ -56,7 +56,7 @@ const items: Item[] = [
     photoCredit: "Johnson Watch Co · Flickr (domaine public)",
     tagline: "Les diamants qui dansent en liberté",
     description:
-      "En 1976, le designer Ronald Kurowski a une idée en observant les gouttes d'eau d'une cascade : libérer les diamants de leur serti pour les laisser tourbillonner librement entre deux glaces saphir, autour du cadran. « Les diamants sont plus heureux quand ils sont libres », commente la fille du fondateur — le nom Happy Diamonds est né. D'abord montre d'homme (elle reçoit une distinction à Baden-Baden), elle devient l'icône féminine de Chopard et engendre toute la lignée Happy Sport. Le brevet des diamants mobiles reste l'une des signatures les plus contrefaites de la joaillerie. C'est la préciosité qui refuse de se tenir tranquille.",
+      "En 1976, le designer Ronald Kurowski a une idée en observant les gouttes d'eau d'une cascade : libérer les diamants de leur serti pour les laisser tourbillonner librement entre deux glaces saphir, autour du cadran. « Les diamants sont plus heureux quand ils sont libres », commente la fille du fondateur. Le nom Happy Diamonds est né. D'abord montre d'homme (elle reçoit une distinction à Baden-Baden), elle devient l'icône féminine de Chopard et engendre toute la lignée Happy Sport. Le brevet des diamants mobiles reste l'une des signatures les plus contrefaites de la joaillerie. C'est la préciosité qui refuse de se tenir tranquille.",
   },
   {
     slug: "cartier-panthere",
@@ -76,7 +76,7 @@ const items: Item[] = [
     photoCredit: "Johnson Watch Co · Flickr (domaine public)",
     tagline: "L'acier et le diamant enfin réunis",
     description:
-      "En 1993, Caroline Scheufele, héritière de Chopard, ose une hérésie : marier l'acier, métal utilitaire, aux diamants, matière du soir — avec les pierres mobiles des Happy Diamonds dansant sur le cadran. La Happy Sport invente la montre de jour précieuse, celle qu'on porte au tennis comme au dîner, et devient l'un des plus grands succès de l'horlogerie féminine des années 1990. Sa lunette aux sept diamants tourbillonnants est reconnaissable entre mille. Toujours best-seller trente ans plus tard, déclinée à l'infini. C'est le luxe descendu de son piédestal, sans rien perdre de son éclat.",
+      "En 1993, Caroline Scheufele, héritière de Chopard, ose une hérésie : marier l'acier, métal utilitaire, aux diamants, matière du soir, avec les pierres mobiles des Happy Diamonds dansant sur le cadran. La Happy Sport invente la montre de jour précieuse, celle qu'on porte au tennis comme au dîner, et devient l'un des plus grands succès de l'horlogerie féminine des années 1990. Sa lunette aux sept diamants tourbillonnants est reconnaissable entre mille. Toujours best-seller trente ans plus tard, déclinée à l'infini. C'est le luxe descendu de son piédestal, sans rien perdre de son éclat.",
   },
   {
     slug: "casio-baby-g",
@@ -96,7 +96,7 @@ const items: Item[] = [
     photoCredit: "Chun's Pictures · Flickr (CC BY 2.0)",
     tagline: "La céramique noire qui a changé le siècle",
     description:
-      "Dessinée par Jacques Helleu comme un objet de désir absolu — il voulait « la montre que l'on porte avec tout, tout le temps » —, la J12 impose en 2000 un matériau que l'horlogerie ne prenait pas au sérieux : la céramique high-tech noire, inrayable, plus légère que l'acier, d'un noir laqué profond. Montre de femme pensée sans complexe comme une vraie montre sportive, elle conquiert ensuite les hommes — trajectoire inverse de toute l'histoire horlogère. Sa version blanche de 2003 relance la mode mondiale des montres blanches. C'est la première icône horlogère du XXIe siècle, tous genres confondus.",
+      "Dessinée par Jacques Helleu comme un objet de désir absolu (il voulait « la montre que l'on porte avec tout, tout le temps »), la J12 impose en 2000 un matériau que l'horlogerie ne prenait pas au sérieux : la céramique high-tech noire, inrayable, plus légère que l'acier, d'un noir laqué profond. Montre de femme pensée sans complexe comme une vraie montre sportive, elle conquiert ensuite les hommes : trajectoire inverse de toute l'histoire horlogère. Sa version blanche de 2003 relance la mode mondiale des montres blanches. C'est la première icône horlogère du XXIe siècle, tous genres confondus.",
   },
   {
     slug: "breguet-reine-de-naples",
@@ -105,7 +105,7 @@ const items: Item[] = [
     year: 2002,
     tagline: "L'héritière de la toute première montre-bracelet",
     description:
-      "En 1810, Abraham-Louis Breguet reçoit de Caroline Murat, reine de Naples et sœur de Napoléon, la commande la plus visionnaire de l'histoire horlogère : une montre à porter au bracelet — la toute première montre-bracelet jamais réalisée. La pièce originale, ovale et attachée d'un bracelet de cheveux tressés d'or, a disparu ; la collection Reine de Naples lancée en 2002 la réinvente avec son boîtier ovoïde incliné, sa couronne à 4 heures et son guillochage grand feu. C'est le rappel somptueux que la montre-bracelet est une invention féminine. L'histoire au poignet, littéralement.",
+      "En 1810, Abraham-Louis Breguet reçoit de Caroline Murat, reine de Naples et sœur de Napoléon, la commande la plus visionnaire de l'histoire horlogère : une montre à porter au bracelet, la toute première montre-bracelet jamais réalisée. La pièce originale, ovale et attachée d'un bracelet de cheveux tressés d'or, a disparu ; la collection Reine de Naples lancée en 2002 la réinvente avec son boîtier ovoïde incliné, sa couronne à 4 heures et son guillochage grand feu. C'est le rappel somptueux que la montre-bracelet est une invention féminine. L'histoire au poignet, littéralement.",
   },
   {
     slug: "cartier-ballon-bleu",
@@ -124,9 +124,9 @@ const items: Item[] = [
     year: 1982,
     tagline: "Les griffes d'Omega, icône des années Cindy",
     description:
-      "La Constellation existe depuis 1952, mais c'est la refonte « Manhattan » de 1982 qui crée l'icône féminine : quatre griffes enserrant le verre, bracelet intégré, lunette gravée de chiffres romains. Cindy Crawford en devient l'ambassadrice en 1995 — l'un des premiers grands contrats entre une top model et une manufacture — et fait de la Constellation la montre féminine la plus reconnaissable de la décennie. Le médaillon d'observatoire gravé au dos rappelle les records de précision qui ont donné son nom au modèle. C'est l'élégance à griffes, au sens propre.",
+      "La Constellation existe depuis 1952, mais c'est la refonte « Manhattan » de 1982 qui crée l'icône féminine : quatre griffes enserrant le verre, bracelet intégré, lunette gravée de chiffres romains. Cindy Crawford en devient l'ambassadrice en 1995 (l'un des premiers grands contrats entre une top model et une manufacture) et fait de la Constellation la montre féminine la plus reconnaissable de la décennie. Le médaillon d'observatoire gravé au dos rappelle les records de précision qui ont donné son nom au modèle. C'est l'élégance à griffes, au sens propre.",
   },
-  // Vague 2 — élargissement du canon (juillet 2026). Le registre trie par
+  // Vague 2 : élargissement du canon (juillet 2026). Le registre trie par
   // année, l'ordre d'insertion ici n'a pas d'importance.
   {
     slug: "omega-ladymatic",
@@ -136,7 +136,7 @@ const items: Item[] = [
     photoCredit: "Thomas Quine · Wikimedia Commons (CC BY 2.0)",
     tagline: "La première automatique pensée pour elles",
     description:
-      "En 1955, Omega lance la Ladymatic, sa première montre automatique conçue pour les femmes, animée par le calibre 455 — alors le plus petit mouvement automatique à rotor du monde, certifié chronomètre. Le geste est inédit : offrir aux femmes la même exigence de précision mécanique qu'aux hommes, à une époque où l'horlogerie féminine se résume trop souvent au serti. Le succès est immédiat et durable. Relancée en 2010 dans la collection De Ville avec Nicole Kidman en ambassadrice, elle rappelle qu'Omega a pris les poignets féminins au sérieux avant presque tout le monde. C'est la technique offerte, pas concédée.",
+      "En 1955, Omega lance la Ladymatic, sa première montre automatique conçue pour les femmes, animée par le calibre 455 : alors le plus petit mouvement automatique à rotor du monde, certifié chronomètre. Le geste est inédit : offrir aux femmes la même exigence de précision mécanique qu'aux hommes, à une époque où l'horlogerie féminine se résume trop souvent au serti. Le succès est immédiat et durable. Relancée en 2010 dans la collection De Ville avec Nicole Kidman en ambassadrice, elle rappelle qu'Omega a pris les poignets féminins au sérieux avant presque tout le monde. C'est la technique offerte, pas concédée.",
   },
   {
     slug: "georg-jensen-vivianna",
@@ -156,7 +156,7 @@ const items: Item[] = [
     photoCredit: "Johnson Watch Co · Flickr (domaine public)",
     tagline: "Les cubes d'or adoubés par Rihanna",
     description:
-      "En 1999, Chopard empile des cubes facettés — or poli ou tout-pavé de diamants — en une géométrie radicale, urbaine, presque brutaliste : l'Ice Cube tranche avec tout ce que la maison — et l'époque — produit alors. La montre trouve sa consécration pop en 2017 quand Rihanna co-signe la collection « Rihanna ♥ Chopard » et en fait l'emblème d'un luxe streetwear avant l'heure. Entre joaillerie glacée et minimalisme architectural, elle traverse les générations sans prendre une ride. C'est le glamour passé au cube.",
+      "En 1999, Chopard empile des cubes facettés (or poli ou tout-pavé de diamants) en une géométrie radicale, urbaine, presque brutaliste : l'Ice Cube tranche avec tout ce que la maison (et l'époque) produit alors. La montre trouve sa consécration pop en 2017 quand Rihanna co-signe la collection « Rihanna ♥ Chopard » et en fait l'emblème d'un luxe streetwear avant l'heure. Entre joaillerie glacée et minimalisme architectural, elle traverse les générations sans prendre une ride. C'est le glamour passé au cube.",
   },
   {
     slug: "jlc-rendez-vous",
@@ -171,7 +171,7 @@ const items: Item[] = [
 ]
 
 
-// Fiches promues depuis `pending` — photos presse/enchères (projet perso,
+// Fiches promues depuis `pending` : photos presse/enchères (projet perso,
 // crédit dans la fiche). Le registre trie par année.
 const promoted: Item[] = [
   {
@@ -182,7 +182,7 @@ const promoted: Item[] = [
     photoCredit: "Patek Philippe Museum · The Jewellery Editor",
     tagline: "La première montre-bracelet conservée de l'histoire",
     description:
-      "On l'oublie systématiquement : la montre-bracelet est née au poignet des femmes, un demi-siècle avant que les hommes n'osent l'adopter. Après la pièce perdue créée par Breguet pour Caroline Murat en 1810, la plus ancienne montre-bracelet conservée est ce bracelet-bijou en or émaillé livré par Patek Philippe à la comtesse hongroise Koscowicz en 1868. À l'époque, l'objet est classé parmi les bijoux — l'idée qu'un homme porte sa montre au poignet ferait rire les clubs londoniens. Il faudra les tranchées de 1914 pour que les messieurs rattrapent cinquante ans de retard. Toute l'horlogerie de poignet descend de cette pièce de dame.",
+      "On l'oublie systématiquement : la montre-bracelet est née au poignet des femmes, un demi-siècle avant que les hommes n'osent l'adopter. Après la pièce perdue créée par Breguet pour Caroline Murat en 1810, la plus ancienne montre-bracelet conservée est ce bracelet-bijou en or émaillé livré par Patek Philippe à la comtesse hongroise Koscowicz en 1868. À l'époque, l'objet est classé parmi les bijoux : l'idée qu'un homme porte sa montre au poignet ferait rire les clubs londoniens. Il faudra les tranchées de 1914 pour que les messieurs rattrapent cinquante ans de retard. Toute l'horlogerie de poignet descend de cette pièce de dame.",
   },
   {
     slug: "jlc-calibre-101",
@@ -202,7 +202,7 @@ const promoted: Item[] = [
     photoCredit: "Boucheron · FHH (hautehorlogerie.org)",
     tagline: "Le talisman d'Édith Piaf",
     description:
-      "Imaginée par Gérard Boucheron, la Reflet aligne ses godrons d'or verticaux au poignet et cache une invention brevetée en 1944 : l'attache invisible qui permet de changer de bracelet d'un geste. Édith Piaf en fait son talisman absolu — elle en achète vingt et un exemplaires entre 1949 et 1963, qu'elle offre à ceux qu'elle aime, dont celui gravé « Je ne sonne que les heures heureuses ». Près de quatre-vingts ans plus tard, la Reflet est toujours au catalogue de la place Vendôme, quasi inchangée. C'est la montre-bijou parisienne par excellence : une idée d'orfèvre, une histoire d'amour, une devise. Les heures malheureuses attendront.",
+      "Imaginée par Gérard Boucheron, la Reflet aligne ses godrons d'or verticaux au poignet et cache une invention brevetée en 1944 : l'attache invisible qui permet de changer de bracelet d'un geste. Édith Piaf en fait son talisman absolu : elle en achète vingt et un exemplaires entre 1949 et 1963, qu'elle offre à ceux qu'elle aime, dont celui gravé « Je ne sonne que les heures heureuses ». Près de quatre-vingts ans plus tard, la Reflet est toujours au catalogue de la place Vendôme, quasi inchangée. C'est la montre-bijou parisienne par excellence : une idée d'orfèvre, une histoire d'amour, une devise. Les heures malheureuses attendront.",
   },
   {
     slug: "cartier-crash",
@@ -212,7 +212,7 @@ const promoted: Item[] = [
     photoCredit: "Phillips · catalogue d'enchères",
     tagline: "La montre fondue du Swinging London",
     description:
-      "Née en 1967 chez Cartier London sous Jean-Jacques Cartier, la Crash étire et tord le boîtier comme une montre molle de Dalí — la légende maison évoque une Baignoire déformée dans un accident de voiture. En pleine Swinging London, cette forme impossible devient le manifeste du chic anticonformiste, portée par les Londoniennes les plus audacieuses. Produite au compte-gouttes, rééditée confidentiellement à Paris en 1991 puis à Londres en 2013, elle est devenue le graal absolu des montres de forme : un exemplaire de 1967 a dépassé 1,5 million de dollars aux enchères en 2022. C'est le surréalisme au poignet, et la preuve que Cartier sait aussi casser ses propres codes.",
+      "Née en 1967 chez Cartier London sous Jean-Jacques Cartier, la Crash étire et tord le boîtier comme une montre molle de Dalí. La légende maison évoque une Baignoire déformée dans un accident de voiture. En pleine Swinging London, cette forme impossible devient le manifeste du chic anticonformiste, portée par les Londoniennes les plus audacieuses. Produite au compte-gouttes, rééditée confidentiellement à Paris en 1991 puis à Londres en 2013, elle est devenue le graal absolu des montres de forme : un exemplaire de 1967 a dépassé 1,5 million de dollars aux enchères en 2022. C'est le surréalisme au poignet, et la preuve que Cartier sait aussi casser ses propres codes.",
   },
   {
     slug: "hermes-kelly",
@@ -222,7 +222,7 @@ const promoted: Item[] = [
     photoCredit: "Hermès · visuel de presse",
     tagline: "Le cadenas du sac devenu montre",
     description:
-      "En 1975, Hermès transforme le cadenas du sac Kelly — dessiné par Robert Dumas dans les années 1930 — en boîtier de montre, suspendu au poignet sur un simple lien de cuir. L'objet est d'une audace tranquille : une montre qui pend comme une breloque, assumant le bijou plus que l'instrument, portée par les initiées comme un mot de passe. Culte chez les amatrices de vintage, très recherchée aux enchères, elle a été relancée en 2024 — première refonte en près d'un demi-siècle. C'est tout Hermès en miniature : la sellerie, le secret, l'humour. Un cadenas qui n'enferme que le temps.",
+      "En 1975, Hermès transforme le cadenas du sac Kelly (dessiné par Robert Dumas dans les années 1930) en boîtier de montre, suspendu au poignet sur un simple lien de cuir. L'objet est d'une audace tranquille : une montre qui pend comme une breloque, assumant le bijou plus que l'instrument, portée par les initiées comme un mot de passe. Culte chez les amatrices de vintage, très recherchée aux enchères, elle a été relancée en 2024, première refonte en près d'un demi-siècle. C'est tout Hermès en miniature : la sellerie, le secret, l'humour. Un cadenas qui n'enferme que le temps.",
   },
   {
     slug: "piaget-limelight-gala",
@@ -242,7 +242,7 @@ const promoted: Item[] = [
     photoCredit: "Van Cleef & Arpels · Worldtempus",
     tagline: "Le baiser de minuit en émail grand feu",
     description:
-      "Sur un pont parisien peint en émail grand feu, elle avance portée par les heures, lui par les minutes — et à minuit comme à midi, les deux amoureux se rejoignent pour un baiser. Le Pont des Amoureux, lancé en 2010, est le sommet des « Complications Poétiques » de Van Cleef & Arpels : un double affichage rétrograde développé exclusivement pour raconter cette histoire. Prix de la Montre Dame au Grand Prix d'Horlogerie de Genève 2010, il a redéfini la haute horlogerie féminine comme un art narratif. C'est la complication la plus romantique jamais construite : la mécanique au service d'un baiser.",
+      "Sur un pont parisien peint en émail grand feu, elle avance portée par les heures, lui par les minutes, et à minuit comme à midi, les deux amoureux se rejoignent pour un baiser. Le Pont des Amoureux, lancé en 2010, est le sommet des « Complications Poétiques » de Van Cleef & Arpels : un double affichage rétrograde développé exclusivement pour raconter cette histoire. Prix de la Montre Dame au Grand Prix d'Horlogerie de Genève 2010, il a redéfini la haute horlogerie féminine comme un art narratif. C'est la complication la plus romantique jamais construite : la mécanique au service d'un baiser.",
   },
   {
     slug: "piaget-manchette",
@@ -252,7 +252,7 @@ const promoted: Item[] = [
     photoCredit: "Sotheby's · catalogue d'enchères",
     tagline: "L'or et les pierres dures de la jet-set",
     description:
-      "À la fin des années 1960, Piaget fait scandale et sensation : des manchettes d'or martelé aux cadrans de jade, lapis-lazuli, opale ou œil-de-tigre, réunies en 1969 sous la bannière « 21st Century ». Orchestré par Yves Piaget, ce style habille la « Piaget Society » — Jackie Kennedy, Elizabeth Taylor, Sophia Loren, Andy Warhol — et fait de la maison LE joaillier-horloger de la décennie. La montre cesse d'être un instrument pour devenir une œuvre portable, où la mécanique extra-plate maison disparaît dans le bijou. Les exemplaires d'époque s'arrachent aujourd'hui aux enchères. C'est le sommet du glamour horloger des sixties.",
+      "À la fin des années 1960, Piaget fait scandale et sensation : des manchettes d'or martelé aux cadrans de jade, lapis-lazuli, opale ou œil-de-tigre, réunies en 1969 sous la bannière « 21st Century ». Orchestré par Yves Piaget, ce style habille la « Piaget Society » (Jackie Kennedy, Elizabeth Taylor, Sophia Loren, Andy Warhol) et fait de la maison LE joaillier-horloger de la décennie. La montre cesse d'être un instrument pour devenir une œuvre portable, où la mécanique extra-plate maison disparaît dans le bijou. Les exemplaires d'époque s'arrachent aujourd'hui aux enchères. C'est le sommet du glamour horloger des sixties.",
   },
   {
     slug: "franck-muller-cintree-curvex",
@@ -262,7 +262,7 @@ const promoted: Item[] = [
     photoCredit: "Franck Muller · visuel officiel",
     tagline: "Le tonneau cintré des années folles 90",
     description:
-      "En 1992, Franck Muller cintre le tonneau Art déco dans les trois dimensions : la Cintrée Curvex épouse le poignet comme aucun boîtier avant elle, habillée de chiffres exubérants peints comme des enseignes. Elle fait du jeune horloger genevois le « maître des complications » et LA montre statement des années 1990-2000, adorée des femmes — et d'Elton John. Ses déclinaisons Color Dreams, aux chiffres multicolores, définissent le glamour pré-2000 et s'offrent aujourd'hui une vraie seconde vie en vintage. C'est l'exubérance assumée, à contre-courant du minimalisme — et ça lui va très bien.",
+      "En 1992, Franck Muller cintre le tonneau Art déco dans les trois dimensions : la Cintrée Curvex épouse le poignet comme aucun boîtier avant elle, habillée de chiffres exubérants peints comme des enseignes. Elle fait du jeune horloger genevois le « maître des complications » et LA montre statement des années 1990-2000, adorée des femmes, et d'Elton John. Ses déclinaisons Color Dreams, aux chiffres multicolores, définissent le glamour pré-2000 et s'offrent aujourd'hui une vraie seconde vie en vintage. C'est l'exubérance assumée, à contre-courant du minimalisme, et ça lui va très bien.",
   },
   {
     slug: "longines-dolcevita",
@@ -272,7 +272,7 @@ const promoted: Item[] = [
     photoCredit: "Longines · visuel de presse",
     tagline: "Le rectangle Art déco de la dolce vita",
     description:
-      "En 1997, Longines ressuscite ses rectangles Art déco des années 1920 et les baptise en hommage à la douceur de vivre fellinienne : la DolceVita est née. Proportions justes, chiffres romains ou rail de chemin de fer, prix accessible : elle devient l'un des best-sellers mondiaux les plus constants de l'horlogerie féminine, portée par des ambassadrices comme Jennifer Lawrence. La Mini DolceVita de 2023 a relancé la fièvre des petites montres rectangulaires auprès d'une nouvelle génération. Près de trente ans de succès ininterrompu pour un dessin vieux d'un siècle. C'est la preuve que l'Art déco ne se démode pas — il attend.",
+      "En 1997, Longines ressuscite ses rectangles Art déco des années 1920 et les baptise en hommage à la douceur de vivre fellinienne : la DolceVita est née. Proportions justes, chiffres romains ou rail de chemin de fer, prix accessible : elle devient l'un des best-sellers mondiaux les plus constants de l'horlogerie féminine, portée par des ambassadrices comme Jennifer Lawrence. La Mini DolceVita de 2023 a relancé la fièvre des petites montres rectangulaires auprès d'une nouvelle génération. Près de trente ans de succès ininterrompu pour un dessin vieux d'un siècle. C'est la preuve que l'Art déco ne se démode pas. Il attend.",
   },
   {
     slug: "girard-perregaux-cats-eye",
@@ -302,7 +302,7 @@ const promoted: Item[] = [
     photoCredit: "Chanel · GPHG",
     tagline: "Le vestiaire masculin emprunté, encore",
     description:
-      "En 2015, Chanel applique à l'horlogerie le geste fondateur de Gabrielle Chanel — emprunter au vestiaire des hommes — avec un clin d'œil à Boy Capel, l'amour de sa vie : la Boy·Friend étire un boîtier octogonal aux proportions volontairement masculines sur un poignet féminin. Les puristes s'inclinent devant les versions squelette animées du calibre 3 de la maison, d'une rigueur architecturale rare. Après la Première et la J12, c'est la montre qui a définitivement installé Chanel dans la cour de la haute horlogerie. C'est du Chanel canonique : l'élégance qui se prend au sérieux mécaniquement, jamais solennellement.",
+      "En 2015, Chanel applique à l'horlogerie le geste fondateur de Gabrielle Chanel (emprunter au vestiaire des hommes) avec un clin d'œil à Boy Capel, l'amour de sa vie : la Boy·Friend étire un boîtier octogonal aux proportions volontairement masculines sur un poignet féminin. Les puristes s'inclinent devant les versions squelette animées du calibre 3 de la maison, d'une rigueur architecturale rare. Après la Première et la J12, c'est la montre qui a définitivement installé Chanel dans la cour de la haute horlogerie. C'est du Chanel canonique : l'élégance qui se prend au sérieux mécaniquement, jamais solennellement.",
   },
   {
     slug: "chanel-premiere",
@@ -312,7 +312,7 @@ const promoted: Item[] = [
     photoCredit: "Chanel · visuel de presse",
     tagline: "La première montre de la maison Chanel",
     description:
-      "Quand Chanel lance sa toute première montre en 1987, Jacques Helleu en dessine le boîtier d'après la géométrie du bouchon du parfum N°5 — lui-même inspiré de la place Vendôme. Chaîne entrelacée de cuir comme le sac 2.55, cadran laqué noir sans chiffre : tout le vocabulaire de Gabrielle Chanel tient dans quelques centimètres carrés. Le succès est immédiat et installe la légitimité horlogère de la maison, ouvrant la voie à la J12. Rééditée en 2022 dans sa forme d'origine, elle a retrouvé le succès instantanément. C'est du Chanel à l'état pur : rien de superflu, tout est signature.",
+      "Quand Chanel lance sa toute première montre en 1987, Jacques Helleu en dessine le boîtier d'après la géométrie du bouchon du parfum N°5, lui-même inspiré de la place Vendôme. Chaîne entrelacée de cuir comme le sac 2.55, cadran laqué noir sans chiffre : tout le vocabulaire de Gabrielle Chanel tient dans quelques centimètres carrés. Le succès est immédiat et installe la légitimité horlogère de la maison, ouvrant la voie à la J12. Rééditée en 2022 dans sa forme d'origine, elle a retrouvé le succès instantanément. C'est du Chanel à l'état pur : rien de superflu, tout est signature.",
   },
   {
     slug: "hermes-cape-cod",
@@ -322,7 +322,7 @@ const promoted: Item[] = [
     photoCredit: "Hermès · packshot officiel",
     tagline: "Le carré dans le rectangle, et le Double Tour",
     description:
-      "Dessinée en 1991 par Henri d'Origny à qui l'on demandait un boîtier carré — il livra « un carré dans un rectangle », aux attaches inspirées des maillons de la chaîne d'ancre Hermès —, la Cape Cod prend sa dimension mythique en 1998 : Martin Margiela, alors directeur artistique des collections femme, imagine le bracelet Double Tour qui s'enroule deux fois autour du poignet comme un lien de cuir. Le geste devient l'une des signatures les plus copiées de la montre féminine. Sellerie, cuir, discrétion : tout Hermès est là. C'est l'élégance qui s'attache au lieu de s'afficher.",
+      "Dessinée en 1991 par Henri d'Origny à qui l'on demandait un boîtier carré (il livra « un carré dans un rectangle », aux attaches inspirées des maillons de la chaîne d'ancre Hermès), la Cape Cod prend sa dimension mythique en 1998 : Martin Margiela, alors directeur artistique des collections femme, imagine le bracelet Double Tour qui s'enroule deux fois autour du poignet comme un lien de cuir. Le geste devient l'une des signatures les plus copiées de la montre féminine. Sellerie, cuir, discrétion : tout Hermès est là. C'est l'élégance qui s'attache au lieu de s'afficher.",
   },
   {
     slug: "patek-twenty4",
@@ -332,7 +332,7 @@ const promoted: Item[] = [
     photoCredit: "Sotheby's · catalogue d'enchères",
     tagline: "La Patek pensée pour la vie des femmes",
     description:
-      "En 1999, Patek Philippe lance sa première collection entièrement dédiée aux femmes depuis des décennies : la Twenty~4, du nom des vingt-quatre heures d'une vie active qu'elle prétend accompagner — du bureau au dîner sans changer de montre. Boîtier rectangulaire inspiré de la Gondolo, deux rangées de diamants, bracelet intégré : le manifeste d'une génération de femmes qui s'achètent elles-mêmes leur haute horlogerie au lieu de l'attendre en cadeau. Le slogan « Qui serez-vous dans les prochaines 24 heures ? » assume le propos. C'est la porte d'entrée féminine de la plus prestigieuse des manufactures.",
+      "En 1999, Patek Philippe lance sa première collection entièrement dédiée aux femmes depuis des décennies : la Twenty~4, du nom des vingt-quatre heures d'une vie active qu'elle prétend accompagner, du bureau au dîner sans changer de montre. Boîtier rectangulaire inspiré de la Gondolo, deux rangées de diamants, bracelet intégré : le manifeste d'une génération de femmes qui s'achètent elles-mêmes leur haute horlogerie au lieu de l'attendre en cadeau. Le slogan « Qui serez-vous dans les prochaines 24 heures ? » assume le propos. C'est la porte d'entrée féminine de la plus prestigieuse des manufactures.",
   },
   {
     slug: "dior-la-d",
@@ -352,7 +352,7 @@ const promoted: Item[] = [
     photoCredit: "Poiray · visuel officiel",
     tagline: "La parisienne aux bracelets interchangeables",
     description:
-      "Créée en 1985 par la maison de la place Vendôme, Ma Première invente un geste que toute l'industrie copiera trente ans plus tard : le bracelet interchangeable sans outil, qui change la montre d'humeur en quelques secondes — satin le soir, cuir grainé au bureau, vernis fluo le week-end. Son boîtier coussin cerclé de godrons devient un classique du chic parisien, offert de mère en fille pour les grandes occasions. C'est la montre française féminine par excellence, indémodable et malicieuse. Une idée simple, exécutée avec esprit : très parisien, précisément.",
+      "Créée en 1985 par la maison de la place Vendôme, Ma Première invente un geste que toute l'industrie copiera trente ans plus tard : le bracelet interchangeable sans outil, qui change la montre d'humeur en quelques secondes, satin le soir, cuir grainé au bureau, vernis fluo le week-end. Son boîtier coussin cerclé de godrons devient un classique du chic parisien, offert de mère en fille pour les grandes occasions. C'est la montre française féminine par excellence, indémodable et malicieuse. Une idée simple, exécutée avec esprit : très parisien, précisément.",
   },
   {
     slug: "audemars-piguet-royal-oak-lady",
@@ -363,7 +363,7 @@ const promoted: Item[] = [
     ref: "8638",
     tagline: "L'acier au féminin, dessiné par une femme",
     description:
-      "Quatre ans après la Royal Oak de Gérald Genta, Audemars Piguet en confie la version féminine à Jacqueline Dimier, l'une des premières femmes designers de l'industrie, qui dirigera le design de la maison de 1975 à 1999. Sa Royal Oak Lady de 1976, 29 millimètres, réf. 8638, est une rupture totale : une montre de femme en acier, quand l'or et le platine régnaient sans partage. Le pari prend — 423 exemplaires vendus la première année, plus d'un millier dès 1979 — et la déclinaison féminine porte largement le succès d'un modèle jugé trop massif en version homme. C'est l'icône du luxe sportif, au féminin dès l'origine, et signée par une femme.",
+      "Quatre ans après la Royal Oak de Gérald Genta, Audemars Piguet en confie la version féminine à Jacqueline Dimier, l'une des premières femmes designers de l'industrie, qui dirigera le design de la maison de 1975 à 1999. Sa Royal Oak Lady de 1976, 29 millimètres, réf. 8638, est une rupture totale : une montre de femme en acier, quand l'or et le platine régnaient sans partage. Le pari prend (423 exemplaires vendus la première année, plus d'un millier dès 1979) et la déclinaison féminine porte largement le succès d'un modèle jugé trop massif en version homme. C'est l'icône du luxe sportif, au féminin dès l'origine, et signée par une femme.",
   },
   {
     slug: "ebel-beluga",
@@ -373,7 +373,7 @@ const promoted: Item[] = [
     photoCredit: "1stDibs",
     tagline: "La vague dorée des années 80",
     description:
-      "Lancée en 1985 exclusivement en or, la Beluga ondule : boîtier aux courbes pleines, bracelet « vague » qui coule autour du poignet, lunette sertie de quarante diamants. Elle est l'archétype de la montre-bijou des années 1980-90, l'âge d'or d'Ebel — « les architectes du temps » — quand la maison de La Chaux-de-Fonds rivalisait avec les plus grands. Rare icône féminine née hors du cercle des maisons du très haut luxe, elle a défini une élégance ronde et sensuelle à contre-courant des angles de la décennie. Sa silhouette n'a jamais quitté le catalogue. C'est la douceur érigée en style.",
+      "Lancée en 1985 exclusivement en or, la Beluga ondule : boîtier aux courbes pleines, bracelet « vague » qui coule autour du poignet, lunette sertie de quarante diamants. Elle est l'archétype de la montre-bijou des années 1980-90, l'âge d'or d'Ebel (« les architectes du temps ») quand la maison de La Chaux-de-Fonds rivalisait avec les plus grands. Rare icône féminine née hors du cercle des maisons du très haut luxe, elle a défini une élégance ronde et sensuelle à contre-courant des angles de la décennie. Sa silhouette n'a jamais quitté le catalogue. C'est la douceur érigée en style.",
   },
   {
     slug: "hermes-heure-h",
@@ -383,7 +383,7 @@ const promoted: Item[] = [
     photoCredit: "Hermès · packshot officiel",
     tagline: "La lettre devenue boîtier",
     description:
-      "Dessinée en 1996 par Philippe Mouquet, l'Heure H résout une équation d'une élégance rare : le boîtier carré EST la lettre H — Hermès et Horlogerie d'un seul trait. Ni logo apposé ni monogramme imprimé : la signature est la structure même de l'objet. Portée sur les bracelets de cuir de la sellerie maison, déclinée du mini au serti, elle est devenue le porte-drapeau de l'horlogerie Hermès et l'une des montres de mode les plus reconnaissables au monde, best-seller trente ans après. C'est le design réduit à son os : une initiale qui donne l'heure.",
+      "Dessinée en 1996 par Philippe Mouquet, l'Heure H résout une équation d'une élégance rare : le boîtier carré EST la lettre H. Hermès et Horlogerie d'un seul trait. Ni logo apposé ni monogramme imprimé : la signature est la structure même de l'objet. Portée sur les bracelets de cuir de la sellerie maison, déclinée du mini au serti, elle est devenue le porte-drapeau de l'horlogerie Hermès et l'une des montres de mode les plus reconnaissables au monde, best-seller trente ans après. C'est le design réduit à son os : une initiale qui donne l'heure.",
   },
 ]
 
