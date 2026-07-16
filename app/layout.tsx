@@ -48,7 +48,7 @@ export default function RootLayout({
           <footer className="border-t">
             <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 font-mono text-[11px] tracking-wider text-muted-foreground uppercase sm:px-6">
               <p>Taste©2026</p>
-              <p>Photos : Wikimedia Commons &amp; Flickr</p>
+              <p>Photos : crédits par pièce</p>
             </div>
           </footer>
         </ThemeProvider>
