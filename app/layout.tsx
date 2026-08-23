@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils"
 
 export const metadata: Metadata = {
   title: {
-    default: "Taste — Le musée personnel du goût",
-    template: "%s — Taste",
+    default: "Taste, le musée personnel du goût",
+    template: "%s - Taste",
   },
   description:
     "Des collections d'icônes (montres, design d'intérieur…) à explorer et départager en duel pour révéler votre goût.",
