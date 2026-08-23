@@ -13,7 +13,7 @@ import {
   AlertDescription,
   AlertTitle,
 } from "@/components/ui/alert"
-import { Button } from "@/components/ui/button"
+import { LinkButton } from "@/components/ui/button"
 import { Kbd, KbdGroup } from "@/components/ui/kbd"
 import { Skeleton } from "@/components/ui/skeleton"
 import { useRankings } from "@/hooks/use-rankings"
@@ -121,14 +121,13 @@ export function DuelArena({ subjectSlug }: { subjectSlug: string }) {
             l&apos;affiner encore.
           </AlertDescription>
           <AlertAction>
-            <Button
+            <LinkButton
               size="sm"
               variant="outline"
-              nativeButton={false}
-              render={<Link href={`/${subject.slug}/classement`} />}
+              href={`/${subject.slug}/classement`}
             >
               Voir le classement
-            </Button>
+            </LinkButton>
           </AlertAction>
         </Alert>
       ) : null}
@@ -163,7 +162,7 @@ export function DuelArena({ subjectSlug }: { subjectSlug: string }) {
 
       <p className="mt-8 text-center text-xs text-muted-foreground">
         {totalDuels} duel{totalDuels > 1 ? "s" : ""} joué
-        {totalDuels > 1 ? "s" : ""} ·{" "}
+        {totalDuels > 1 ? "s" : ""},{" "}
         <Link
           href={`/${subject.slug}/classement`}
           className="underline underline-offset-4 hover:text-foreground"

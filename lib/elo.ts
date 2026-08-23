@@ -47,9 +47,9 @@ export function getEntry(
   return entries[slug] ?? initialEntry()
 }
 
-/** "3V · 1D" — shared display format for a win/loss record. */
+/** "3V 1D", format d'affichage commun des victoires/défaites. */
 export function formatRecord(entry: EloEntry): string {
-  return `${entry.wins}V · ${entry.battles - entry.wins}D`
+  return `${entry.wins}V ${entry.battles - entry.wins}D`
 }
 
 /** Deterministic PRNG so pair picking stays a pure function of the state. */

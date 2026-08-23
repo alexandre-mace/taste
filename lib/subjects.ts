@@ -71,10 +71,10 @@ export function getSubject(slug: string): Subject | undefined {
   return subjects.find((s) => s.slug === slug)
 }
 
-/** « Montres · Femme » dans les menus, « Montres » pour les sujets sans variante. */
+/** « Montres — Femme » devient « Montres Femme » dans les menus, « Montres » sans variante. */
 export function subjectLabel(subject: Subject): string {
   return subject.variant
-    ? `${subject.title} · ${subject.variant}`
+    ? `${subject.title} ${subject.variant}`
     : subject.title
 }
 

@@ -150,7 +150,7 @@ const items: Item[] = [
     maker: "Charles & Ray Eames",
     name: "Plastic Chair DSW",
     year: 1950,
-    photoCredit: "withassociates · Flickr (CC BY-SA 2.0)",
+    photoCredit: "withassociates, Flickr (CC BY-SA 2.0)",
     tagline: "La coque universelle aux mille bases",
     description:
       "Première chaise de série en plastique moulé, la Plastic Chair des Eames sépare génialement la coque de son piètement : la même assise en fibre de verre se visse sur des pieds bois « Eiffel », des tubes d'acier ou des patins, en une famille infinie. Pensée pour le concours « mobilier à bas coût » du MoMA, elle démocratise le design d'auteur des décennies avant IKEA. Sa déclinaison DSW aux pieds de bois clair est devenue l'un des objets les plus photographiés de Pinterest, et les plus contrefaits du monde. C'est la chaise moderne par défaut de la planète entière.",

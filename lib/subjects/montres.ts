@@ -538,7 +538,7 @@ const items: Item[] = [
     name: "Lange 1",
     year: 1994,
     tagline: "Le chef-d'œuvre asymétrique de Saxe",
-    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    photoCredit: "Johnson Watch Co, Flickr (domaine public)",
     description:
       "En décembre 1990, un an après la chute du Mur, Walter Lange ressuscite la manufacture familiale de Glashütte nationalisée par la RDA ; la Lange 1, présentée en 1994, est son premier modèle, et un coup de maître. Son cadran asymétrique, ordonné selon le nombre d'or, et sa grande date inspirée de l'horloge de l'opéra de Dresde sont devenus des icônes instantanées. Le mouvement, avec sa platine trois-quarts en maillechort, son coq de balancier gravé main et ses chatons en or, est parmi les plus beaux du monde. Beaucoup de collectionneurs la placent au-dessus de Patek en finition pure. C'est la preuve que la haute horlogerie parle aussi allemand.",
   },
@@ -548,7 +548,7 @@ const items: Item[] = [
     name: "Octo Finissimo",
     year: 2014,
     tagline: "L'ultra-plat aux 110 facettes",
-    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    photoCredit: "Johnson Watch Co, Flickr (domaine public)",
     description:
       "L'Octo Finissimo a enchaîné huit records mondiaux de finesse en dix ans : mouvement automatique, tourbillon, chronographe et même répétition minutes, tout y passe, dans des boîtiers de quelques millimètres d'épaisseur. Son design aux 110 facettes, hérité de Gérald Genta dont Bulgari a racheté la maison, marie géométrie romaine et radicalité contemporaine. La version titane sablé, d'un gris uniforme presque irréel, est devenue l'icône du design horloger des années 2010. Elle a prouvé qu'une maison de joaillerie italienne pouvait battre les Suisses sur leur propre terrain technique. C'est la montre d'architecte par excellence.",
   },
@@ -558,7 +558,7 @@ const items: Item[] = [
     name: "BR 03",
     year: 2005,
     tagline: "L'instrument de cockpit carré",
-    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    photoCredit: "Johnson Watch Co, Flickr (domaine public)",
     description:
       "Fondée en 1992 par deux amis français, Bell & Ross a trouvé son identité en 2005 avec la BR 01 : un instrument de cockpit d'avion littéralement transposé au poignet, carré à quatre vis, cadran circulaire ultra-lisible. La BR 03, sa déclinaison en 42 mm, est devenue le cœur de la collection. Le design « rond dans un carré » est l'une des rares signatures véritablement nouvelles de l'horlogerie du XXIe siècle. Ses déclinaisons céramique, camouflage ou « Phantom » tout noir cultivent l'esthétique militaire et aéronautique. C'est la montre des amateurs de design industriel radical.",
   },
@@ -577,7 +577,7 @@ const items: Item[] = [
     maker: "Patek Philippe",
     name: "Golden Ellipse",
     year: 1968,
-    photoCredit: "Patek Philippe · visuel officiel",
+    photoCredit: "Patek Philippe, visuel officiel",
     tagline: "Le nombre d'or fait boîtier",
     description:
       "En 1968, Patek Philippe lance sa première collection entièrement nouvelle depuis la Calatrava de 1932, et c'est une pure affaire de proportions : la Golden Ellipse dessine un boîtier elliptique fondé sur le nombre d'or, ce rapport de 1 à 1,618 que les Grecs jugeaient parfait. Ni ronde ni rectangulaire, elle échappe à toute mode et se contente d'un cadran d'un bleu profond rehaussé d'or. Sans complication, sans esbroufe, elle mise tout sur la justesse de la forme. Plus de cinquante-cinq ans plus tard, elle est toujours au catalogue, quasi inchangée. C'est la preuve qu'un dessin juste se passe de tout le reste.",
@@ -587,7 +587,7 @@ const items: Item[] = [
     maker: "Jaeger-LeCoultre",
     name: "Memovox Polaris",
     year: 1965,
-    photoCredit: "Jaeger-LeCoultre · Robb Report",
+    photoCredit: "Jaeger-LeCoultre, Robb Report",
     tagline: "Le réveil qui sonne sous l'eau",
     description:
       "Comment prévenir un plongeur qu'il est temps de remonter ? Jaeger-LeCoultre répond en 1965 avec la Memovox Polaris, une montre de plongée dotée d'un réveil mécanique dont la sonnerie reste audible sous l'eau grâce à un fond à triple caisse de résonance. Ses trois couronnes commandent l'heure, la lunette interne et l'alarme, sous un cadran noir d'une lisibilité parfaite. La version de 1968, produite à seulement 768 exemplaires en acier, est devenue l'une des JLC les plus recherchées des collectionneurs. Rééditée en Tribute to Polaris, elle a donné son nom à toute une collection sportive. C'est l'horlogerie qui résout un problème concret avec une élégance folle.",
@@ -597,7 +597,7 @@ const items: Item[] = [
     maker: "Girard-Perregaux",
     name: "Laureato",
     year: 1975,
-    photoCredit: "Girard-Perregaux · Monochrome-Watches",
+    photoCredit: "Girard-Perregaux, Monochrome-Watches",
     tagline: "L'octogone oublié du sport-chic",
     description:
       "Sorti en 1975 en pleine crise du quartz, le Laureato superpose une lunette octogonale à un boîtier tonneau et un bracelet intégré, animé à l'origine par un mouvement à quartz haute fréquence entièrement maison, une prouesse pour l'époque. Il appartient à la même famille que la Royal Oak, la Nautilus et l'Ingenieur, ce sport-luxe à bracelet intégré né dans les années 1970, mais reste longtemps le grand oublié du genre. Son nom, clin d'œil au Lauréat de Mike Nichols, ne sera officialisé qu'en 1995. Redécouvert et relancé, il retrouve enfin la place qui lui revient. C'est la pièce manquante d'un canon que tout le monde croyait complet.",
@@ -617,7 +617,7 @@ const items: Item[] = [
     maker: "Vacheron Constantin",
     name: "Overseas",
     year: 1996,
-    photoCredit: "Sotheby's · catalogue d'enchères",
+    photoCredit: "Sotheby's, catalogue d'enchères",
     tagline: "La croix de Malte part en voyage",
     description:
       "Descendante directe de la 222 de 1977, l'Overseas de 1996 est la sportive de voyage de la plus ancienne manufacture en activité : bracelet intégré, lunette dessinée d'après la croix de Malte emblème de la maison, résistance aux champs magnétiques pour le globe-trotter. Elle complète, aux côtés de la Royal Oak et de la Nautilus, la sainte trinité du sport-luxe genevois. Ses bracelets interchangeables sans outil, acier, cuir et caoutchouc, en font l'une des intégrées les plus polyvalentes du marché. Devenue une pièce très désirée, elle réconcilie la haute horlogerie avec le poignet du quotidien. C'est le luxe qui prend enfin l'avion en classe affaires.",
@@ -637,7 +637,7 @@ const items: Item[] = [
     maker: "Chopard",
     name: "Alpine Eagle",
     year: 2019,
-    photoCredit: "Chopard · visuel officiel",
+    photoCredit: "Chopard, visuel officiel",
     tagline: "L'œil de l'aigle en acier Lucent",
     description:
       "L'Alpine Eagle de 2019 ressuscite la St. Moritz de 1980, la toute première montre en acier de Chopard, imaginée par Karl-Friedrich Scheufele quand il avait vingt-deux ans, et relancée trente-neuf ans plus tard avec son fils. Son cadran texturé évoque l'iris d'un aigle, son acier Lucent breveté est refondu à partir de matière recyclée, son bracelet intégré file la ligne sport-chic. Projet réunissant trois générations d'une même famille, elle devient presque instantanément un classique culte de la vague des intégrées. Elle prouve qu'on peut encore entrer tard dans un genre saturé et s'y faire une place. C'est l'histoire de famille devenue objet de désir.",
@@ -647,7 +647,7 @@ const items: Item[] = [
     maker: "De Bethune",
     name: "DB28",
     year: 2010,
-    photoCredit: "De Bethune · Monochrome-Watches",
+    photoCredit: "De Bethune, Monochrome-Watches",
     tagline: "Le vaisseau de titane bleui",
     description:
       "La DB28 de 2010 ne ressemble à aucune autre montre : ses cornes flottantes articulées épousent le poignet par une géométrie variable, son titane est bleui par oxydation thermique jusqu'à un bleu nuit sidéral, son pont de balancier en delta signe le style de Denis Flageollet. Manifeste de la maison la plus avant-gardiste des indépendants, elle décroche l'Aiguille d'Or du Grand Prix d'Horlogerie de Genève en 2011, plus haute distinction du métier. Chaque détail y relève de la recherche pure, du balancier en silicium et platine aux finitions polies main. Elle regarde vers l'espace autant que vers la tradition. C'est l'horlogerie de demain, faite à l'ancienne.",
@@ -657,7 +657,7 @@ const items: Item[] = [
     maker: "MB&F",
     name: "Legacy Machine N°1",
     year: 2011,
-    photoCredit: "MB&F · The Hour Glass",
+    photoCredit: "MB&F, The Hour Glass",
     tagline: "Le balancier suspendu dans le vide",
     description:
       "Maximilian Büsser a fondé MB&F en 2005 pour transformer la montre en sculpture cinétique, et la Legacy Machine N°1 de 2011 en est le sommet lisible : un immense balancier flotte, suspendu, au-dessus du cadran, comme en lévitation, entouré de deux cadrans inclinés à double fuseau et d'un indicateur de réserve de marche en éventail. Là où les premières « Machines » de la maison étaient franchement extraterrestres, celle-ci rend hommage à l'horlogerie du XIXe siècle avec une émotion rare. Le spectacle mécanique se joue côté cadran, sous vos yeux, en permanence. Elle a scellé le statut de MB&F comme l'un des ateliers les plus créatifs du monde. C'est de la haute horlogerie qui se regarde comme un aquarium.",
@@ -667,7 +667,7 @@ const items: Item[] = [
     maker: "Grand Seiko",
     name: "Snowflake",
     year: 2010,
-    photoCredit: "Grand Seiko · visuel officiel",
+    photoCredit: "Grand Seiko, visuel officiel",
     tagline: "La neige de Shinshu au poignet",
     description:
       "Son cadran texturé évoque la surface d'une neige fraîche, celle des montagnes de Shinshu où elle est assemblée, et sa trotteuse glisse sans à-coups au lieu de tictaquer : c'est le mouvement Spring Drive, hybride unique de mécanique et de régulation électronique dont Seiko a le secret. Surnommée « Snowflake » spontanément par les collectionneurs, la référence SBGA211 révèle à l'Occident, à partir de 2010, l'existence d'une haute horlogerie japonaise aussi obsessionnelle que la suisse. Boîtier en titane clair, aiguille bleuie, finitions Zaratsu polies au miroir : tout y respire la retenue. Elle a converti une génération entière de passionnés. C'est la preuve que la perfection peut être discrète.",
@@ -688,7 +688,7 @@ const items: Item[] = [
     maker: "Doxa",
     name: "SUB 300",
     year: 1967,
-    photoCredit: "Doxa · visuel officiel",
+    photoCredit: "Doxa, visuel officiel",
     tagline: "Le cadran orange des profondeurs",
     description:
       "Présentée à Bâle en 1967, la Doxa SUB 300 est la première montre de plongée vraiment pensée pour le grand public et non pour les seuls professionnels : son cadran orange vif, dernière couleur visible quand on descend, la rend lisible là où toutes les autres s'éteignent. Sa lunette porte une table de décompression mise au point avec US Divers, la société de Jacques Cousteau, dont les plongeurs de la Calypso l'adoptent aussitôt. Popularisée plus tard par Dirk Pitt, le héros des romans de Clive Cussler, elle devient un objet culte à la silhouette immédiatement reconnaissable. Peu de montres ont autant démocratisé la plongée. C'est l'orange qui a rendu les abysses lisibles.",
@@ -698,7 +698,7 @@ const items: Item[] = [
     maker: "Vostok",
     name: "Amphibia",
     year: 1967,
-    photoCredit: "SevenFiveThree · Wikimedia Commons (CC BY-SA 4.0)",
+    photoCredit: "SevenFiveThree, Wikimedia Commons (CC BY-SA 4.0)",
     tagline: "La plongeuse soviétique indestructible",
     description:
       "Conçue en 1967 par Mikhaïl Novikov et Vera Belova pour les hommes-grenouilles de la marine soviétique, l'Amphibia résout l'étanchéité avec une logique inversée géniale : plus la pression augmente en profondeur, plus le verre et le fond à baïonnette se plaquent et se scellent d'eux-mêmes. Là où l'Ouest multiplie les joints, l'URSS retourne le problème avec trois fois rien. Robuste à l'excès, réparable avec un tournevis, vendue pour une bouchée de pain, elle traverse les décennies sans jamais changer d'esprit. Elle est devenue culte auprès des amateurs du monde entier, précisément pour son ingéniosité contre-intuitive. C'est la preuve que la contrainte accouche parfois du génie.",
@@ -718,7 +718,7 @@ const items: Item[] = [
     maker: "Casio",
     name: "CA-53W",
     year: 1988,
-    photoCredit: "Morn · Wikimedia Commons (CC BY-SA 4.0)",
+    photoCredit: "Morn, Wikimedia Commons (CC BY-SA 4.0)",
     tagline: "La calculatrice de Marty McFly",
     description:
       "Casio met une calculatrice au poignet dès les années 1980, et la CA-53W de 1988 en devient l'archétype : huit touches minuscules, écran à cristaux liquides, boîtier de résine noire, le tout pour le prix d'un sandwich. Elle doit sa célébrité au cinéma, portée par Marty McFly dans les deuxième et troisième volets de Retour vers le futur, ce qui lui vaut son surnom éternel. Objet geek assumé, gadget increvable, elle est toujours produite quasiment à l'identique près de quarante ans plus tard. Portée aujourd'hui au second degré comme au premier, elle ne se démode pas parce qu'elle n'a jamais cherché à être à la mode. C'est le futur des années 80, resté au poignet.",
@@ -728,7 +728,7 @@ const items: Item[] = [
     maker: "Braun",
     name: "AW 10",
     year: 1989,
-    photoCredit: "Braun · visuel officiel",
+    photoCredit: "Braun, visuel officiel",
     tagline: "Moins, mais mieux",
     description:
       "Quand Braun se lance dans la montre-bracelet à la fin des années 1980, c'est Dietrich Lubs, dans le sillage du grand Dieter Rams, qui en dessine le cadran : lisibilité maximale, index nets, une seule touche de jaune sur la trotteuse, et rien de superflu. L'AW 10 de 1989 applique au poignet le fameux « moins, mais mieux » qui a fait la légende du design Braun, des radios aux calculatrices. Elle devient le modèle secret de tout le minimalisme horloger contemporain, copiée à l'infini par des marques qui ne la citent jamais. Rééditée pour son statut d'icône, elle reste une leçon de rigueur. C'est le fonctionnalisme allemand réduit à sa plus juste expression.",

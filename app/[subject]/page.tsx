@@ -3,7 +3,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 
 import { ExplorerGrid } from "@/components/explorer-grid"
-import { Button } from "@/components/ui/button"
+import { LinkButton } from "@/components/ui/button"
 import {
   getSubject,
   subjectLabel,
@@ -47,7 +47,7 @@ export default async function SubjectPage({
         <div className="flex items-baseline justify-between gap-4 font-mono text-[11px] tracking-wider text-muted-foreground uppercase">
           <p>Collection — {subject.category}</p>
           <p className="tabular-nums">
-            {subject.items.length} {subject.itemNoun}s · {yearRange(subject)}
+            {subject.items.length} {subject.itemNoun}s, {yearRange(subject)}
           </p>
         </div>
         <h1 className="mt-3 font-heading text-[clamp(3rem,11vw,10rem)] leading-[0.9] font-semibold tracking-[-0.045em] uppercase">
@@ -80,19 +80,17 @@ export default async function SubjectPage({
             {subject.intro}
           </p>
           <div className="flex shrink-0 flex-wrap gap-3">
-            <Button
-              nativeButton={false}
-              render={<Link href={`/${subject.slug}/duel`} />}
+            <LinkButton
+              href={`/${subject.slug}/duel`}
             >
               Lancer le duel
-            </Button>
-            <Button
+            </LinkButton>
+            <LinkButton
               variant="outline"
-              nativeButton={false}
-              render={<Link href={`/${subject.slug}/classement`} />}
+              href={`/${subject.slug}/classement`}
             >
               Mon classement
-            </Button>
+            </LinkButton>
           </div>
         </div>
       </section>

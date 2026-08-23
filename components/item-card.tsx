@@ -33,7 +33,7 @@ export function ItemCard({
         imageClassName="transition-transform duration-700 group-hover:scale-[1.02]"
       />
       <Cartel
-        meta={`N° ${String(number).padStart(2, "0")} · ${item.year}`}
+        meta={`N° ${String(number).padStart(2, "0")}, ${item.year}`}
         title={item.name}
         titleAs="h3"
         brand={item.maker}

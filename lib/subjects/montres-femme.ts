@@ -6,7 +6,7 @@ const items: Item[] = [
     maker: "Cartier",
     name: "Baignoire",
     year: 1912,
-    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    photoCredit: "Johnson Watch Co, Flickr (domaine public)",
     tagline: "L'ovale étiré de Louis Cartier",
     description:
       "En 1912, Louis Cartier étire le cercle d'une montre en un ovale allongé : le dessin, baptisé plus tard « Baignoire » pour sa forme de tub, devient l'une des signatures les plus durables de la maison. Godrons d'or, cadran épuré, chiffres romains étirés : c'est la montre-bijou dans sa forme la plus architecturale. Adorée dans les années 1960 par Catherine Deneuve puis redécouverte par la génération Instagram dans sa version Mini, elle traverse les modes sans prendre une ride. La version « Allongée » des années 1950 s'arrache aux enchères. C'est la preuve qu'une forme juste n'a pas d'époque.",
@@ -16,7 +16,7 @@ const items: Item[] = [
     maker: "Van Cleef & Arpels",
     name: "Cadenas",
     year: 1935,
-    photoCredit: "shakko · Wikimedia Commons (CC BY-SA 3.0)",
+    photoCredit: "shakko, Wikimedia Commons (CC BY-SA 3.0)",
     tagline: "La montre-cadenas de la duchesse de Windsor",
     description:
       "Dessinée en 1935, la Cadenas de Van Cleef & Arpels enroule son bracelet en un fermoir de cadenas dont le cadran, incliné vers celle qui la porte, permet de lire l'heure sans geste visible, car une dame du monde ne consulte pas sa montre en société. La légende l'associe à Wallis Simpson, duchesse de Windsor et cliente fidèle de la maison, dont l'histoire d'amour scandaleuse avec Édouard VIII fascine l'époque. Bijou d'abord, montre ensuite, elle incarne l'âge d'or de la joaillerie horlogère parisienne. Toujours au catalogue, quasi inchangée. C'est l'heure lue à la dérobée, transformée en geste d'élégance.",
@@ -53,7 +53,7 @@ const items: Item[] = [
     maker: "Chopard",
     name: "Happy Diamonds",
     year: 1976,
-    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    photoCredit: "Johnson Watch Co, Flickr (domaine public)",
     tagline: "Les diamants qui dansent en liberté",
     description:
       "En 1976, le designer Ronald Kurowski a une idée en observant les gouttes d'eau d'une cascade : libérer les diamants de leur serti pour les laisser tourbillonner librement entre deux glaces saphir, autour du cadran. « Les diamants sont plus heureux quand ils sont libres », commente la fille du fondateur. Le nom Happy Diamonds est né. D'abord montre d'homme (elle reçoit une distinction à Baden-Baden), elle devient l'icône féminine de Chopard et engendre toute la lignée Happy Sport. Le brevet des diamants mobiles reste l'une des signatures les plus contrefaites de la joaillerie. C'est la préciosité qui refuse de se tenir tranquille.",
@@ -64,7 +64,7 @@ const items: Item[] = [
     name: "Panthère",
     year: 1983,
     tagline: "Le bracelet-bijou des années 80",
-    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    photoCredit: "Johnson Watch Co, Flickr (domaine public)",
     description:
       "Lancée en 1983, la Panthère doit son nom à son bracelet à maillons brossés, souple comme le félin emblème de Cartier depuis 1914. Petit boîtier carré hérité de la Santos, or et acier assumés : c'est la montre-bijou des années 1980, portée aussi bien par les femmes que par les hommes, de Keith Richards à Pierce Brosnan. Retirée du catalogue en 2004, elle est relancée en 2017 quasi inchangée et redevient immédiatement un best-seller. Elle incarne le glamour deux-tons de la décennie Dynasty mieux qu'aucune autre. C'est la preuve que Cartier fabrique des icônes en série.",
   },
@@ -73,7 +73,7 @@ const items: Item[] = [
     maker: "Chopard",
     name: "Happy Sport",
     year: 1993,
-    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    photoCredit: "Johnson Watch Co, Flickr (domaine public)",
     tagline: "L'acier et le diamant enfin réunis",
     description:
       "En 1993, Caroline Scheufele, héritière de Chopard, ose une hérésie : marier l'acier, métal utilitaire, aux diamants, matière du soir, avec les pierres mobiles des Happy Diamonds dansant sur le cadran. La Happy Sport invente la montre de jour précieuse, celle qu'on porte au tennis comme au dîner, et devient l'un des plus grands succès de l'horlogerie féminine des années 1990. Sa lunette aux sept diamants tourbillonnants est reconnaissable entre mille. Toujours best-seller trente ans plus tard, déclinée à l'infini. C'est le luxe descendu de son piédestal, sans rien perdre de son éclat.",
@@ -83,7 +83,7 @@ const items: Item[] = [
     maker: "Casio",
     name: "Baby-G",
     year: 1994,
-    photoCredit: "MIKI Yoshihito · Flickr (CC BY 2.0)",
+    photoCredit: "MIKI Yoshihito, Flickr (CC BY 2.0)",
     tagline: "La G-Shock des filles des années 90",
     description:
       "En 1994, Casio décline sa G-Shock indestructible pour les adolescentes : la Baby-G, plus compacte, déclinée en rose bubblegum, bleu lagon et blanc néon, devient instantanément l'accessoire des lycéennes de Tokyo à Los Angeles. Portée avec les chaussettes hautes et le kogal style à Shibuya, adoptée par les Spice Girls et Gwen Stefani, elle est la montre pop de toute une génération. Résistante aux chocs comme sa grande sœur, elle assume d'être un jouet autant qu'un instrument. C'est la culture jeune des années 1990 cristallisée au poignet, et un souvenir générationnel mondial.",
@@ -93,7 +93,7 @@ const items: Item[] = [
     maker: "Chanel",
     name: "J12",
     year: 2000,
-    photoCredit: "Chun's Pictures · Flickr (CC BY 2.0)",
+    photoCredit: "Chun's Pictures, Flickr (CC BY 2.0)",
     tagline: "La céramique noire qui a changé le siècle",
     description:
       "Dessinée par Jacques Helleu comme un objet de désir absolu (il voulait « la montre que l'on porte avec tout, tout le temps »), la J12 impose en 2000 un matériau que l'horlogerie ne prenait pas au sérieux : la céramique high-tech noire, inrayable, plus légère que l'acier, d'un noir laqué profond. Montre de femme pensée sans complexe comme une vraie montre sportive, elle conquiert ensuite les hommes : trajectoire inverse de toute l'histoire horlogère. Sa version blanche de 2003 relance la mode mondiale des montres blanches. C'est la première icône horlogère du XXIe siècle, tous genres confondus.",
@@ -113,7 +113,7 @@ const items: Item[] = [
     name: "Ballon Bleu",
     year: 2007,
     tagline: "Le rond parfait au cabochon protégé",
-    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    photoCredit: "Johnson Watch Co, Flickr (domaine public)",
     description:
       "Lancée en 2007, la Ballon Bleu est le plus grand succès commercial récent de Cartier. Son boîtier galet, bombé comme un ballon, enveloppe la couronne et son cabochon de saphir bleu dans un arc de métal, créant une silhouette immédiatement identifiable. Le chiffre romain XII déformé par le guichet de couronne est devenu une signature. Kate Middleton en a fait sa montre de tous les jours, assurant sa célébrité mondiale. Elle prouve que Cartier sait encore créer des icônes au XXIe siècle.",
   },
@@ -133,7 +133,7 @@ const items: Item[] = [
     maker: "Omega",
     name: "Ladymatic",
     year: 1955,
-    photoCredit: "Thomas Quine · Wikimedia Commons (CC BY 2.0)",
+    photoCredit: "Thomas Quine, Wikimedia Commons (CC BY 2.0)",
     tagline: "La première automatique pensée pour elles",
     description:
       "En 1955, Omega lance la Ladymatic, sa première montre automatique conçue pour les femmes, animée par le calibre 455 : alors le plus petit mouvement automatique à rotor du monde, certifié chronomètre. Le geste est inédit : offrir aux femmes la même exigence de précision mécanique qu'aux hommes, à une époque où l'horlogerie féminine se résume trop souvent au serti. Le succès est immédiat et durable. Relancée en 2010 dans la collection De Ville avec Nicole Kidman en ambassadrice, elle rappelle qu'Omega a pris les poignets féminins au sérieux avant presque tout le monde. C'est la technique offerte, pas concédée.",
@@ -143,7 +143,7 @@ const items: Item[] = [
     maker: "Georg Jensen",
     name: "Vivianna",
     year: 1969,
-    photoCredit: "Torun Bülow-Hübe · Wikimedia Commons (domaine public)",
+    photoCredit: "Torun Bülow-Hübe, Wikimedia Commons (domaine public)",
     tagline: "Le jonc-miroir de Torun",
     description:
       "Dessinée en 1962 par Vivianna Torun Bülow-Hübe, légende de l'orfèvrerie scandinave, et produite par Georg Jensen à partir de 1969, la Vivianna est un jonc ouvert qui se glisse au poignet sans fermoir, coiffé d'un cadran-miroir sans index. Torun voulait « une montre qui ne fasse pas de nous les esclaves du temps » : le miroir renvoie à celle qui la porte son propre regard plutôt que la fuite des heures. Icône absolue du design scandinave, jamais sortie du catalogue, elle est régulièrement citée parmi les montres féminines les plus importantes de tous les temps. C'est moins une montre qu'un manifeste : le temps ramené à soi.",
@@ -153,7 +153,7 @@ const items: Item[] = [
     maker: "Chopard",
     name: "Ice Cube",
     year: 1999,
-    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    photoCredit: "Johnson Watch Co, Flickr (domaine public)",
     tagline: "Les cubes d'or adoubés par Rihanna",
     description:
       "En 1999, Chopard empile des cubes facettés (or poli ou tout-pavé de diamants) en une géométrie radicale, urbaine, presque brutaliste : l'Ice Cube tranche avec tout ce que la maison (et l'époque) produit alors. La montre trouve sa consécration pop en 2017 quand Rihanna co-signe la collection « Rihanna ♥ Chopard » et en fait l'emblème d'un luxe streetwear avant l'heure. Entre joaillerie glacée et minimalisme architectural, elle traverse les générations sans prendre une ride. C'est le glamour passé au cube.",
@@ -163,7 +163,7 @@ const items: Item[] = [
     maker: "Jaeger-LeCoultre",
     name: "Rendez-Vous",
     year: 2012,
-    photoCredit: "Johnson Watch Co · Flickr (domaine public)",
+    photoCredit: "Johnson Watch Co, Flickr (domaine public)",
     tagline: "L'étoile qui marque l'heure du rendez-vous",
     description:
       "Lancée en 2012, la Rendez-Vous est la grande collection féminine mécanique de Jaeger-LeCoultre : chiffres floraux dessinés comme une calligraphie, guillochage soleillé, et sur le réhaut une petite étoile que l'on positionne sur l'heure d'un rendez-vous à ne pas manquer. La Grande Maison y verse tout son savoir-faire, des calibres automatiques maison jusqu'aux cadrans de haute joaillerie de la Rendez-Vous Ivy et aux complications célestes de la Celestial. Pilier commercial de la manufacture, omniprésente sur les tapis rouges au poignet des ambassadrices de la maison, elle prouve que la mécanique fine se conjugue au féminin sans se travestir. C'est l'heure qui compte vraiment, marquée d'une étoile.",
@@ -179,7 +179,7 @@ const promoted: Item[] = [
     maker: "Patek Philippe",
     name: "Montre de la comtesse Koscowicz",
     year: 1868,
-    photoCredit: "Patek Philippe Museum · The Jewellery Editor",
+    photoCredit: "Patek Philippe Museum, The Jewellery Editor",
     tagline: "La première montre-bracelet conservée de l'histoire",
     description:
       "On l'oublie systématiquement : la montre-bracelet est née au poignet des femmes, un demi-siècle avant que les hommes n'osent l'adopter. Après la pièce perdue créée par Breguet pour Caroline Murat en 1810, la plus ancienne montre-bracelet conservée est ce bracelet-bijou en or émaillé livré par Patek Philippe à la comtesse hongroise Koscowicz en 1868. À l'époque, l'objet est classé parmi les bijoux : l'idée qu'un homme porte sa montre au poignet ferait rire les clubs londoniens. Il faudra les tranchées de 1914 pour que les messieurs rattrapent cinquante ans de retard. Toute l'horlogerie de poignet descend de cette pièce de dame.",
@@ -189,7 +189,7 @@ const promoted: Item[] = [
     maker: "Jaeger-LeCoultre",
     name: "Calibre 101",
     year: 1929,
-    photoCredit: "A Collected Man · Fratello Watches",
+    photoCredit: "A Collected Man, Fratello Watches",
     tagline: "Le plus petit mouvement mécanique du monde",
     description:
       "Créé en 1929, le Calibre 101 de Jaeger-LeCoultre reste, près d'un siècle plus tard, le plus petit mouvement mécanique du monde : 14 millimètres de long, moins d'un gramme, 98 composants assemblés à la loupe par une poignée d'horlogères de la Vallée de Joux. Il permet des montres-bijoux où la mécanique disparaît littéralement dans le serti. Elizabeth II en portait une, discrètement glissée au poignet, le jour de son couronnement en 1953. Produit à quelques exemplaires par an, il est l'un des secrets les mieux gardés de la haute horlogerie. C'est la miniaturisation élevée au rang d'art féminin.",
@@ -199,7 +199,7 @@ const promoted: Item[] = [
     maker: "Boucheron",
     name: "Reflet",
     year: 1947,
-    photoCredit: "Boucheron · FHH (hautehorlogerie.org)",
+    photoCredit: "Boucheron, FHH (hautehorlogerie.org)",
     tagline: "Le talisman d'Édith Piaf",
     description:
       "Imaginée par Gérard Boucheron, la Reflet aligne ses godrons d'or verticaux au poignet et cache une invention brevetée en 1944 : l'attache invisible qui permet de changer de bracelet d'un geste. Édith Piaf en fait son talisman absolu : elle en achète vingt et un exemplaires entre 1949 et 1963, qu'elle offre à ceux qu'elle aime, dont celui gravé « Je ne sonne que les heures heureuses ». Près de quatre-vingts ans plus tard, la Reflet est toujours au catalogue de la place Vendôme, quasi inchangée. C'est la montre-bijou parisienne par excellence : une idée d'orfèvre, une histoire d'amour, une devise. Les heures malheureuses attendront.",
@@ -209,7 +209,7 @@ const promoted: Item[] = [
     maker: "Cartier",
     name: "Crash",
     year: 1967,
-    photoCredit: "Phillips · catalogue d'enchères",
+    photoCredit: "Phillips, catalogue d'enchères",
     tagline: "La montre fondue du Swinging London",
     description:
       "Née en 1967 chez Cartier London sous Jean-Jacques Cartier, la Crash étire et tord le boîtier comme une montre molle de Dalí. La légende maison évoque une Baignoire déformée dans un accident de voiture. En pleine Swinging London, cette forme impossible devient le manifeste du chic anticonformiste, portée par les Londoniennes les plus audacieuses. Produite au compte-gouttes, rééditée confidentiellement à Paris en 1991 puis à Londres en 2013, elle est devenue le graal absolu des montres de forme : un exemplaire de 1967 a dépassé 1,5 million de dollars aux enchères en 2022. C'est le surréalisme au poignet, et la preuve que Cartier sait aussi casser ses propres codes.",
@@ -219,7 +219,7 @@ const promoted: Item[] = [
     maker: "Hermès",
     name: "Kelly",
     year: 1975,
-    photoCredit: "Hermès · visuel de presse",
+    photoCredit: "Hermès, visuel de presse",
     tagline: "Le cadenas du sac devenu montre",
     description:
       "En 1975, Hermès transforme le cadenas du sac Kelly (dessiné par Robert Dumas dans les années 1930) en boîtier de montre, suspendu au poignet sur un simple lien de cuir. L'objet est d'une audace tranquille : une montre qui pend comme une breloque, assumant le bijou plus que l'instrument, portée par les initiées comme un mot de passe. Culte chez les amatrices de vintage, très recherchée aux enchères, elle a été relancée en 2024, première refonte en près d'un demi-siècle. C'est tout Hermès en miniature : la sellerie, le secret, l'humour. Un cadenas qui n'enferme que le temps.",
@@ -229,7 +229,7 @@ const promoted: Item[] = [
     maker: "Piaget",
     name: "Limelight Gala",
     year: 1973,
-    photoCredit: "Piaget · visuel de presse",
+    photoCredit: "Piaget, visuel de presse",
     tagline: "Les cornes étirées du Gstaad Palace",
     description:
       "Dévoilée en 1973 lors d'une soirée au Gstaad Palace, dessinée par Jean-Claude Gueit, la Limelight Gala étire deux cornes asymétriques serties de diamants de part et d'autre d'un boîtier rond, prolongé d'un bracelet d'or souple comme un tissu. C'est l'emblème de la jet-set du « Piaget Society style », de Monte-Carlo à Palm Springs. Rebaptisée et relancée en 2013, célébrée en grande pompe pour ses cinquante ans en 2023, elle est redevenue le pilier féminin de la maison. Son asymétrie précieuse est reconnaissable au premier regard. C'est la fête des années 1970 qui continue, un demi-siècle plus tard.",
@@ -239,7 +239,7 @@ const promoted: Item[] = [
     maker: "Van Cleef & Arpels",
     name: "Lady Arpels Pont des Amoureux",
     year: 2010,
-    photoCredit: "Van Cleef & Arpels · Worldtempus",
+    photoCredit: "Van Cleef & Arpels, Worldtempus",
     tagline: "Le baiser de minuit en émail grand feu",
     description:
       "Sur un pont parisien peint en émail grand feu, elle avance portée par les heures, lui par les minutes, et à minuit comme à midi, les deux amoureux se rejoignent pour un baiser. Le Pont des Amoureux, lancé en 2010, est le sommet des « Complications Poétiques » de Van Cleef & Arpels : un double affichage rétrograde développé exclusivement pour raconter cette histoire. Prix de la Montre Dame au Grand Prix d'Horlogerie de Genève 2010, il a redéfini la haute horlogerie féminine comme un art narratif. C'est la complication la plus romantique jamais construite : la mécanique au service d'un baiser.",
@@ -249,7 +249,7 @@ const promoted: Item[] = [
     maker: "Piaget",
     name: "Montres-manchettes 21st Century",
     year: 1969,
-    photoCredit: "Sotheby's · catalogue d'enchères",
+    photoCredit: "Sotheby's, catalogue d'enchères",
     tagline: "L'or et les pierres dures de la jet-set",
     description:
       "À la fin des années 1960, Piaget fait scandale et sensation : des manchettes d'or martelé aux cadrans de jade, lapis-lazuli, opale ou œil-de-tigre, réunies en 1969 sous la bannière « 21st Century ». Orchestré par Yves Piaget, ce style habille la « Piaget Society » (Jackie Kennedy, Elizabeth Taylor, Sophia Loren, Andy Warhol) et fait de la maison LE joaillier-horloger de la décennie. La montre cesse d'être un instrument pour devenir une œuvre portable, où la mécanique extra-plate maison disparaît dans le bijou. Les exemplaires d'époque s'arrachent aujourd'hui aux enchères. C'est le sommet du glamour horloger des sixties.",
@@ -259,7 +259,7 @@ const promoted: Item[] = [
     maker: "Franck Muller",
     name: "Cintrée Curvex",
     year: 1992,
-    photoCredit: "Franck Muller · visuel officiel",
+    photoCredit: "Franck Muller, visuel officiel",
     tagline: "Le tonneau cintré des années folles 90",
     description:
       "En 1992, Franck Muller cintre le tonneau Art déco dans les trois dimensions : la Cintrée Curvex épouse le poignet comme aucun boîtier avant elle, habillée de chiffres exubérants peints comme des enseignes. Elle fait du jeune horloger genevois le « maître des complications » et LA montre statement des années 1990-2000, adorée des femmes, et d'Elton John. Ses déclinaisons Color Dreams, aux chiffres multicolores, définissent le glamour pré-2000 et s'offrent aujourd'hui une vraie seconde vie en vintage. C'est l'exubérance assumée, à contre-courant du minimalisme, et ça lui va très bien.",
@@ -269,7 +269,7 @@ const promoted: Item[] = [
     maker: "Longines",
     name: "DolceVita",
     year: 1997,
-    photoCredit: "Longines · visuel de presse",
+    photoCredit: "Longines, visuel de presse",
     tagline: "Le rectangle Art déco de la dolce vita",
     description:
       "En 1997, Longines ressuscite ses rectangles Art déco des années 1920 et les baptise en hommage à la douceur de vivre fellinienne : la DolceVita est née. Proportions justes, chiffres romains ou rail de chemin de fer, prix accessible : elle devient l'un des best-sellers mondiaux les plus constants de l'horlogerie féminine, portée par des ambassadrices comme Jennifer Lawrence. La Mini DolceVita de 2023 a relancé la fièvre des petites montres rectangulaires auprès d'une nouvelle génération. Près de trente ans de succès ininterrompu pour un dessin vieux d'un siècle. C'est la preuve que l'Art déco ne se démode pas. Il attend.",
@@ -279,7 +279,7 @@ const promoted: Item[] = [
     maker: "Girard-Perregaux",
     name: "Cat's Eye",
     year: 2004,
-    photoCredit: "Girard-Perregaux · Watchonista",
+    photoCredit: "Girard-Perregaux, Watchonista",
     tagline: "L'ovale mécanique, manifeste anti-quartz",
     description:
       "En 2004, Girard-Perregaux dessine un boîtier ovale aux courbes d'œil de chat et prend un parti radical : la Cat's Eye ne recevra que des mouvements mécaniques de manufacture, jusqu'au tourbillon sous pont d'or et aux phases de lune. Dans l'horlogerie féminine des années 2000, saturée de quartz habillé de diamants, c'est un manifeste : les femmes aussi ont droit à la belle mécanique. Vingt ans au catalogue et une place régulière dans les listes des montres féminines les plus marquantes du siècle lui donnent raison. C'est la haute horlogerie conjuguée au féminin sans condescendance.",
@@ -289,7 +289,7 @@ const promoted: Item[] = [
     maker: "Vacheron Constantin",
     name: "Égérie",
     year: 2020,
-    photoCredit: "Vacheron Constantin · Escapement Magazine",
+    photoCredit: "Vacheron Constantin, Escapement Magazine",
     tagline: "Le plissé couture de la plus vieille manufacture",
     description:
       "En 2020, la plus ancienne manufacture horlogère en activité continue lance sa première vraie collection féminine contemporaine : l'Égérie, au cadran plissé comme un tissu de haute couture et à la couronne désaxée sertie d'une pierre de lune. Mouvements de manufacture, du quartz banni jusqu'au tourbillon : Vacheron Constantin parle enfin directement aux femmes, sans dilution ni condescendance. Saluée par la critique comme le signe d'un basculement de toute l'industrie, elle est jeune mais déjà pilier. C'est deux cent soixante-cinq ans de savoir-faire, plissés au féminin.",
@@ -299,7 +299,7 @@ const promoted: Item[] = [
     maker: "Chanel",
     name: "Boy·Friend",
     year: 2015,
-    photoCredit: "Chanel · GPHG",
+    photoCredit: "Chanel, GPHG",
     tagline: "Le vestiaire masculin emprunté, encore",
     description:
       "En 2015, Chanel applique à l'horlogerie le geste fondateur de Gabrielle Chanel (emprunter au vestiaire des hommes) avec un clin d'œil à Boy Capel, l'amour de sa vie : la Boy·Friend étire un boîtier octogonal aux proportions volontairement masculines sur un poignet féminin. Les puristes s'inclinent devant les versions squelette animées du calibre 3 de la maison, d'une rigueur architecturale rare. Après la Première et la J12, c'est la montre qui a définitivement installé Chanel dans la cour de la haute horlogerie. C'est du Chanel canonique : l'élégance qui se prend au sérieux mécaniquement, jamais solennellement.",
@@ -309,7 +309,7 @@ const promoted: Item[] = [
     maker: "Chanel",
     name: "Première",
     year: 1987,
-    photoCredit: "Chanel · visuel de presse",
+    photoCredit: "Chanel, visuel de presse",
     tagline: "La première montre de la maison Chanel",
     description:
       "Quand Chanel lance sa toute première montre en 1987, Jacques Helleu en dessine le boîtier d'après la géométrie du bouchon du parfum N°5, lui-même inspiré de la place Vendôme. Chaîne entrelacée de cuir comme le sac 2.55, cadran laqué noir sans chiffre : tout le vocabulaire de Gabrielle Chanel tient dans quelques centimètres carrés. Le succès est immédiat et installe la légitimité horlogère de la maison, ouvrant la voie à la J12. Rééditée en 2022 dans sa forme d'origine, elle a retrouvé le succès instantanément. C'est du Chanel à l'état pur : rien de superflu, tout est signature.",
@@ -319,7 +319,7 @@ const promoted: Item[] = [
     maker: "Hermès",
     name: "Cape Cod",
     year: 1991,
-    photoCredit: "Hermès · packshot officiel",
+    photoCredit: "Hermès, packshot officiel",
     tagline: "Le carré dans le rectangle, et le Double Tour",
     description:
       "Dessinée en 1991 par Henri d'Origny à qui l'on demandait un boîtier carré (il livra « un carré dans un rectangle », aux attaches inspirées des maillons de la chaîne d'ancre Hermès), la Cape Cod prend sa dimension mythique en 1998 : Martin Margiela, alors directeur artistique des collections femme, imagine le bracelet Double Tour qui s'enroule deux fois autour du poignet comme un lien de cuir. Le geste devient l'une des signatures les plus copiées de la montre féminine. Sellerie, cuir, discrétion : tout Hermès est là. C'est l'élégance qui s'attache au lieu de s'afficher.",
@@ -329,7 +329,7 @@ const promoted: Item[] = [
     maker: "Patek Philippe",
     name: "Twenty~4",
     year: 1999,
-    photoCredit: "Sotheby's · catalogue d'enchères",
+    photoCredit: "Sotheby's, catalogue d'enchères",
     tagline: "La Patek pensée pour la vie des femmes",
     description:
       "En 1999, Patek Philippe lance sa première collection entièrement dédiée aux femmes depuis des décennies : la Twenty~4, du nom des vingt-quatre heures d'une vie active qu'elle prétend accompagner, du bureau au dîner sans changer de montre. Boîtier rectangulaire inspiré de la Gondolo, deux rangées de diamants, bracelet intégré : le manifeste d'une génération de femmes qui s'achètent elles-mêmes leur haute horlogerie au lieu de l'attendre en cadeau. Le slogan « Qui serez-vous dans les prochaines 24 heures ? » assume le propos. C'est la porte d'entrée féminine de la plus prestigieuse des manufactures.",
@@ -339,7 +339,7 @@ const promoted: Item[] = [
     maker: "Dior",
     name: "La D de Dior",
     year: 2003,
-    photoCredit: "Dior · The Jewellery Editor",
+    photoCredit: "Dior, The Jewellery Editor",
     tagline: "La montre dessinée comme un bouton de tailleur",
     description:
       "Victoire de Castellane, créatrice de la joaillerie Dior, dessine en 2003 une montre qui refuse tous les codes horlogers : La D de Dior est ronde et plate « comme un bouton de tailleur Bar », avec un bracelet qui évoque un ruban de gros-grain. Pensée comme un accessoire de couture plus que comme un instrument, déclinée en nacre, opale, malachite et diamants, elle assume une préciosité joyeuse et féminine sans s'excuser. Elle a installé Dior comme acteur horloger légitime. C'est la couture qui donne l'heure.",
@@ -349,7 +349,7 @@ const promoted: Item[] = [
     maker: "Poiray",
     name: "Ma Première",
     year: 1985,
-    photoCredit: "Poiray · visuel officiel",
+    photoCredit: "Poiray, visuel officiel",
     tagline: "La parisienne aux bracelets interchangeables",
     description:
       "Créée en 1985 par la maison de la place Vendôme, Ma Première invente un geste que toute l'industrie copiera trente ans plus tard : le bracelet interchangeable sans outil, qui change la montre d'humeur en quelques secondes, satin le soir, cuir grainé au bureau, vernis fluo le week-end. Son boîtier coussin cerclé de godrons devient un classique du chic parisien, offert de mère en fille pour les grandes occasions. C'est la montre française féminine par excellence, indémodable et malicieuse. Une idée simple, exécutée avec esprit : très parisien, précisément.",
@@ -359,7 +359,7 @@ const promoted: Item[] = [
     maker: "Audemars Piguet",
     name: "Royal Oak Lady",
     year: 1976,
-    photoCredit: "Sotheby's · catalogue d'enchères",
+    photoCredit: "Sotheby's, catalogue d'enchères",
     ref: "8638",
     tagline: "L'acier au féminin, dessiné par une femme",
     description:
@@ -380,7 +380,7 @@ const promoted: Item[] = [
     maker: "Hermès",
     name: "Heure H",
     year: 1996,
-    photoCredit: "Hermès · packshot officiel",
+    photoCredit: "Hermès, packshot officiel",
     tagline: "La lettre devenue boîtier",
     description:
       "Dessinée en 1996 par Philippe Mouquet, l'Heure H résout une équation d'une élégance rare : le boîtier carré EST la lettre H. Hermès et Horlogerie d'un seul trait. Ni logo apposé ni monogramme imprimé : la signature est la structure même de l'objet. Portée sur les bracelets de cuir de la sellerie maison, déclinée du mini au serti, elle est devenue le porte-drapeau de l'horlogerie Hermès et l'une des montres de mode les plus reconnaissables au monde, best-seller trente ans après. C'est le design réduit à son os : une initiale qui donne l'heure.",
@@ -391,7 +391,7 @@ const promoted: Item[] = [
     maker: "Tiffany & Co.",
     name: "Atlas",
     year: 1983,
-    photoCredit: "Rago Auctions · catalogue d'enchères",
+    photoCredit: "Rago Auctions, catalogue d'enchères",
     tagline: "Les chiffres romains de la Cinquième Avenue",
     description:
       "En 1983, John Loring, directeur du design de Tiffany & Co., s'inspire de l'horloge que porte la statue d'Atlas au-dessus de l'entrée du magasin historique de la Cinquième Avenue, veillant sur New York depuis 1853. Il en tire la collection Atlas et ses chiffres romains en haut-relief, brevetés, disposés en couronne autour du cadran comme sur un cadran d'horloge monumentale. Élégante, graphique, immédiatement identifiable, elle devient une signature du style américain et l'un des piliers horlogers de la maison au petit écrin bleu. Portée le jour comme le soir, elle traverse les modes sans effort. C'est un morceau d'architecture new-yorkaise ramené à l'échelle du poignet.",
@@ -411,7 +411,7 @@ const promoted: Item[] = [
     maker: "Cartier",
     name: "Tank Française",
     year: 1996,
-    photoCredit: "Cartier · visuel officiel",
+    photoCredit: "Cartier, visuel officiel",
     tagline: "La Tank de Lady Diana",
     description:
       "En 1996, Cartier resserre sa Tank en un boîtier et un bracelet de maillons parfaitement intégrés, plus souples, plus sportifs : la Tank Française est née. La même année, Lady Diana en fait sa montre de tous les jours au moment de son divorce, au point que la presse la surnomme durablement « la montre de Diana ». Cette filiation royale et la ligne assagie en font instantanément un best-seller mondial de la maison. Sa déclinaison accessible, la Must de Cartier relancée depuis en vermeil et cadrans colorés, en fait même un phénomène auprès des nouvelles générations. Redevenue une icône absolue, elle porte toute l'histoire de la Tank au féminin. C'est le carré parfait de Cartier, ajusté au poignet du quotidien.",
@@ -421,7 +421,7 @@ const promoted: Item[] = [
     maker: "Jaeger-LeCoultre",
     name: "Reverso Duetto",
     year: 1997,
-    photoCredit: "Jaeger-LeCoultre · visuel de presse",
+    photoCredit: "Jaeger-LeCoultre, visuel de presse",
     tagline: "Deux visages pour un seul poignet",
     description:
       "La Reverso naît en 1931 pour les joueurs de polo, son boîtier basculant sur lui-même afin de protéger le verre : soixante-six ans plus tard, la Duetto exploite génialement ce dos jusqu'ici nu. D'un côté un cadran clair et lisible pour le jour, de l'autre un cadran précieux, serti ou nacré pour le soir ; un seul mouvement anime les deux. La femme retourne littéralement sa montre pour changer de tenue, du bureau au dîner, d'un geste. Cette double vie fait de la Duetto l'expression féminine la plus aboutie de l'une des montres les plus iconiques du XXe siècle. C'est l'Art déco qui joue, malicieusement, sur les deux tableaux.",
@@ -431,7 +431,7 @@ const promoted: Item[] = [
     maker: "Harry Winston",
     name: "Avenue",
     year: 1997,
-    photoCredit: "Harry Winston · The Gourmet Gazette",
+    photoCredit: "Harry Winston, The Gourmet Gazette",
     tagline: "La montre de tapis rouge du roi du diamant",
     description:
       "Harry Winston, le « roi du diamant » qui habille les stars d'Hollywood pour la nuit des Oscars, dessine dans les années 1990 une montre à sa mesure : l'Avenue, au boîtier cintré Art déco étiré à la verticale, baptisée d'après la Cinquième Avenue new-yorkaise. Serti de diamants, épousant le poignet comme un bijou, elle devient la montre de soirée par excellence, celle qui accompagne les robes de grands soirs sous les projecteurs. Là où d'autres maisons font des montres qui portent des diamants, Winston fait des diamants qui donnent l'heure. Elle incarne le glamour américain dans sa version la plus scintillante. C'est la haute joaillerie qui a rendez-vous avec les caméras.",
@@ -441,7 +441,7 @@ const promoted: Item[] = [
     maker: "Chaumet",
     name: "Joséphine",
     year: 2010,
-    photoCredit: "Chaumet · GPHG",
+    photoCredit: "Chaumet, GPHG",
     tagline: "Le diadème de l'impératrice, devenu montre",
     description:
       "Chaumet, joaillier de Napoléon installé place Vendôme depuis plus de deux siècles, puise dans ses archives de diadèmes et dans la figure de l'impératrice Joséphine, sa cliente et égérie fondatrice. La ligne Joséphine, lancée en 2010, en tire sa signature : l'aigrette, cette poire de diamant dressée comme la pointe d'un diadème impérial, qui couronne le cadran serti. Bijou d'abord, montre ensuite, elle porte deux cents ans d'histoire joaillière française dans quelques centimètres carrés. Romantique et régalienne, elle rappelle qu'avant d'être horloger, Chaumet fut d'abord le faiseur de couronnes des têtes de l'Empire. C'est un diadème miniature qui aurait appris à donner l'heure.",
@@ -451,7 +451,7 @@ const promoted: Item[] = [
     maker: "Daniel Wellington",
     name: "Classic",
     year: 2011,
-    photoCredit: "Daniel Wellington · visuel officiel",
+    photoCredit: "Daniel Wellington, visuel officiel",
     tagline: "Le minimalisme qui a conquis Instagram",
     description:
       "Fondée en 2011 par le Suédois Filip Tysander avec quelques milliers d'euros, Daniel Wellington lance une montre d'une simplicité extrême : cadran blanc épuré, aiguilles fines, boîtier plat, le tout sur un bracelet NATO rayé aux couleurs militaires. Le produit importe peu ; c'est la stratégie qui fait date, propulsée par des centaines de micro-influenceuses Instagram brandissant leur poignet sous le mot-dièse de la marque. En quelques années, plus de six millions de pièces sont vendues et la maison devient le symbole du marketing d'influence des années 2010. Objet horloger modeste mais marqueur culturel majeur, elle raconte une décennie autant qu'elle donne l'heure. C'est la montre née sur un écran de téléphone.",
@@ -461,7 +461,7 @@ const promoted: Item[] = [
     maker: "Dior",
     name: "Grand Bal",
     year: 2011,
-    photoCredit: "Dior · MOJEH",
+    photoCredit: "Dior, MOJEH",
     tagline: "La masse oscillante qui danse sur le cadran",
     description:
       "Victoire de Castellane, créatrice de la joaillerie Dior, réalise en 2011 un tour de force horloger : déplacer la masse oscillante d'un mouvement automatique, normalement cachée au dos, sur la face du cadran, où elle tourne au moindre geste comme une jupe de bal en plein tournoiement. Ce mécanisme baptisé « Dior Inversé », signé Frédéric Jouvenot, transforme la mécanique en robe de gala sertie de plumes de diamants et d'émail. La montre s'inspire directement des jupons des robes du soir de la maison, drapés et virevoltants. Rare mariage de haute couture et de haute horlogerie, elle prouve que la mécanique peut être pure émotion. C'est un bal masqué qui tient au poignet.",
@@ -481,7 +481,7 @@ const promoted: Item[] = [
     maker: "Bulgari",
     name: "Divas' Dream",
     year: 2015,
-    photoCredit: "Bulgari · Monochrome-Watches",
+    photoCredit: "Bulgari, Monochrome-Watches",
     tagline: "L'éventail des thermes de Caracalla",
     description:
       "En 2015, Bulgari donne à sa clientèle féminine une signature nouvelle, distincte de la Serpenti : la Divas' Dream, dont le motif en éventail reprend les mosaïques des thermes de Caracalla, dans la Rome antique chère à la maison. L'objet est un hommage aux « divas » qui ont fait la légende romaine de Bulgari, d'Elizabeth Taylor à Anna Magnani, dans le Rome dolce vita des années 1960. Cadran de pierre dure, nacre ou serti, boîtier à godrons : tout y célèbre le glamour méditerranéen le plus assumé. Elle est devenue l'un des deux grands piliers féminins de la maison. C'est l'Antiquité romaine transformée en bijou de poignet contemporain.",

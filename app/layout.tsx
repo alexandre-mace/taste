@@ -1,20 +1,12 @@
 import type { Metadata } from "next"
-import { Archivo, Geist_Mono } from "next/font/google"
+import { GeistSans } from "geist/font/sans"
+import { GeistMono } from "geist/font/mono"
 
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
 import { SiteHeader } from "@/components/site-header"
 import { cn } from "@/lib/utils"
 
-const archivo = Archivo({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
 
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-})
 
 export const metadata: Metadata = {
   title: {
@@ -33,16 +25,14 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      suppressHydrationWarning
       className={cn(
         "antialiased",
         "font-sans",
-        archivo.variable,
-        fontMono.variable
+        GeistSans.variable,
+        GeistMono.variable
       )}
     >
       <body className="flex min-h-svh flex-col">
-        <ThemeProvider>
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <footer className="border-t">
@@ -51,7 +41,6 @@ export default function RootLayout({
               <p>Photos : crédits par pièce</p>
             </div>
           </footer>
-        </ThemeProvider>
       </body>
     </html>
   )

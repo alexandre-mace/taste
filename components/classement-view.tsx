@@ -10,7 +10,6 @@ import {
   AlertDialog,
   AlertDialogAction,
   AlertDialogCancel,
-  AlertDialogContent,
   AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogHeader,
@@ -18,7 +17,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { Button, LinkButton } from "@/components/ui/button"
 import {
   Empty,
   EmptyContent,
@@ -77,12 +76,11 @@ export function ClassementView({ subjectSlug }: { subjectSlug: string }) {
             </EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
-            <Button
-              nativeButton={false}
-              render={<Link href={`/${subject.slug}/duel`} />}
+            <LinkButton
+              href={`/${subject.slug}/duel`}
             >
               Lancer le premier duel
-            </Button>
+            </LinkButton>
           </EmptyContent>
         </Empty>
       </div>
@@ -100,28 +98,23 @@ export function ClassementView({ subjectSlug }: { subjectSlug: string }) {
           title="Votre classement"
         >
           <p className="mt-3 text-sm text-muted-foreground">
-            Établi sur {totalDuels} duel{totalDuels > 1 ? "s" : ""} ·{" "}
+            Établi sur {totalDuels} duel{totalDuels > 1 ? "s" : ""},{" "}
             {unseen > 0 ? unseenLabel(subject, unseen) : allSeen}
           </p>
         </PageHeader>
         <div className="flex gap-2">
-          <Button
+          <LinkButton
             variant="outline"
             size="sm"
-            nativeButton={false}
-            render={<Link href={`/${subject.slug}/duel`} />}
+            href={`/${subject.slug}/duel`}
           >
             Continuer les duels
-          </Button>
-          <AlertDialog>
-            <AlertDialogTrigger
-              render={
-                <Button variant="ghost" size="sm">
-                  Tout recommencer
-                </Button>
-              }
-            />
-            <AlertDialogContent>
+          </LinkButton>
+          <AlertDialogTrigger>
+            <Button variant="ghost" size="sm">
+              Tout recommencer
+            </Button>
+            <AlertDialog>
               <AlertDialogHeader>
                 <AlertDialogTitle>
                   Remettre le classement à zéro ?
@@ -133,12 +126,12 @@ export function ClassementView({ subjectSlug }: { subjectSlug: string }) {
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel>Annuler</AlertDialogCancel>
-                <AlertDialogAction onClick={reset}>
+                <AlertDialogAction onPress={reset}>
                   Tout effacer
                 </AlertDialogAction>
               </AlertDialogFooter>
-            </AlertDialogContent>
-          </AlertDialog>
+            </AlertDialog>
+          </AlertDialogTrigger>
         </div>
       </div>
 
@@ -235,7 +228,7 @@ function PodiumCard({
         imageClassName="transition-transform duration-700 group-hover:scale-[1.02]"
       />
       <Cartel
-        meta={`${entry.rating} pts · ${formatRecord(entry)}`}
+        meta={`${entry.rating} pts (${formatRecord(entry)})`}
         title={item.name}
         size="lg"
         brand={item.maker}

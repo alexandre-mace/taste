@@ -4,9 +4,9 @@ import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import { CheckIcon, ChevronDownIcon } from "lucide-react"
 
+import { Button as AriaButton } from "react-aria-components"
 import {
   DropdownMenu,
-  DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
@@ -37,19 +37,19 @@ export function SiteHeader() {
           >
             Taste
           </Link>
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex min-w-0 items-center gap-1.5 border-b border-transparent pb-0.5 font-mono text-[11px] tracking-wider text-muted-foreground uppercase transition-colors outline-none hover:text-foreground focus-visible:border-ring data-[popup-open]:text-foreground">
+          <DropdownMenuTrigger>
+            <AriaButton className="flex min-w-0 items-center gap-1.5 border-b border-transparent pb-0.5 font-mono text-[11px] tracking-wider text-muted-foreground uppercase transition-colors outline-none hover:text-foreground focus-visible:border-ring aria-expanded:text-foreground">
               <span className="truncate">
                 {subject ? subjectLabel(subject) : "Collections"}
               </span>
               <ChevronDownIcon className="size-3 shrink-0" aria-hidden />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="start">
+            </AriaButton>
+            <DropdownMenu placement="bottom start">
               <DropdownMenuGroup>
                 {subjects.map((s) => (
                   <DropdownMenuItem
                     key={s.slug}
-                    onClick={() => router.push(`/${s.slug}`)}
+                    onAction={() => router.push(`/${s.slug}`)}
                     className="font-mono text-xs tracking-wider uppercase"
                   >
                     {subjectLabel(s)}
@@ -59,8 +59,8 @@ export function SiteHeader() {
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuGroup>
-            </DropdownMenuContent>
-          </DropdownMenu>
+            </DropdownMenu>
+          </DropdownMenuTrigger>
         </div>
 
         {subject ? (

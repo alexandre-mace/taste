@@ -66,7 +66,7 @@ export default async function ItemPage({
           />
           <figcaption className="flex flex-wrap justify-between gap-x-4 gap-y-1 px-0.5 font-mono text-[10px] tracking-wider text-muted-foreground tabular-nums">
             <span>
-              N° {String(number).padStart(2, "0")} / {items.length} · Collection{" "}
+              N° {String(number).padStart(2, "0")} / {items.length}, Collection{" "}
               {subject.title}
             </span>
             {item.photoCredit ? <span>Photo : {item.photoCredit}</span> : null}

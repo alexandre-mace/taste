@@ -137,7 +137,7 @@ const items: Item[] = [
     maker: "Utrecht, Pays-Bas",
     name: "De Stijl",
     year: 1917,
-    photoCredit: "Basvb · Wikimedia Commons (CC BY-SA 3.0)",
+    photoCredit: "Basvb, Wikimedia Commons (CC BY-SA 3.0)",
     tagline: "Vivre dans un Mondrian",
     description:
       "Le mouvement néerlandais De Stijl réduit le monde à ses éléments premiers : lignes droites, plans, et les trois couleurs primaires posées sur blanc, gris et noir. La maison Schröder de Gerrit Rietveld à Utrecht en est le manifeste habitable : cloisons coulissantes, mobilier intégré, sa fameuse chaise rouge et bleue : un tableau de Mondrian en trois dimensions. L'espace y est pensé comme une composition abstraite dont l'habitant fait partie. D'une radicalité inouïe pour 1924, elle est classée au patrimoine mondial de l'UNESCO. Aucun intérieur n'a jamais poussé aussi loin l'utopie géométrique.",
@@ -148,7 +148,7 @@ const items: Item[] = [
     maker: "Weimar & Dessau, Allemagne",
     name: "Bauhaus",
     year: 1919,
-    photoCredit: "JensKunstfreund & Martavictor · Wikimedia Commons",
+    photoCredit: "JensKunstfreund & Martavictor, Wikimedia Commons",
     tagline: "La forme suit la fonction",
     description:
       "L'école fondée par Walter Gropius révolutionne l'habitat en mariant art et industrie : acier tubulaire de Marcel Breuer, luminaires de Marianne Brandt, plans libres et murs blancs. L'intérieur Bauhaus supprime tout ornement au profit de la fonction, avec une conviction : le bon design doit être reproductible et accessible à tous. Fermée par les nazis en 1933, l'école essaime dans le monde entier et fonde le design moderne. La chaise Cesca et le fauteuil Wassily meublent encore nos salons. Son esthétique machine, scandaleuse à l'époque, est devenue le langage par défaut de la modernité. Cent ans après, on habite tous un peu au Bauhaus.",
@@ -189,7 +189,7 @@ const items: Item[] = [
     maker: "Danemark, Suède & Finlande",
     name: "Scandinave",
     year: 1950,
-    photoCredit: "Alex Tyson · Pexels",
+    photoCredit: "Alex Tyson, Pexels",
     tagline: "La beauté fonctionnelle pour tous",
     description:
       "Le design scandinave des années 1950 (Hans Wegner, Arne Jacobsen, Alvar Aalto, Finn Juhl) marie chaleur artisanale et modernisme : teck et chêne blonds, laine et cuir, formes douces dessinées pour le corps. Sa philosophie est sociale-démocrate jusque dans le mobilier : du beau, du fonctionnel, pour tout le monde. Le « hygge » danois et la lumière rare du Nord façonnent des intérieurs clairs, feutrés, où la bougie est une institution. IKEA en a diffusé une version planétaire, faisant du look scandinave le style par défaut du XXIe siècle. Peu de régions ont autant marqué la maison contemporaine.",
@@ -258,7 +258,7 @@ const items: Item[] = [
     maker: "Los Angeles",
     name: "Hollywood Regency",
     year: 1935,
-    photoCredit: "DesignFolly.com · Flickr (CC BY-SA 2.0)",
+    photoCredit: "DesignFolly.com, Flickr (CC BY-SA 2.0)",
     tagline: "Le glamour des studios au salon",
     description:
       "Né dans les villas des stars de l'âge d'or hollywoodien, sous la houlette de décorateurs vedettes comme Dorothy Draper ou William Haines, le Hollywood Regency met la maison en scène comme un plateau de cinéma : laque noire et blanche, miroirs partout, velours émeraude, léopard, lustres théâtraux. Tout est contraste et brillance, pensé pour flatter ses occupants comme un éclairage de studio. C'est le style de l'apparence assumée, du cocktail à 18 heures et de l'escalier fait pour les entrées remarquées. Périodiquement ressuscité (par Jonathan Adler ou Kelly Wearstler), il reste la référence du chic spectaculaire. Le glamour, ici, est une discipline.",
@@ -287,7 +287,7 @@ const items: Item[] = [
     name: "Méditerranéen",
     year: 1920,
     photoCount: 2,
-    photoCredit: "Agung Pandit Wiguna & hatice yağcı · Pexels",
+    photoCredit: "Agung Pandit Wiguna & hatice yağcı, Pexels",
     tagline: "Chaux blanche, terre cuite et lumière",
     description:
       "Des villas des Cyclades aux haciendas californiennes du « Mediterranean Revival » des années 1920, le style méditerranéen distille la même recette : murs à la chaux, sols en terre cuite, bois patinés par le sel, niches et arches sculptées dans l'épaisseur des murs. La palette est celle du paysage (blanc éclatant, bleu Égée, ocres et verts d'olivier) et la frontière entre dedans et dehors s'efface sous les pergolas. Popularisé par les magazines de voyage puis par la vague « coastal » d'Instagram, il évoque instantanément l'été perpétuel. De Santorin à Comporta, c'est l'esthétique vacances devenue art de vivre. Le luxe y a la texture du plâtre frais.",
@@ -297,7 +297,7 @@ const items: Item[] = [
     maker: "Londres & Japon",
     name: "Minimalisme",
     year: 1995,
-    photoCredit: "Ndecam · Flickr (CC BY 2.0)",
+    photoCredit: "Ndecam, Flickr (CC BY 2.0)",
     tagline: "L'espace, la lumière, et presque rien",
     description:
       "Héritier du zen japonais et du modernisme, le minimalisme des années 1990 (John Pawson en chef de file, Claudio Silvestrin, l'influence de Tadao Ando) réduit l'architecture intérieure à l'essentiel absolu : murs nus, lumière sculptée, rangements invisibles, une matière ou deux traitées à la perfection. La maison Pawson à Londres ou le monastère de Nový Dvůr montrent la rigueur quasi monastique du genre. Calvin Klein en fit l'esthétique de sa marque, les galeries d'art son décor par défaut. Exigeant à vivre (le désordre y est un scandale), il reste l'horizon de toute épure contemporaine. Moins, ici, est réellement plus.",
@@ -333,7 +333,7 @@ const promoted: Item[] = [
     name: "Loft industriel",
     year: 1970,
     photoCount: 2,
-    photoCredit: "Keren Fedida & Christian Lendl · Unsplash",
+    photoCredit: "Keren Fedida & Christian Lendl, Unsplash",
     tagline: "Habiter l'usine, inventer l'espace ouvert",
     description:
       "Quand les artistes de SoHo (Rauschenberg, puis toute une génération) investissent illégalement les étages d'anciennes manufactures new-yorkaises, ils inventent sans le savoir le fantasme résidentiel des cinquante années suivantes : plateaux ouverts, briques apparentes, colonnes de fonte, verrières d'atelier et volumes démesurés. L'esthétique de l'usine (tuyauterie visible, béton, métal riveté) devient un langage décoratif à part entière. Le loft transforme la contrainte en luxe : l'espace brut vaut plus que la finition. Copié dans le monde entier jusque dans les programmes neufs « esprit loft », il a durablement décloisonné nos logements. C'est la plus belle revanche de la friche sur le salon bourgeois.",
@@ -344,7 +344,7 @@ const promoted: Item[] = [
     name: "Farmhouse moderne",
     year: 2013,
     photoCount: 2,
-    photoCredit: "Clay Banks · Unsplash",
+    photoCredit: "Clay Banks, Unsplash",
     tagline: "La ferme réinventée par la télévision",
     description:
       "Popularisé par Joanna Gaines et l'émission Fixer Upper depuis Waco, Texas, le modern farmhouse croise la ferme américaine et le confort contemporain : lambris shiplap blancs, poutres récupérées, éviers de ferme, luminaires de grange en métal noir et lettrages muraux. La recette (neutre, chaleureuse, familiale) a conquis l'Amérique périurbaine au point de devenir le style par défaut des constructions neuves des années 2010-2020. Sa diffusion par la télévision puis Pinterest en fait le premier grand style né du divertissement de masse. Critiqué pour son uniformité, il a néanmoins réhabilité bois brut et artisanat auprès du grand public. C'est le rêve pastoral en version climatisée.",
@@ -355,7 +355,7 @@ const promoted: Item[] = [
     name: "Japandi",
     year: 2017,
     photoCount: 2,
-    photoCredit: "Puscas Adryan & rawkkim · Unsplash",
+    photoCredit: "Puscas Adryan & rawkkim, Unsplash",
     tagline: "Quand Kyoto rencontre Copenhague",
     description:
       "Contraction de « Japan » et « Scandi », le japandi fusionne deux traditions cousines : l'épure chaleureuse du design danois et la sobriété artisanale japonaise. Bois clairs et bois brûlés, céramiques wabi-sabi, lignes basses, palette minérale : tout y respire le calme étudié. La parenté n'est pas nouvelle (les Danois des années 1950 admiraient déjà l'artisanat japonais), mais l'étiquette née des réseaux sociaux a cristallisé un goût mondial des années 2020 pour les intérieurs apaisés. C'est le style refuge de l'époque anxieuse, mi-hygge, mi-zen. La maison comme respiration.",

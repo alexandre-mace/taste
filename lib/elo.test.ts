@@ -79,7 +79,7 @@ describe("getEntry", () => {
 
 describe("formatRecord", () => {
   it("affiche victoires et défaites", () => {
-    expect(formatRecord({ rating: 1000, battles: 5, wins: 3 })).toBe("3V · 2D")
+    expect(formatRecord({ rating: 1000, battles: 5, wins: 3 })).toBe("3V 2D")
   })
 })
 

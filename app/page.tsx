@@ -16,10 +16,7 @@ export default function Page() {
   return (
     <div className="mx-auto max-w-6xl px-4 pt-12 pb-16 sm:px-6 sm:pt-20 sm:pb-24">
       <section className="max-w-3xl">
-        <p className="font-mono text-[11px] tracking-[0.25em] text-muted-foreground uppercase">
-          Un musée personnel du goût
-        </p>
-        <h1 className="mt-4 font-heading text-5xl leading-[0.95] font-semibold tracking-[-0.04em] sm:text-7xl">
+        <h1 className="font-heading text-5xl leading-[0.95] font-semibold tracking-[-0.04em] sm:text-7xl">
           Explorez les icônes.
           <br />
           Révélez votre goût.
@@ -67,7 +64,7 @@ function CollectionRow({ group }: { group: Subject[] }) {
                   {subject.variant} —
                 </span>
               ) : null}
-              {subject.items.length} {subject.itemNoun}s · {yearRange(subject)}
+              {subject.items.length} {subject.itemNoun}s, {yearRange(subject)}
               <ArrowRightIcon
                 className="size-3.5 transition-transform group-hover:translate-x-1"
                 aria-hidden
