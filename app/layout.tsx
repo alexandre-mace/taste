@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 
 import "./globals.css"
+import { MadeWithLove } from "@/components/made-with-love"
 import { SiteHeader } from "@/components/site-header"
 import { cn } from "@/lib/utils"
 
@@ -41,6 +42,7 @@ export default function RootLayout({
               <p>Photos : crédits par pièce</p>
             </div>
           </footer>
+          <MadeWithLove className="mt-0 pb-6" />
       </body>
     </html>
   )
