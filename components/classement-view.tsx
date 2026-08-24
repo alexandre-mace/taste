@@ -10,6 +10,7 @@ import {
   AlertDialog,
   AlertDialogAction,
   AlertDialogCancel,
+  AlertDialogContent,
   AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogHeader,
@@ -40,6 +41,7 @@ import { cn } from "@/lib/utils"
 export function ClassementView({ subjectSlug }: { subjectSlug: string }) {
   const subject = getSubject(subjectSlug)!
   const { ready, entries, totalDuels, reset } = useRankings(subjectSlug)
+  const [resetDialogOpen, setResetDialogOpen] = React.useState(false)
 
   const ranked = React.useMemo(() => {
     return subject.items
@@ -110,11 +112,14 @@ export function ClassementView({ subjectSlug }: { subjectSlug: string }) {
           >
             Continuer les duels
           </LinkButton>
-          <AlertDialogTrigger>
-            <Button variant="ghost" size="sm">
+          <AlertDialog
+            open={resetDialogOpen}
+            onOpenChange={setResetDialogOpen}
+          >
+            <AlertDialogTrigger render={<Button variant="ghost" size="sm" />}>
               Tout recommencer
-            </Button>
-            <AlertDialog>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
               <AlertDialogHeader>
                 <AlertDialogTitle>
                   Remettre le classement à zéro ?
@@ -126,12 +131,17 @@ export function ClassementView({ subjectSlug }: { subjectSlug: string }) {
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel>Annuler</AlertDialogCancel>
-                <AlertDialogAction onPress={reset}>
+                <AlertDialogAction
+                  onClick={() => {
+                    reset()
+                    setResetDialogOpen(false)
+                  }}
+                >
                   Tout effacer
                 </AlertDialogAction>
               </AlertDialogFooter>
-            </AlertDialog>
-          </AlertDialogTrigger>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
       </div>
 
