@@ -27,6 +27,16 @@ hors-sujet, et une sélection faite sur des noms de fichiers ne prouve rien. Mé
 planche-contact PIL, vignettes et libellés, lue d'un coup pour juger des dizaines d'images à la fois.
 Déléguer les probes à des agents marche bien, l'oeil final reste à faire.
 
+## Une correction locale sur `separator`
+
+shadcn écrit encore les variantes d'orientation en `data-horizontal:` / `data-vertical:`,
+c'est-à-dire les attributs booléens `[data-horizontal]` / `[data-vertical]`. Base UI 1.7
+n'en émet aucun : il écrit `data-orientation="horizontal"`. Le séparateur n'avait donc ni
+hauteur ni largeur, il était invisible. Corrigé ici en `data-[orientation=horizontal]:`.
+
+`separator` n'est pas dans le registry `@alexandremace`, donc rien ne le propage : un
+`shadcn add separator` futur ramènerait la version cassée, il faut refaire la correction.
+
 ## Éditorial
 
 Vérifier qu'une pièce existe bien dans la discipline avant de l'ajouter : Messika ne fait pas de
@@ -36,9 +46,13 @@ illustre, pas seulement jolie : six styles d'intérieur ont été réimagés pou
 Les fiches sont fact-checkées. Tests unitaires Vitest sur `lib/elo.ts`.
 
 <!-- BEGIN:nextjs-agent-rules -->
+
 # This is NOT the Next.js you know
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
 <!-- END:nextjs-agent-rules -->
 
 Conventions de la stack : `docs/next-guidelines.md`, lien vers [dev-standards](https://github.com/alexandre-mace/dev-standards).
