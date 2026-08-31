@@ -27,15 +27,16 @@ hors-sujet, et une sélection faite sur des noms de fichiers ne prouve rien. Mé
 planche-contact PIL, vignettes et libellés, lue d'un coup pour juger des dizaines d'images à la fois.
 Déléguer les probes à des agents marche bien, l'oeil final reste à faire.
 
-## Une correction locale sur `separator`
+## `separator` vient du kit
 
 shadcn écrit encore les variantes d'orientation en `data-horizontal:` / `data-vertical:`,
 c'est-à-dire les attributs booléens `[data-horizontal]` / `[data-vertical]`. Base UI 1.7
 n'en émet aucun : il écrit `data-orientation="horizontal"`. Le séparateur n'avait donc ni
-hauteur ni largeur, il était invisible. Corrigé ici en `data-[orientation=horizontal]:`.
+hauteur ni largeur, il était invisible.
 
-`separator` n'est pas dans le registry `@alexandremace`, donc rien ne le propage : un
-`shadcn add separator` futur ramènerait la version cassée, il faut refaire la correction.
+Le composant est entré au registry `@alexandremace` pour cette raison : il se met à jour
+par `pnpm dlx shadcn@latest add @alexandremace/separator`, et jamais par un `shadcn add
+separator` officiel, qui ramènerait la version cassée.
 
 ## Éditorial
 
